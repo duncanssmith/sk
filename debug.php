@@ -1,0 +1,36 @@
+<?php
+
+$debug=array(
+	'action'=>false,
+	'ajax'=>false,
+	'args'=>false,
+	'attributetypes'=>false,
+	'cmd'=>false,
+	'colorkey'=>false,
+	'colors'=>false,
+	'control'=>false,
+	'data'=>false,
+	'date_functions'=>false,
+	'dbOn'=>false,
+	'errors'=>false,
+	'etc'=>false,
+	'functions'=>false,
+	'methods'=>false,
+	'general'=>false,
+	'get'=>false,
+	'global'=>false,
+	'images'=>false,
+	'mysqlvariables'=>false,
+	'page'=>false,
+	'params'=>false,
+	'post'=>false,
+	'session'=>false,
+	'showhiddenvalues'=>false,
+	'sql'=>false,
+	'table'=>false,
+	'usedelform'=>false,
+	'variables'=>false,
+	'view'=>false
+);
+
+?>

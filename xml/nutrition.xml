@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<catalog>
+
+  <item>
+    <title><![CDATA[]]></title>
+    <artist></artist>
+		<id></id>
+		<date></date>
+    <categories>
+      <category></category>
+      <category></category>
+    </categories>
+    <pageid>0.3.0</pageid>
+    <media><![CDATA[ ]]></media>
+    <subtitle><![CDATA[ ]]></subtitle>
+    <images>
+      <image>img/1.jpg</image>
+		</images>
+	</item>
+
+	</catalog>
