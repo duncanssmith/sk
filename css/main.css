@@ -347,7 +347,7 @@ table.index_data {
   margin: 0 auto;
   width: 1000px;
   background: white;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 1em;
   border-radius: 1em;
   -webkit-border-radius: 1em;
@@ -356,8 +356,8 @@ table.index_data {
   -moz-border-radius: 1em; }
 
 #header {
-  background: #37379b;
-  background: #37379b;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
   padding: 20px;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
@@ -370,7 +370,7 @@ table.index_data {
 
 #navigation {
   float: left;
-  width: 900px;
+  width: 1000px;
   background: #37379b;
   background: #37379b; }
   #navigation ul {
@@ -470,8 +470,8 @@ table.index_data {
 
 #footer {
   clear: left;
-  background: #2daadc;
-  background: rgba(45, 170, 220, 0.8);
+  background: #373737;
+  background: rgba(55, 55, 55, 0.3);
   text-align: right;
   padding: 20px;
   height: 1%;

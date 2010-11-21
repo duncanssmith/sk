@@ -26,7 +26,6 @@ $xmlfile="";
 
 $var=1;
 
-
 # -----------------------
 #
 $files=array(
@@ -133,34 +132,52 @@ $pages=array(
     'showtitle'=>true,
     'include'=>'inc/insurance_providers.inc',
     'layout'=>'info',
+    '3.0'=>array(
+      'title'=>'Weight Management',
+      'showtitle'=>true,
+      'include'=>'inc/weight_management.inc',
+      'layout'=>'info',
+    )
   ),
   '4'=>array(
     'title'=>'Medical',
     'showtitle'=>true,
     'include'=>'inc/medical.inc',
     'layout'=>'info',
+    '4.0'=>array(
+      'title'=>'Weight Management',
+      'showtitle'=>true,
+      'include'=>'inc/weight_management.inc',
+      'layout'=>'info',
+    )
   ),
   '5'=>array(
     'title'=>'Other Services',
     'showtitle'=>true,
     'include'=>'inc/other_services.inc',
     'layout'=>'info',
+    '5.0'=>array(
+      'title'=>'Weight Management',
+      'showtitle'=>true,
+      'include'=>'inc/weight_management.inc',
+      'layout'=>'info',
+    )
   )
 );
- 
 
-
-$itingline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">&copy; iting ".$now."</a>\n";
+$itingline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">web design &copy; iting design ".$year." all rights reserved</a>\n";
+$sknutritionline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">site content &copy; sk nutrition ".$year." all rights reserved</a>\n";
 /* images */
 $logo="images/logo.gif";
 $logoBlank="images/blank_logo.gif";
+$logoline="<a href=\"index.php\"><img src=\"img/logo.png\" alt=\"SK Nutrition\"/></a>";
+$nologoline="";
 
 /* links */
 $Url00="http://www.iting.co.uk/";
 $Url01="http://www.iting.co.uk";
 
 /* alt text */
-$Alt00="Duncan Smith";
-
+$Alt00="SK Nutrition";
 
 ?>

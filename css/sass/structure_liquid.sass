@@ -1,0 +1,114 @@
+@import sv4
+
+#container
+  margin: 1 auto
+  width: 100%
+  background: $container_background_color 
+  border-radius: 8px
+  border-radius: 8px
+  -webkit-border-radius: 8px
+  -webkit-border-radius: 8px
+  -moz-border-radius: 8px
+  -moz-border-radius: 8px
+
+#header
+  background: $header_background_color
+  padding: 20px
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+  -webkit-border-top-left-radius: 8px
+  -webkit-border-top-right-radius: 8px
+  -moz-border-radius-topleft: 8px
+  -moz-border-radius-topright: 8px
+  h1
+    margin: 0
+
+#navigation
+  float: left
+  width: 100%
+  background: $navigation_background_color url("../../images/glass_button.png") repeat-x 0 50%
+  ul
+    margin: 0
+    padding: 0
+    li
+      list-style-type: none
+      display: inline
+  li a
+    display: block
+    float: left
+    padding: 5px 10px
+    color: $navigation_link_text_color 
+    text-decoration: none
+    font-weight: normal
+    border-right: 1px solid $navigation_border_color
+    &:hover
+      background: $navigation_background_hover_color url("../../images/glass_button.png") repeat-x 0 50%
+      color: $navigation_link_hover_color 
+
+#content_container
+  background: $content-container_background_color 
+  float: left
+  width: 100%
+  //background: white url(/wp-content/uploads/layout-three-fixed-background.gif) repeat-y 100% 0
+
+#content_container1
+  background: $content_container1_background_color
+  float: left
+  width: 100%
+//  background: url(rails.png) repeat-y 20% 0
+
+#content_container2
+  background: $content_container2_background_color
+  float: left
+  width: 100%
+  // background: url(/public/images/rails.png) repeat-y 80% 0
+  //background: url(/wp-content/uploads/layout-three-liquid-background2.gif) repeat-y 80% 0
+
+#left_sidebar
+  float: left
+  background: $left_sidebar_background_color
+  width: 8%
+  padding: 10px 0
+  margin: 0 2%
+  display: inline
+  ul
+    margin: 0
+    padding: 0
+    li
+      margin: 0 0 1em
+      padding: 0
+      list-style-type: none
+
+#content
+  float: left
+  background: $content_background_color
+  width: 56%
+  padding: 20px 0
+  margin: 0 0 0 2%
+  h1
+    margin: 0
+  h2
+    margin: 0
+
+#right_sidebar
+  float: right
+  background: $right_sidebar_background_color
+  width: 16%
+  padding: 20px 0
+  margin: 0 2% 0 0
+  display: inline
+  h3
+    margin: 0
+
+#footer
+  clear: both
+  background: $footer_background_color 
+  text-align: right
+  padding: 20px
+  height: 1%
+  border-bottom-left-radius: 8px
+  border-bottom-right-radius: 8px
+  -webkit-border-bottom-left-radius: 8px
+  -webkit-border-bottom-right-radius: 8px
+  -moz-border-radius-bottomleft: 8px
+  -moz-border-radius-bottomright: 8px  

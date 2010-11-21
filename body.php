@@ -1,22 +1,23 @@
 <body>
   <div id="container">
     <div id="header">
-      <div id="navigation">
-        <?php  
-          include "menu.php"; 
-            #   echo "<script>";
-            #   echo $script;
-            #  echo "</script>";
-        ?>
-      </div>
-    <?php 
-       if($settings['logo']){
-        echo $logoline;
-      }else{
-        echo $nologoline;
-      }
-    ?>
+      <?php 
+         if($settings['logo']){
+          echo $logoline;
+        }else{
+          echo $nologoline;
+        }
+      ?>
       <br/>
+      <br/>
+    </div>
+    <div id="navigation">
+      <?php  
+        include "menu.php"; 
+          #   echo "<script>";
+          #   echo $script;
+          #  echo "</script>";
+      ?>
     </div>
 
     <div id="content_container">
@@ -74,10 +75,10 @@
         ?>
 
       </div>
-      <div id="footer">
-        <div>
+			<div id="footer">
           <?php 
             echo $itingline; 
+            echo $sknutritionline; 
             if($settings['logo']){
               echo $bottom_of_page_line;
             }else{
@@ -85,8 +86,7 @@
             }
 
           ?>
-          <?php #echo $now?>
-        </div>
+					<?php echo $now ?>
         <?php
           if(($debug['global'])){
             echo "<pre>Global: ";
@@ -94,6 +94,9 @@
             echo "</pre>\n";
           }
         ?>
+        <br/>
+        <br/>
+        <br/>
       </div>
     </div>
   </body>
