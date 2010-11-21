@@ -30,6 +30,18 @@
   }
 ?>
 
+<?php
+#---------------------------------------------------------------------
+# Here we are writing a set of text files generated from the pages array
+# This text file is included and forms the SUBMENU navigation for the sidebar
+# This generated files require an intermediate temp file also
+#---------------------------------------------------------------------
+  if($control['generate_sidebar_links']){ 
+    generate_sidebar_links($pages, $files['sidebar']);
+  }
+
+?>
+
 <script type='text/javascript'>
 
 <?php

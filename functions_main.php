@@ -53,6 +53,47 @@ function generate_tabs($p,$f){
 
 }
 
+function generate_sidebar_links($p){
+
+	global $debug;
+	global $control;
+	global $pageid;
+	global $files;
+	global $flm;
+	global $final_menu;
+	global $menu_array;
+	global $timestamp;
+	global $pagekeys;
+	global $menulevels;
+	global $pagetitles;
+	global $tabs;
+	global $timestamp;
+
+	if($debug['functions']){
+		$thisFunction ="generate_sidebar_links(".$p.")";
+		echo_functionname($thisFunction);
+	}
+  $pk = array_keys($p); 
+
+	$file=fopen( $p['sidebar_file'], "w");
+	#echo "<p>".$p['title']." - ".$p['sidebar_file']."</p>\n";
+	fprintf($file,"\n<ul>\n");
+
+	for($i=0;$i<sizeof($p);$i++){
+		if(is_array($p[$pk[$i]])){
+      fprintf($file, "<li><a href=\"index.php?pageid=%s\">%s</a></li>\n", $pk[$i], $p[$pk[$i]]['title']);
+			generate_sidebar_links($p[$pk[$i]]);
+		}
+		else{
+      #fprintf($file, "<li><a href=\"index.php?%s\">%s</a></li>\n", $p[$pk[$i]], $p['title']);
+		}
+	}
+	fprintf($file, "</ul>\n");
+  fclose($file);
+
+  return true;
+}
+
 function generate_menu($p){
 
 	global $debug;
@@ -200,6 +241,30 @@ function echo_functionname($name){
 function tf($v){return $v ? "True" : "False";}
 
 #	$page=array();
+
+function find_sidebar_include_file($p,$pageid, $d){
+
+	global $debug;
+	global $pageid;
+	global $foundx;
+	global $page;
+
+	if($debug['functions']){
+		$thisFunction ="find_sidebar_include_file(".$p.", ".$pageid.", ".$d.")";
+		#echo_functionname($thisFunction);
+	}
+  $pk=array_keys($p);
+  $pageidstr=sprintf("%s",$pageid);
+	for($i=0;$i<sizeof($p);$i++){
+	  $pkeystr=sprintf("%s",$p[$pk[$i]]);
+	  echo "<p>key: ".$p[$pk[$i]]."</p>\n";
+		if($pkeystr===$pageidstr){
+			$file = $p['sidebar_file'];
+			echo "<p>SIDEBAR FILE: ".$file."</p>\n";
+    }
+  }
+				return $file;
+}
 
 function getlinks($p,$pageid,$d){
 

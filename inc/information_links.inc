@@ -6,42 +6,42 @@
 </p>
 <ul>
   <li>
-    <a href='http://www.bda.uk.org'>
+    <a href='http://www.bda.uk.com' target='_blank'>
       British Dietetic Association
     </a>
   </li>
   <li>
-    <a href='http://www.hpd-uk.org'>
+    <a href='http://www.hpc-uk.org' target='_blank'>
       Health Professions Council
     </a>
   </li>
   <li>
-    <a href='http://www.nutrition.org'>
+    <a href='http://www.nutrition.org.uk' target='_blank'>
       British Nutrition Foundation
     </a>
   </li>
   <li>
-    <a href='http://www.food.gov.uk'>
+    <a href='http://www.food.gov.uk' target='_blank'>
       Food Standards Agency
     </a>
   </li>
   <li>
-    <a href='http://www.bhf.org.uk'>
+    <a href='http://www.bhf.org.uk' target='_blank'>
       British Heart Foundation
     </a>
   </li>
   <li>
-    <a href='http://www.diabetes.org.uk'>
+    <a href='http://www.diabetes.org.uk' target='_blank'>
       Diabetes UK
     </a>
   </li>
   <li>
-    <a href='http://www.coeliac.org.uk'>
+    <a href='http://www.coeliac.org.uk' target='_blank'>
       Coeliac Society
     </a>
   </li>
   <li>
-    <a href='http://www.allergyuk.org'>
+    <a href='http://www.allergyuk.org' target='_blank'>
       The British Allergy Foundation
     </a>
   </li>

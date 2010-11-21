@@ -23,13 +23,14 @@
     <div id="content_container">
 			<div id="left_sidebar">
         <?php
+				  include "sidebar.php";
 					#$pageid=$_GET['pageid']=0;
-					 $z = array();
-					 $z=getlinks($pages,$pageid,$depth);
-           if(!$foundx){
-					   $pageid = $_GET['pageid'] = 0;
-						 $z=getlinks($pages,$pageid,$depth);
-					 }
+					# $z = array();
+					# $z=getlinks($pages,$pageid,$depth);
+          # if(!$foundx){
+					#   $pageid = $_GET['pageid'] = 0;
+					#	 $z=getlinks($pages,$pageid,$depth);
+					# }
            #sidebar_links($p)
         ?>
       </div>
