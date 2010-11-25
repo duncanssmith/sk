@@ -1,15 +1,17 @@
 <body>
   <div id="container">
     <div id="header">
-      <?php 
-         if($settings['logo']){
-          echo $logoline;
-        }else{
-          echo $nologoline;
-        }
-      ?>
-      <br/>
-      <br/>
+      <div id="logo">
+        <?php 
+          if($settings['logo']){
+            echo $logoline;
+          }else{
+            echo $nologoline;
+          }
+        ?>
+        <br/>
+        <br/>
+      </div>
     </div>
     <div id="navigation">
       <?php  
@@ -21,24 +23,13 @@
     </div>
 
     <div id="content_container">
-			<div id="left_sidebar">
+      <div id="left_sidebar">
         <?php
-				  include "sidebar.php";
-					#$pageid=$_GET['pageid']=0;
-					# $z = array();
-					# $z=getlinks($pages,$pageid,$depth);
-          # if(!$foundx){
-					#   $pageid = $_GET['pageid'] = 0;
-					#	 $z=getlinks($pages,$pageid,$depth);
-					# }
-           #sidebar_links($p)
+          include "sidebar.php";
         ?>
       </div>
       <div id="content">
           <?php
-            # the file state contains code that determines 
-            # the current state of the application 
-            # and acts on it accordingly
             include "state.php";
           ?>
       </div>
@@ -76,7 +67,7 @@
         ?>
 
       </div>
-			<div id="footer">
+      <div id="footer">
           <?php 
             echo $itingline; 
             echo $sknutritionline; 
@@ -87,7 +78,7 @@
             }
 
           ?>
-					<?php echo $now ?>
+          <?php echo $now ?>
         <?php
           if(($debug['global'])){
             echo "<pre>Global: ";

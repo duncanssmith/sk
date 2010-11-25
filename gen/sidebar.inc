@@ -1,9 +1,9 @@
 
 <ul>
-<li><a href="index.php?pageid=0">SK Nutrition</a></li>
-<li><a href="index.php?pageid=1">Nutrition and Health</a></li>
-<li><a href="index.php?pageid=2">Information Links</a></li>
-<li><a href="index.php?pageid=3">Insurance Providers</a></li>
-<li><a href="index.php?pageid=4">Medical</a></li>
+<li><a href="index.php?pageid=0">Home</a></li>
+<li><a href="index.php?pageid=1">Your Health</a></li>
+<li><a href="index.php?pageid=2">Your Organisation</a></li>
+<li><a href="index.php?pageid=3">About Us</a></li>
+<li><a href="index.php?pageid=4">Contact Us</a></li>
 <li><a href="index.php?pageid=5">Other Services</a></li>
 </ul>

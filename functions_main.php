@@ -84,9 +84,6 @@ function generate_sidebar_links($p){
       fprintf($file, "<li><a href=\"index.php?pageid=%s\">%s</a></li>\n", $pk[$i], $p[$pk[$i]]['title']);
 			generate_sidebar_links($p[$pk[$i]]);
 		}
-		else{
-      #fprintf($file, "<li><a href=\"index.php?%s\">%s</a></li>\n", $p[$pk[$i]], $p['title']);
-		}
 	}
 	fprintf($file, "</ul>\n");
   fclose($file);

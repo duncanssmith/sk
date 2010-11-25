@@ -42,147 +42,140 @@ $files=array(
 );
 // packages.inc
 // philosophy.inc
-
+/* 'include'=>'inc/philosophy.inc',
+   'include'=>'inc/consultation.inc',
+   'include'=>'inc/mainbody.inc',
+   'include'=>'inc/reasons.inc',
+   'include'=>'inc/bookings.inc',
+   'include'=>'inc/fees.inc',
+   'include'=>'inc/nutritionist_dietitian.inc',
+   'include'=>'inc/packages.inc',
+   'include'=>'inc/type2_diabetes.inc',
+   'include'=>'inc/heart_health.inc',
+   'include'=>'inc/fertility.inc',
+   'include'=>'inc/weight_management.inc',
+   'include'=>'inc/information_links.inc',
+   'include'=>'inc/insurance_providers.inc',
+ */
 $pages=array(
-  'title'=>'SK Nutrition',
+  'title'=>'SouthEast Nutrition and Health',
   'layout'=>'info',
   'showtitle'=>true,
-  'include'=>'inc/mainbody.inc',
-	'sidebar_file' => 'gen/sidebar.inc',
+  'sidebar_file' => 'gen/sidebar.inc',
   '0'=>array(
-    'title'=>'SK Nutrition',
+    'title'=>'Home',
     'showtitle'=>true,
-    'include'=>'inc/reasons.inc',
+    'include'=>'inc/philosophy.inc',
     'layout'=>'info',
-		'xmlfile'=>'xml/nutrition.xml',
-		'sidebar_file' => 'gen/sidebar_0.inc',
+  'xmlfile'=>'xml/nutrition.xml',
+  'sidebar_file' => 'gen/sidebar_0.inc',
     '0.0'=>array(
-      'title'=>'Consultations',
+      'title'=>'Why see a dietician?',
       'showtitle'=>true,
-      'include'=>'inc/consultation.inc',
       'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_0_0.inc',
+      'include'=>'inc/reasons.inc',
+      'sidebar_file' => 'gen/sidebar_0_0.inc'
     ),
     '0.1'=>array(
-      'title'=>'Booking',
+      'title'=>'Differences between Dieticians and Nutritionists',
       'showtitle'=>true,
-      'include'=>'inc/bookings.inc',
       'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_0_1.inc',
+      'include'=>'inc/nutritionist_dietitian.inc',
+      'sidebar_file' => 'gen/sidebar_0_1.inc'
     ),
     '0.2'=>array(
-      'title'=>'Fees',
-      'showtitle'=>true,
-      'include'=>'inc/fees.inc',
-      'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_0_2.inc',
-    ),
-    '0.3'=>array(
-      'title'=>'Nutritionist Dietitian',
-      'showtitle'=>true,
-      'include'=>'inc/nutritionist_dietitian.inc',
-      'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_0_3.inc',
-    ),
-    '0.4'=>array(
       'title'=>'Packages',
       'showtitle'=>true,
+      'layout'=>'info',
       'include'=>'inc/packages.inc',
-      'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_0_4.inc',
+      'sidebar_file' => 'gen/sidebar_0_2.inc',
     ),
-    '0.5'=>array(
-      'title'=>'Philosophy',
+    '0.3'=>array(
+      'title'=>'Booking and Fees',
       'showtitle'=>true,
-      'include'=>'inc/philosophy.inc',
       'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_0_5.inc',
+      'include'=>'inc/bookingsandfees.inc',
+      'sidebar_file' => 'gen/sidebar_0_3.inc',
     )
   ),
   '1'=>array(
-    'title'=>'Nutrition and Health',
+    'title'=>'Your Health',
     'showtitle'=>true,
-    'include'=>'inc/reasons.inc',
     'layout'=>'info',
     'xmlfile'=>'xml/nutrition.xml',
-		'sidebar_file' => 'gen/sidebar_1.inc',
+    'sidebar_file' => 'gen/sidebar_1.inc',
     '1.0'=>array(
-      'title'=>'Type 2 Diabetes',
+      'title'=>'Healthy eating for families',
       'showtitle'=>true,
-      'include'=>'inc/type2_diabetes.inc',
       'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_1_0.inc',
+      'sidebar_file' => 'gen/sidebar_1_0.inc',
     ),
     '1.1'=>array(
-      'title'=>'Heart Health',
+      'title'=>'Vegetarian/Vegan',
       'showtitle'=>true,
-      'include'=>'inc/heart_health.inc',
       'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_1_1.inc',
+      'sidebar_file' => 'gen/sidebar_1_1.inc',
     ),
     '1.2'=>array(
-      'title'=>'Fertility',
+      'title'=>'Diabetes',
       'showtitle'=>true,
-      'include'=>'inc/fertility.inc',
       'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_1_2.inc',
+      'sidebar_file' => 'gen/sidebar_1_2.inc',
     ),
     '1.3'=>array(
-      'title'=>'Weight Management',
+      'title'=>'Heart Health',
       'showtitle'=>true,
-      'include'=>'inc/weight_management.inc',
       'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_1_3.inc',
+      'sidebar_file' => 'gen/sidebar_1_3.inc',
+    ),
+    '1.4'=>array(
+      'title'=>'Food allergy or intolerance',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'sidebar_file' => 'gen/sidebar_1_4.inc',
+    ),
+    '1.5'=>array(
+      'title'=>'Irritable Bowel Syndrome',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'sidebar_file' => 'gen/sidebar_1_5.inc',
+    ),
+    '1.6'=>array(
+      'title'=>'Weight Loss',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'sidebar_file' => 'gen/sidebar_1_6.inc',
+    ),
+    '1.7'=>array(
+      'title'=>'Mineral and Vitamin Deficiency',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'sidebar_file' => 'gen/sidebar_1_7.inc',
     )
   ),
   '2'=>array(
-    'title'=>'Information Links',
+    'title'=>'Your Organisation',
     'showtitle'=>true,
-    'include'=>'inc/information_links.inc',
     'layout'=>'info',
-		'sidebar_file' => 'gen/sidebar_2.inc',
+    'sidebar_file' => 'gen/sidebar_2.inc',
   ),
   '3'=>array(
-    'title'=>'Insurance Providers',
+    'title'=>'About Us',
     'showtitle'=>true,
-    'include'=>'inc/insurance_providers.inc',
     'layout'=>'info',
-		'sidebar_file' => 'gen/sidebar_3.inc',
-    '3.0'=>array(
-      'title'=>'Weight Management',
-      'showtitle'=>true,
-      'include'=>'inc/weight_management.inc',
-      'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_3_0.inc',
-    )
+    'sidebar_file' => 'gen/sidebar_3.inc',
   ),
   '4'=>array(
-    'title'=>'Medical',
+    'title'=>'Contact Us',
     'showtitle'=>true,
-    'include'=>'inc/medical.inc',
     'layout'=>'info',
-		'sidebar_file' => 'gen/sidebar_4.inc',
-    '4.0'=>array(
-      'title'=>'Weight Management',
-      'showtitle'=>true,
-      'include'=>'inc/weight_management.inc',
-      'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_4_0.inc',
-    )
+    'sidebar_file' => 'gen/sidebar_4.inc',
   ),
   '5'=>array(
     'title'=>'Other Services',
     'showtitle'=>true,
-    'include'=>'inc/other_services.inc',
     'layout'=>'info',
-		'sidebar_file' => 'gen/sidebar_5.inc',
-    '5.0'=>array(
-      'title'=>'Weight Management',
-      'showtitle'=>true,
-      'include'=>'inc/weight_management.inc',
-      'layout'=>'info',
-		  'sidebar_file' => 'gen/sidebar_5_0.inc',
-    )
+    'sidebar_file' => 'gen/sidebar_5.inc',
   )
 );
 
@@ -191,7 +184,7 @@ $sknutritionline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">site
 /* images */
 $logo="images/logo.gif";
 $logoBlank="images/blank_logo.gif";
-$logoline="<a href=\"index.php\"><img src=\"img/logo.png\" alt=\"SK Nutrition\"/></a>";
+$logoline="<a href=\"index.php\"><img src=\"img/senh_logo.png\" alt=\"SK Nutrition\"/></a>";
 $nologoline="";
 
 /* links */
