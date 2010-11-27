@@ -37,7 +37,7 @@
 # This generated files require an intermediate temp file also
 #---------------------------------------------------------------------
   if($control['generate_sidebar_links']){ 
-    generate_sidebar_links($pages, $files['sidebar']);
+    generate_sidebar_links($pages);
   }
 
 ?>

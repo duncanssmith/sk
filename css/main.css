@@ -379,9 +379,9 @@ caption {
  *   master.css
  *-------------------------------------------------------------- */
 body {
-  font-family: verdana, tahoma, arial, helvetica, sans-serif;
-  background: white url("../img/grass.jpg") top left repeat-x fixed;
+  font-family: arial, helvetica neue, verdana, tahoma, arial, helvetica, sans-serif;
   background: rgba(255, 255, 255, 0.9) url("../img/grass.jpg") top left repeat-x fixed;
+  background: white url("../img/grass.jpg") top left repeat-x fixed;
   color: #1e1e1e;
   color: rgba(30, 30, 30, 0.8);
   margin: 10px;
@@ -440,33 +440,36 @@ table.index_data {
 #container {
   margin: 0 auto;
   width: 1000px;
-  background: #199b91;
-  background: rgba(25, 155, 145, 0.7);
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  -webkit-border-top-left-radius: 1em;
-  -webkit-border-top-right-radius: 1em;
-  -moz-border-radius-topleft: 1em;
-  -moz-border-radius-topright: 1em; }
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 1em 1em;
+  -webkit-border-top-left-radius: 1em 1em;
+  -moz-border-radius-topleft: 1em 1em;
+  border-top-right-radius: 1em 1em;
+  -webkit-border-top-right-radius: 1em 1em;
+  -moz-border-radius-topright: 1em 1em; }
 
 #header {
   background: #41cda0;
-  background: rgba(65, 205, 160, 0.4);
+  background: rgba(65, 205, 160, 0.1);
   padding: 20px;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  -webkit-border-top-left-radius: 1em;
-  -webkit-border-top-right-radius: 1em;
-  -moz-border-radius-topleft: 1em;
-  -moz-border-radius-topright: 1em; }
+  border-top-left-radius: 1em 1em;
+  -webkit-border-top-left-radius: 1em 1em;
+  -moz-border-radius-topleft: 1em 1em;
+  border-top-right-radius: 1em 1em;
+  -webkit-border-top-right-radius: 1em 1em;
+  -moz-border-radius-topright: 1em 1em; }
   #header h1 {
+    margin: 0; }
+  #header #logo {
+    padding: 0;
     margin: 0; }
 
 #navigation {
   float: left;
   width: 1000px;
-  background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
-  background: #23af82 url("../img/glass_button.png") repeat-x 0 50%; }
+  background: #23af82;
+  background: #23af82; }
   #navigation ul {
     margin: 0;
     padding: 0; }
@@ -479,8 +482,8 @@ table.index_data {
     padding: 5px 10px;
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
-    color: #f5f5f5;
-    color: rgba(245, 245, 245, 0.7);
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     border-right: 1px solid white;
     border-right: 1px solid rgba(255, 255, 255, 0.7); }
@@ -494,44 +497,64 @@ table.index_data {
   float: left;
   width: 1000px;
   background: white;
-  background: rgba(255, 255, 255, 0.7);
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  -webkit-border-bottom-left-radius: 1em;
-  -webkit-border-bottom-right-radius: 1em;
-  -moz-border-radius-bottomleft: 1em;
-  -moz-border-radius-bottomright: 1em; }
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 1em 1em;
+  -webkit-border-bottom-left-radius: 1em 1em;
+  -moz-border-radius-bottomleft: 1em 1em;
+  border-bottom-right-radius: 1em 1em;
+  -webkit-border-bottom-right-radius: 1em 1em;
+  -moz-border-radius-bottomright: 1em 1em; }
 
 #left_sidebar {
   float: left;
   background: white;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.9);
+  width: 120%;
   width: 140px;
   padding: 15px 10px 10px 10px;
-  margin: 0 20px;
+  margin: 0 15px;
   display: inline; }
   #left_sidebar ul {
+    width: 120%;
     margin: 0;
-    padding: 0; }
+    padding: 0 0 0 0px;
+    border-top: 1px dotted green;
+    background: white;
+    background: rgba(255, 255, 255, 0.05); }
     #left_sidebar ul li {
-      margin: 0 0 1em;
-      padding: 0;
-      list-style-type: none; }
+      margin: 0 0 0 0px;
+      padding: 0em;
+      list-style-type: none;
+      font-size: 1em;
+      font-family: arial;
+      border-bottom: 1px dotted green;
+      padding-top: 2px;
+      text-align: right; }
+      #left_sidebar ul li:hover {
+        background: #c8e65a;
+        background: rgba(200, 230, 90, 0.9); }
+      #left_sidebar ul li a {
+        color: #287832;
+        color: rgba(40, 120, 50, 0.9);
+        background: white;
+        background: rgba(255, 255, 255, 0.05);
+        text-decoration: none;
+        text-align: right; }
   #left_sidebar .more_btn a {
     padding: 3px 12px;
-    color: #f5f5f5;
-    color: rgba(245, 245, 245, 0.7);
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
     border: 1px solid #23af82;
     border: 1px solid #23af82;
-    border-radius: 1em;
-    border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -moz-border-radius: 1em; }
+    border-top-left-radius: 1em 1em;
+    -webkit-border-top-left-radius: 1em 1em;
+    -moz-border-radius-topleft: 1em 1em;
+    border-top-right-radius: 1em 1em;
+    -webkit-border-top-right-radius: 1em 1em;
+    -moz-border-radius-topright: 1em 1em; }
     #left_sidebar .more_btn a:hover {
       color: white;
       color: white;
@@ -544,8 +567,15 @@ table.index_data {
   width: 500px;
   padding: 15px 10px 10px 10px;
   margin: 0 0 0 30px; }
+  #content h1 {
+    font-size: 180%;
+    color: #b4dc46;
+    color: rgba(180, 220, 70, 0.9); }
   #content h2 {
-    margin: 0; }
+    margin: 0;
+    font-size: 150%;
+    color: #b4dc46;
+    color: rgba(180, 220, 70, 0.9); }
   #content #pagetitle {
     color: #fa2800;
     color: rgba(250, 40, 0, 0.4);
@@ -569,12 +599,35 @@ table.index_data {
   text-align: right;
   padding: 20px;
   height: 1%;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  -webkit-border-bottom-left-radius: 1em;
-  -webkit-border-bottom-right-radius: 1em;
-  -moz-border-radius-bottomleft: 1em;
-  -moz-border-radius-bottomright: 1em; }
+  border-bottom-left-radius: 1em 1em;
+  -webkit-border-bottom-left-radius: 1em 1em;
+  -moz-border-radius-bottomleft: 1em 1em;
+  border-bottom-right-radius: 1em 1em;
+  -webkit-border-bottom-right-radius: 1em 1em;
+  -moz-border-radius-bottomright: 1em 1em; }
+  #footer #footboxes {
+    clear: left;
+    background: #373737;
+    background: rgba(55, 55, 55, 0.3); }
+    #footer #footboxes #footbox_left {
+      float: left;
+      background: #373737;
+      background: rgba(55, 55, 55, 0.3); }
+    #footer #footboxes #footbox_middle {
+      background: #373737;
+      background: rgba(55, 55, 55, 0.3); }
+    #footer #footboxes #footbox_right {
+      float: right;
+      background: #373737;
+      background: rgba(55, 55, 55, 0.3); }
+  #footer a {
+    font-size: 8pt;
+    color: #287832;
+    color: rgba(40, 120, 50, 0.9);
+    background: white;
+    background: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    text-align: right; }
 
 #tabs {
   position: absolute;

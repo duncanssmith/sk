@@ -1,5 +1,5 @@
 
-<ul>
+<ul class="left_sidebar_links">
 <li><a href="index.php?pageid=1.0">Healthy eating for families</a></li>
 <li><a href="index.php?pageid=1.1">Vegetarian/Vegan</a></li>
 <li><a href="index.php?pageid=1.2">Diabetes</a></li>

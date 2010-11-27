@@ -1,39 +1,40 @@
-
 /*--------------------------------------------------------------
  *   structure_fixed.css
  *--------------------------------------------------------------
+
+@mixin rounded($side, $orientation, $radius) 
+  border-#{$side}-#{$orientation}-radius: $radius $radius
+  -webkit-border-#{$side}-#{$orientation}-radius: $radius $radius
+  -moz-border-radius-#{$side}#{$orientation}: $radius $radius
+
 
 #container
   margin: 0 auto
   width: 1000px
   background: $container_background_color_IE
   background: $container_background_color
-  //background: $navigation_background_color url("../img/glass_button.png") repeat-x 0 50%
-  border-top-left-radius: $border_radius
-  border-top-right-radius: $border_radius
-  -webkit-border-top-left-radius: $border_radius
-  -webkit-border-top-right-radius: $border_radius
-  -moz-border-radius-topleft: $border_radius
-  -moz-border-radius-topright: $border_radius
+  @include rounded("top", "left", $border_radius)
+  @include rounded("top", "right", $border_radius)
 
 #header
   background: $header_background_color_IE
   background: $header_background_color
   padding: 20px
-  border-top-left-radius: $border_radius
-  border-top-right-radius: $border_radius
-  -webkit-border-top-left-radius: $border_radius
-  -webkit-border-top-right-radius: $border_radius
-  -moz-border-radius-topleft: $border_radius
-  -moz-border-radius-topright: $border_radius
+  @include rounded("top", "left", $border_radius)
+  @include rounded("top", "right", $border_radius)
   h1
     margin: 0
+
+  #logo
+    padding: 0
+    margin: 0
+
 
 #navigation
   float: left
   width: 1000px
-  background: $navigation_background_base_color_IE url("../img/glass_button.png") repeat-x 0 50%
-  background: $navigation_background_base_color url("../img/glass_button.png") repeat-x 0 50%
+  background: $navigation_background_base_color_IE
+  background: $navigation_background_base_color
   ul
     margin: 0
     padding: 0
@@ -63,29 +64,45 @@
   width: 1000px
   background: $content-container_background_color_IE
   background: $content-container_background_color 
-  //background: white url(/wp-content/uploads/layout-three-fixed-background.gif) repeat-y 100% 0
-  border-bottom-left-radius: $border_radius
-  border-bottom-right-radius: $border_radius
-  -webkit-border-bottom-left-radius: $border_radius
-  -webkit-border-bottom-right-radius: $border_radius
-  -moz-border-radius-bottomleft: $border_radius
-  -moz-border-radius-bottomright: $border_radius
+  @include rounded("bottom", "left", $border_radius)
+  @include rounded("bottom", "right", $border_radius)
 
 #left_sidebar
   float: left
   background: $left_sidebar_background_color_IE
   background: $left_sidebar_background_color 
+  width: 120%
   width: 140px
   padding: 15px 10px 10px 10px 
-  margin: 0 20px
+  margin: 0 15px
   display: inline
   ul
+    width: 120%
     margin: 0
-    padding: 0
+    padding: 0 0 0 0px
+    border-top: 1px dotted green 
+    background: $left_sidebar_link_background_color_IE
+    background: $left_sidebar_link_background_color 
     li
-      margin: 0 0 1em
-      padding: 0
+      margin: 0 0 0 0px
+      padding: 0em
       list-style-type: none
+      font-size: $left_sidebar_link_text_size
+      font-family: $left_sidebar_link_text_font
+      border-bottom: 1px dotted green
+      padding-top: 2px
+      text-align: right
+      &:hover
+        background: $left_sidebar_link_background_hover_color_IE
+        background: $left_sidebar_link_background_hover_color 
+      a
+        color: $left_sidebar_link_text_color_IE
+        color: $left_sidebar_link_text_color 
+        background: $left_sidebar_link_background_color_IE
+        background: $left_sidebar_link_background_color 
+        text-decoration: none
+        text-align: right
+        
 
   .more_btn 
     a
@@ -97,12 +114,8 @@
       background: $navigation_background_color url("../img/glass_button.png") repeat-x 0 50%
       border: 1px solid $navigation_background_color_IE
       border: 1px solid $navigation_background_color
-      border-radius: $border_radius
-      border-radius: $border_radius
-      -webkit-border-radius: $border_radius
-      -webkit-border-radius: $border_radius
-      -moz-border-radius: $border_radius
-      -moz-border-radius: $border_radius
+      @include rounded("top", "left", $border_radius)
+      @include rounded("top", "right", $border_radius)
 
       &:hover
         color: $navigation_link_hover_color_IE
@@ -116,8 +129,15 @@
   width: 500px
   padding: 15px 10px 10px 10px 
   margin: 0 0 0 30px
+  h1
+    font-size: 180% 
+    color: $content_h_color_IE
+    color: $content_h_color
   h2
     margin: 0
+    font-size: 150% 
+    color: $content_h_color_IE
+    color: $content_h_color
   #pagetitle
     color: $content_pagetitle_color_IE 
     color: $content_pagetitle_color
@@ -142,9 +162,30 @@
   text-align: right
   padding: 20px
   height: 1%
-  border-bottom-left-radius: $border_radius
-  border-bottom-right-radius: $border_radius
-  -webkit-border-bottom-left-radius: $border_radius
-  -webkit-border-bottom-right-radius: $border_radius
-  -moz-border-radius-bottomleft: $border_radius
-  -moz-border-radius-bottomright: $border_radius
+  @include rounded("bottom", "left", $border_radius)
+  @include rounded("bottom", "right", $border_radius)
+
+  #footboxes
+    clear: left
+    background: $footer_background_color_IE
+    background: $footer_background_color
+    #footbox_left
+      float: left
+      background: $footer_box_left_background_color_IE
+      background: $footer_box_left_background_color
+    #footbox_middle
+      background: $footer_box_middle_background_color_IE
+      background: $footer_box_middle_background_color
+    #footbox_right
+      float: right
+      background: $footer_box_right_background_color_IE
+      background: $footer_box_right_background_color
+
+  a
+    font-size: 8pt
+    color: $left_sidebar_link_text_color_IE
+    color: $left_sidebar_link_text_color 
+    background: $left_sidebar_link_background_color_IE
+    background: $left_sidebar_link_background_color 
+    text-decoration: none
+    text-align: right

@@ -1,0 +1,151 @@
+--- 
+:listlineevencolor: 
+  :b: 220
+  :a: 0.9
+  :r: 255
+  :g: 255
+:content_container_background_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:index_data_table_header_color: 
+  :b: 60
+  :a: 0.6
+  :r: 200
+  :g: 200
+:listlineoddcolor: 
+  :b: 240
+  :a: 0.8
+  :r: 220
+  :g: 255
+:navigation_link_hover_color: 
+  :b: 255
+  :a: 1
+  :r: 255
+  :g: 255
+:left_sidebar_link_background_hover_color: 
+  :b: 90
+  :a: 0.9
+  :r: 200
+  :g: 230
+:hcolor: 
+  :b: 10
+  :a: 0.9
+  :r: 40
+  :g: 40
+:content_background_color: 
+  :b: 255
+  :a: 0.7
+  :r: 255
+  :g: 255
+:left_sidebar_link_background_color: 
+  :b: 255
+  :a: 0.05
+  :r: 255
+  :g: 255
+:pcolor: 
+  :b: 30
+  :a: 0.8
+  :r: 30
+  :g: 30
+:navigation_link_text_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:left_sidebar_link_text_hover_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:footer_box_right_background_color: 
+  :b: 55
+  :a: 0.3
+  :r: 55
+  :g: 55
+:navigation_border_color: 
+  :b: 255
+  :a: 0.7
+  :r: 255
+  :g: 255
+:navigation_background_hover_color: 
+  :b: 75
+  :a: 1
+  :r: 5
+  :g: 125
+:left_sidebar_link_text_color: 
+  :b: 50
+  :a: 0.9
+  :r: 40
+  :g: 120
+:footer_box_middle_background_color: 
+  :b: 55
+  :a: 0.3
+  :r: 55
+  :g: 55
+:navigation_background_base_color: 
+  :b: 130
+  :a: 1
+  :r: 35
+  :g: 175
+:left_sidebar_background_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:base_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:footer_box_left_background_color: 
+  :b: 55
+  :a: 0.3
+  :r: 55
+  :g: 55
+:navigation_background_color: 
+  :b: 130
+  :a: 1
+  :r: 35
+  :g: 175
+:content_h_color: 
+  :b: 70
+  :a: 0.9
+  :r: 180
+  :g: 220
+:footer_background_color: 
+  :b: 55
+  :a: 0.3
+  :r: 55
+  :g: 55
+:header_background_color: 
+  :b: 160
+  :a: 0.1
+  :r: 65
+  :g: 205
+:content_container2_background_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:right_sidebar_background_color: 
+  :b: 255
+  :a: 0.05
+  :r: 255
+  :g: 255
+:container_background_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:content_container1_background_color: 
+  :b: 255
+  :a: 0.9
+  :r: 255
+  :g: 255
+:content_pagetitle_color: 
+  :b: 0
+  :a: 0.4
+  :r: 250
+  :g: 40

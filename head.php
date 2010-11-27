@@ -4,7 +4,10 @@
 <html>
 <head>
 <link rel="shortcut icon" href="images/spacer.gif" />
+
+<!--[if opera]><!-->
 <link rel="stylesheet" href="css/main.css" type="text/css">
+<!-- <![endif]-->
 
 <meta name="keywords" content=" " >
 <meta name="description" content=" ">

@@ -58,7 +58,7 @@ $files=array(
    'include'=>'inc/insurance_providers.inc',
  */
 $pages=array(
-  'title'=>'SouthEast Nutrition and Health',
+  'title'=>'South East Nutrition and Health',
   'layout'=>'info',
   'showtitle'=>true,
   'sidebar_file' => 'gen/sidebar.inc',
@@ -67,8 +67,8 @@ $pages=array(
     'showtitle'=>true,
     'include'=>'inc/philosophy.inc',
     'layout'=>'info',
-  'xmlfile'=>'xml/nutrition.xml',
-  'sidebar_file' => 'gen/sidebar_0.inc',
+    'xmlfile'=>'xml/nutrition.xml',
+    'sidebar_file' => 'gen/sidebar_0.inc',
     '0.0'=>array(
       'title'=>'Why see a dietician?',
       'showtitle'=>true,
@@ -103,6 +103,7 @@ $pages=array(
     'showtitle'=>true,
     'layout'=>'info',
     'xmlfile'=>'xml/nutrition.xml',
+    'include'=>'inc/consultation.inc',
     'sidebar_file' => 'gen/sidebar_1.inc',
     '1.0'=>array(
       'title'=>'Healthy eating for families',
@@ -120,12 +121,14 @@ $pages=array(
       'title'=>'Diabetes',
       'showtitle'=>true,
       'layout'=>'info',
+      'include'=>'inc/type2_diabetes.inc',
       'sidebar_file' => 'gen/sidebar_1_2.inc',
     ),
     '1.3'=>array(
       'title'=>'Heart Health',
       'showtitle'=>true,
       'layout'=>'info',
+      'include'=>'inc/heart_health.inc',
       'sidebar_file' => 'gen/sidebar_1_3.inc',
     ),
     '1.4'=>array(
@@ -144,6 +147,7 @@ $pages=array(
       'title'=>'Weight Loss',
       'showtitle'=>true,
       'layout'=>'info',
+      'include'=>'inc/weight_management.inc',
       'sidebar_file' => 'gen/sidebar_1_6.inc',
     ),
     '1.7'=>array(
@@ -180,16 +184,12 @@ $pages=array(
 );
 
 $itingline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">web design &copy; iting design ".$year." all rights reserved</a>\n";
-$sknutritionline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">site content &copy; sk nutrition ".$year." all rights reserved</a>\n";
+$sknutritionline="\n<a href=\"mailto:senh@gmail.com\" class=\"capt\">site content &copy; sk nutrition ".$year." all rights reserved</a>\n";
 /* images */
 $logo="images/logo.gif";
 $logoBlank="images/blank_logo.gif";
 $logoline="<a href=\"index.php\"><img src=\"img/senh_logo.png\" alt=\"SK Nutrition\"/></a>";
 $nologoline="";
-
-/* links */
-$Url00="http://www.iting.co.uk/";
-$Url01="http://www.iting.co.uk";
 
 /* alt text */
 $Alt00="SK Nutrition";

@@ -8,10 +8,10 @@
           }else{
             echo $nologoline;
           }
+
         ?>
         <br/>
-        <br/>
-      </div>
+		 </div>
     </div>
     <div id="navigation">
       <?php  
@@ -68,17 +68,17 @@
 
       </div>
       <div id="footer">
-          <?php 
-            echo $itingline; 
-            echo $sknutritionline; 
-            if($settings['logo']){
-              echo $bottom_of_page_line;
-            }else{
-              echo $nologo_bottom_of_page_line;
-            }
-
-          ?>
-          <?php echo $now ?>
+        <div id="footboxes">
+          <div id="footbox_left">
+            <?php echo $itingline; ?>
+          </div>
+          <div id="footbox_middle">
+            <?php  echo $sknutritionline; ?>
+          </div>
+          <div id="footbox_right">
+            <?php echo $now ?>
+          </div>
+        </div>
         <?php
           if(($debug['global'])){
             echo "<pre>Global: ";
