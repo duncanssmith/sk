@@ -32,63 +32,38 @@
           <?php
             include "state.php";
           ?>
+				<ul class="content_sub group">
+					<li class="content_sub_left">
+          </li>
+          <li class="content_sub_center">
+          </li>
+          <li class="content_sub_right">
+          </li>
+        </ul>
       </div>
-      <div id="right_sidebar">
+			<div id="right_sidebar">
+
         <?php
-          if($debug['page']){
-            echo "<p>PAGEID</p>\n<pre>";
-            print_r($pageid);
-            echo "</pre>";
-          }
-
-          if($debug['control']){
-            echo "<p>CONTROL</p>\n<pre>";
-            print_r($control);
-           echo "</pre>";
-          }
-
-          if(($debug['session'])){
-            echo "<p>SESSION</p><pre> ";
-            print_r($_SESSION);
-            echo "</pre>\n";
-          }
-
-          if($debug['get']){
-            echo "<p>GET</p>\n<pre>";
-            print_r($_GET);
-           echo "</pre>";
-          }
-
-          if($debug['post']){
-            echo "<p>POST</p>\n<pre>";
-            print_r($_POST);
-           echo "</pre>";
-          }
+          include "right_sidebar.php";
+          if(($debug['global'])){
+									include "debug_printout.php";
+					}
         ?>
-
       </div>
       <div id="footer">
-        <div id="footboxes">
-          <div id="footbox_left">
-            <?php echo $itingline; ?>
-          </div>
-          <div id="footbox_middle">
+        <br />
+        <ol class="footboxes group">
+          <li class="footbox_left">
             <?php  echo $sknutritionline; ?>
-          </div>
-          <div id="footbox_right">
+            <?php echo $itingline; ?>
+          </li>
+					<li class="footbox_middle">
+            &nbsp;
+          </li>
+          <li class="footbox_right">
             <?php echo $now ?>
-          </div>
-        </div>
-        <?php
-          if(($debug['global'])){
-            echo "<pre>Global: ";
-            print_r($GLOBALS);
-            echo "</pre>\n";
-          }
-        ?>
-        <br/>
-        <br/>
-        <br/>
+          </li>
+        </ol>
       </div>
     </div>
   </body>

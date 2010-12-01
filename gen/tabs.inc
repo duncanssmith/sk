@@ -1,5 +1,5 @@
 <?php
-#generated file gen/tabs.inc 2010-11-27 19:04:44 - do not edit
+#generated file gen/tabs.inc 2010-11-30 17:26:25 - do not edit
 
   $tabs=array(
  0=>'Home',
@@ -7,6 +7,7 @@
  2=>'Your Organisation',
  3=>'About Us',
  4=>'Contact Us',
- 5=>'Other Services'
+ 5=>'Other Services',
+ 6=>'Images'
   );
 ?>

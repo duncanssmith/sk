@@ -15,6 +15,8 @@
   background: $container_background_color
   @include rounded("top", "left", $border_radius)
   @include rounded("top", "right", $border_radius)
+  @include rounded("bottom", "left", $border_radius)
+  @include rounded("bottom", "right", $border_radius)
 
 #header
   background: $header_background_color_IE
@@ -71,7 +73,6 @@
   float: left
   background: $left_sidebar_background_color_IE
   background: $left_sidebar_background_color 
-  width: 120%
   width: 140px
   padding: 15px 10px 10px 10px 
   margin: 0 15px
@@ -126,7 +127,7 @@
 #content
   float: left
   background: $content_background_color 
-  width: 500px
+  width: 320px
   padding: 15px 10px 10px 10px 
   margin: 0 0 0 30px
   h1
@@ -142,10 +143,43 @@
     color: $content_pagetitle_color_IE 
     color: $content_pagetitle_color
     font-size: 8pt 
- 
+    a
+      text-decoration: none
+      color: $content_pagetitle_color_IE 
+      color: $content_pagetitle_color
+      &:hover
+        color: $content_pagetitle_hover_color_IE 
+        color: $content_pagetitle_hover_color
+
+  ol.content_sub
+    clear: left
+    width: 400PX
+    padding: 10px
+    border: 1px dotted red
+    margin: 1px
+    background: $content_sub_background_color_IE
+    background: $content_sub_background_color
+    li.content_sub_left
+      float: left
+      width: 100px
+      border: 1px dotted red
+      background: $content_sub_left_background_color_IE
+      background: $content_sub_left_background_color
+    li.content_sub_center
+      float: left
+      width: 100px
+      border: 1px dotted red
+      background: $content_sub_center_background_color_IE
+      background: $content_sub_center_background_color
+    li.content_sub_right
+      float: left
+      width: 100px
+      border: 1px dotted red
+      background: $content_sub_right_background_color_IE
+      background: $content_sub_right_background_color
 
 #right_sidebar
-  float: right
+  float: left
   background: $right_sidebar_background_color_IE
   background: $right_sidebar_background_color 
   width: 140px
@@ -165,21 +199,21 @@
   @include rounded("bottom", "left", $border_radius)
   @include rounded("bottom", "right", $border_radius)
 
-  #footboxes
-    clear: left
+  ol.footboxes
     background: $footer_background_color_IE
     background: $footer_background_color
-    #footbox_left
+    li.footbox_left
       float: left
-      background: $footer_box_left_background_color_IE
-      background: $footer_box_left_background_color
-    #footbox_middle
-      background: $footer_box_middle_background_color_IE
-      background: $footer_box_middle_background_color
-    #footbox_right
-      float: right
-      background: $footer_box_right_background_color_IE
-      background: $footer_box_right_background_color
+      background: $footbox_left_background_color_IE url("../img/img_left.jpg") repeat-x 0 50%
+      background: $footbox_left_background_color url("../img/img_left.jpg") repeat-x 0 50%
+    li.footbox_center
+      float: left
+      background: $footbox_center_background_color_IE url("../img/img_center.jpg") repeat-x 0 50%
+      background: $footbox_center_background_color url("../img/img_center.jpg") repeat-x 0 50%
+    li.footbox_right
+      float: left
+      background: $footbox_right_background_color_IE url("../img/img_right.jpg") repeat-x 0 50%
+      background: $footbox_right_background_color url("../img/img_right.jpg") repeat-x 0 50%
 
   a
     font-size: 8pt
@@ -189,3 +223,10 @@
     background: $left_sidebar_link_background_color 
     text-decoration: none
     text-align: right
+
+.group:after
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden

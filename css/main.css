@@ -1,23 +1,17 @@
+/* import stylesheets and hide from IE/Mac \ */
 /*--------------------------------------------------------------
- *
  *   reset.css
  *   * Resets default browser CSS.
- *
  *-------------------------------------------------------------- */
-html {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: inherit;
-  font-style: inherit;
+  outline: 0;
   font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  background: transparent; }
 
 /* This helps to make newer HTML5 elements behave like DIVs in older browers */
 article, aside, dialog, figure, footer, header, hgroup, nav, section {
@@ -29,6 +23,15 @@ body {
   background: white; }
 
 /* Tables still need 'cellspacing="0"' in the markup. */
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+:focus {
+  outline: 0; }
+
 table {
   border-collapse: separate;
   border-spacing: 0; }
@@ -42,117 +45,26 @@ caption, th, td {
 table, th, td {
   vertical-align: middle; }
 
-/* Remove possible quote marks (") from <q>, <blockquote>. */
-blockquote:before, blockquote:after {
-  content: ""; }
-
-q:before, q:after {
-  content: ""; }
-
-blockquote, q {
-  quotes: "" ""; }
-
 /* Remove annoying border on linked images. */
 a img {
   border: none; }
 
-/* Remember to define your own focus styles! */
-:focus {
-  outline: 0; }
-
 /* -----------------------------------------------------------------------
- *
- *
- * Blueprint CSS Framework 1.0
- * http://blueprintcss.org
- *
- *   * Copyright (c) 2007-Present. See LICENSE for more info.
- *   * See README for instructions on how to use Blueprint.
- *   * For credits and origins, see AUTHORS.
- *   * This is a compressed file. See the sources in the 'src' directory.
- *
+ * ie.sass -> ie.css
  *----------------------------------------------------------------------- */
-/* ie.css */
-body {
-  text-align: left; }
+/* PNG fix */
+* html #selector {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale src='img/image.png');
+  background-image: none;
+  background-repeat: no-repeat;
+  background-color: transparent; }
 
-.container {
-  text-align: left; }
-
-* html .column, * html .span-1, * html .span-2, * html .span-3, * html .span-4, * html .span-5, * html .span-6, * html .span-7, * html .span-8, * html .span-9, * html .span-10, * html .span-11, * html .span-12, * html .span-13, * html .span-14, * html .span-15, * html .span-16, * html .span-17, * html .span-18, * html .span-19, * html .span-20, * html .span-21, * html .span-22, * html .span-23, * html .span-24 {
-  display: inline;
-  overflow-x: hidden; }
-* html legend {
-  margin: 0px -8px 16px 0;
-  padding: 0; }
-
-sup {
-  vertical-align: text-top; }
-
-sub {
-  vertical-align: text-bottom; }
-
-html > body p code {
-  *white-space: normal; }
-
-hr {
-  margin: -8px auto 11px; }
-
-img {
-  -ms-interpolation-mode: bicubic; }
-
-.clearfix, .container {
-  display: inline-block; }
-
-* html .clearfix, * html .container {
+/* self clear floats */
+* html .group {
   height: 1%; }
 
-fieldset {
-  padding-top: 0; }
-
-legend {
-  margin-top: -0.2em;
-  margin-bottom: 1em;
-  margin-left: -0.5em; }
-
-textarea {
-  overflow: auto; }
-
-label {
-  vertical-align: middle;
-  position: relative;
-  top: -0.25em; }
-
-input.text, input.title {
-  background-color: white;
-  border: 1px solid #bbbbbb; }
-
-textarea {
-  background-color: white;
-  border: 1px solid #bbbbbb; }
-
-input.text:focus, input.title:focus {
-  border-color: #666666; }
-input.text, input.title {
-  margin: 0.5em 0; }
-
-textarea, select {
-  margin: 0.5em 0; }
-
-input.checkbox, input.radio {
-  position: relative;
-  top: 0.25em; }
-
-form.inline div, form.inline p {
-  vertical-align: middle; }
-form.inline input.checkbox, form.inline input.radio, form.inline input.button {
-  margin: 0.5em 0; }
-form.inline button {
-  margin: 0.5em 0; }
-
-button, input.button {
-  position: relative;
-  top: 0.25em; }
+*:first-child + html .group {
+  min-height: 1px; }
 
 /* --------------------------------------------------------------
  *
@@ -441,17 +353,23 @@ table.index_data {
   margin: 0 auto;
   width: 1000px;
   background: white;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   border-top-left-radius: 1em 1em;
   -webkit-border-top-left-radius: 1em 1em;
   -moz-border-radius-topleft: 1em 1em;
   border-top-right-radius: 1em 1em;
   -webkit-border-top-right-radius: 1em 1em;
-  -moz-border-radius-topright: 1em 1em; }
+  -moz-border-radius-topright: 1em 1em;
+  border-bottom-left-radius: 1em 1em;
+  -webkit-border-bottom-left-radius: 1em 1em;
+  -moz-border-radius-bottomleft: 1em 1em;
+  border-bottom-right-radius: 1em 1em;
+  -webkit-border-bottom-right-radius: 1em 1em;
+  -moz-border-radius-bottomright: 1em 1em; }
 
 #header {
   background: #41cda0;
-  background: rgba(65, 205, 160, 0.1);
+  background: rgba(65, 205, 160, 0.5);
   padding: 20px;
   border-top-left-radius: 1em 1em;
   -webkit-border-top-left-radius: 1em 1em;
@@ -497,7 +415,7 @@ table.index_data {
   float: left;
   width: 1000px;
   background: white;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   border-bottom-left-radius: 1em 1em;
   -webkit-border-bottom-left-radius: 1em 1em;
   -moz-border-radius-bottomleft: 1em 1em;
@@ -509,7 +427,6 @@ table.index_data {
   float: left;
   background: white;
   background: rgba(255, 255, 255, 0.9);
-  width: 120%;
   width: 140px;
   padding: 15px 10px 10px 10px;
   margin: 0 15px;
@@ -564,27 +481,60 @@ table.index_data {
 #content {
   float: left;
   background: rgba(255, 255, 255, 0.7);
-  width: 500px;
+  width: 320px;
   padding: 15px 10px 10px 10px;
   margin: 0 0 0 30px; }
   #content h1 {
     font-size: 180%;
-    color: #b4dc46;
-    color: rgba(180, 220, 70, 0.9); }
+    color: #465a0f;
+    color: rgba(70, 90, 15, 0.9); }
   #content h2 {
     margin: 0;
     font-size: 150%;
-    color: #b4dc46;
-    color: rgba(180, 220, 70, 0.9); }
+    color: #465a0f;
+    color: rgba(70, 90, 15, 0.9); }
   #content #pagetitle {
-    color: #fa2800;
-    color: rgba(250, 40, 0, 0.4);
+    color: #c86464;
+    color: rgba(200, 100, 100, 0.9);
     font-size: 8pt; }
+    #content #pagetitle a {
+      text-decoration: none;
+      color: #c86464;
+      color: rgba(200, 100, 100, 0.9); }
+      #content #pagetitle a:hover {
+        color: #f08c8c;
+        color: rgba(240, 140, 140, 0.9); }
+  #content ol.content_sub {
+    clear: left;
+    width: 400PX;
+    padding: 10px;
+    border: 1px dotted red;
+    margin: 1px;
+    background: #fafafa;
+    background: rgba(250, 250, 250, 0.8); }
+    #content ol.content_sub li.content_sub_left {
+      float: left;
+      width: 100px;
+      border: 1px dotted red;
+      background: #fafafa;
+      background: rgba(250, 250, 250, 0.8); }
+    #content ol.content_sub li.content_sub_center {
+      float: left;
+      width: 100px;
+      border: 1px dotted red;
+      background: #fafafa;
+      background: rgba(250, 250, 250, 0.8); }
+    #content ol.content_sub li.content_sub_right {
+      float: left;
+      width: 100px;
+      border: 1px dotted red;
+      background: #fafafa;
+      background: rgba(250, 250, 250, 0.8); }
 
 #right_sidebar {
-  float: right;
+  float: left;
   background: white;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.99);
   width: 140px;
   padding: 15px 10px 10px 10px;
   margin: 0 20px 0 0;
@@ -595,7 +545,7 @@ table.index_data {
 #footer {
   clear: left;
   background: #373737;
-  background: rgba(55, 55, 55, 0.3);
+  background: rgba(55, 55, 55, 0.9);
   text-align: right;
   padding: 20px;
   height: 1%;
@@ -605,21 +555,21 @@ table.index_data {
   border-bottom-right-radius: 1em 1em;
   -webkit-border-bottom-right-radius: 1em 1em;
   -moz-border-radius-bottomright: 1em 1em; }
-  #footer #footboxes {
-    clear: left;
+  #footer ol.footboxes {
     background: #373737;
-    background: rgba(55, 55, 55, 0.3); }
-    #footer #footboxes #footbox_left {
+    background: rgba(55, 55, 55, 0.9); }
+    #footer ol.footboxes li.footbox_left {
       float: left;
-      background: #373737;
-      background: rgba(55, 55, 55, 0.3); }
-    #footer #footboxes #footbox_middle {
-      background: #373737;
-      background: rgba(55, 55, 55, 0.3); }
-    #footer #footboxes #footbox_right {
-      float: right;
-      background: #373737;
-      background: rgba(55, 55, 55, 0.3); }
+      background: white url("../img/img_left.jpg") repeat-x 0 50%;
+      background: rgba(255, 255, 255, 0.9) url("../img/img_left.jpg") repeat-x 0 50%; }
+    #footer ol.footboxes li.footbox_center {
+      float: left;
+      background: white url("../img/img_center.jpg") repeat-x 0 50%;
+      background: rgba(255, 255, 255, 0.9) url("../img/img_center.jpg") repeat-x 0 50%; }
+    #footer ol.footboxes li.footbox_right {
+      float: left;
+      background: white url("../img/img_right.jpg") repeat-x 0 50%;
+      background: rgba(255, 255, 255, 0.9) url("../img/img_right.jpg") repeat-x 0 50%; }
   #footer a {
     font-size: 8pt;
     color: #287832;
@@ -628,6 +578,13 @@ table.index_data {
     background: rgba(255, 255, 255, 0.05);
     text-decoration: none;
     text-align: right; }
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
 
 #tabs {
   position: absolute;
@@ -663,3 +620,5 @@ table.index_data {
   margin: 0em;
   width: 10em;
   padding: 0px; }
+
+/* end import/hide */

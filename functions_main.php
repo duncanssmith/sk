@@ -680,10 +680,26 @@ function showpage($p,$cols){
   #  print_r($p);
   # echo "</pre>";
   #
-  $pk=array_keys($p);
+  $pk = array_keys($p);
 
   if(!empty($p['title'])&&(!empty($p['showtitle']))){
-    echo "<h1 id=\"pagetitle\">".$p['title']."</h1>\n";
+	  echo "<h1 id=\"pagetitle\">";
+			if($p['parent'] != '/'){
+		    echo "<a href=\"index.php?pageid=".$p['parent']."\">";
+			  echo $pages[$p['parent']]['title'];
+		    echo "</a>\n";
+		    echo " > ";
+			}
+		echo "<a href=\"\">";
+		echo $p['title'];
+		echo "</a>\n";
+		echo " ";
+		for($i=0;$i<sizeof($pk);$i++){
+	#					echo $pk[$i]." ";
+		#				echo $p[$pk[$i]]." ";
+		}
+		echo " ";
+		echo "</h1>\n";
   }
   #
   # Default xmlfile is books.xml but this
@@ -737,4 +753,75 @@ $static_content_files=array(
   return true;
 }
 
+function showimages($p,$cols){
+  
+  global $debug;
+  global $settings;
+  global $files;
+  global $pages;
 
+  if($debug['functions']){
+    $thisFunction ="showimages(p,".$cols.")";
+    echo_functionname($thisFunction);
+  }
+
+	$pk = array_keys($p);
+	if($p['image']){
+					printf("<a href=\"\"><img src=\"%s\" alt=\"\"/></a>\n", $p['image'], "HELLO"); 
+	}
+
+  return true;
+}
+
+function getimages($p,$pageid,$d){
+
+  global $debug;
+  global $pageid;
+  global $foundy;
+  global $pages;
+
+  if($debug['functions']){
+    $thisFunction ="getimages( ".$p.", $pageid, $d)";
+    #echo_functionname($thisFunction);
+  }
+
+  if($debug['data']){
+    echo "<pre>";
+    print_r($p);
+    echo "</pre>";
+  }
+
+  $pk=array_keys($p);
+
+  if($foundy){
+    if($debug['page']){
+      echo "<pre>";
+      print_r($p);
+      echo "</pre>";
+    }
+  }else{
+    for($i=0;$i<sizeof($p);$i++){
+      if(is_array($p[$pk[$i]])){
+
+        $pagestr=sprintf("%s", $pk[$i]);
+        $pageidstr=sprintf("%s", $pageid);
+  
+        if($pagestr===$pageidstr){
+
+          $foundy=TRUE;
+
+          showimages($p[$pk[$i]],2);
+
+          $page=$p[$pk[$i]];
+          break;
+        }else{
+          $foundy==FALSE;
+          $page=getimages($p[$pk[$i]],$pageid,$d+1);
+        }
+      }else{
+        $page=$p;
+      }
+    }
+  }
+  return $page;
+}

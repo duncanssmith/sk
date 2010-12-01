@@ -1,0 +1,176 @@
+--- 
+:right_sidebar_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.99
+:left_sidebar_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
+:header_background_color: 
+  :r: 65
+  :g: 205
+  :b: 160
+  :a: 0.5
+:hcolor: 
+  :r: 40
+  :g: 40
+  :b: 10
+  :a: 0.9
+:content_pagetitle_color: 
+  :r: 200
+  :g: 100
+  :b: 100
+  :a: 0.9
+:content_pagetitle_hover_color: 
+  :r: 240
+  :g: 140
+  :b: 140
+  :a: 0.9
+:navigation_link_hover_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 1
+:footer_background_color: 
+  :r: 55
+  :g: 55
+  :b: 55
+  :a: 0.9
+:left_sidebar_link_text_color: 
+  :r: 40
+  :g: 120
+  :b: 50
+  :a: 0.9
+:navigation_background_color: 
+  :r: 35
+  :g: 175
+  :b: 130
+  :a: 1
+:listlineoddcolor: 
+  :r: 220
+  :g: 255
+  :b: 240
+  :a: 0.8
+:content_sub_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:content_container_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 1.0
+:footbox_left_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
+:left_sidebar_link_text_hover_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
+:navigation_background_base_color: 
+  :r: 35
+  :g: 175
+  :b: 130
+  :a: 1
+:listlineevencolor: 
+  :r: 240
+  :g: 255
+  :b: 220
+  :a: 0.6
+:content_sub_left_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:content_container1_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 1.0
+:footbox_center_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
+:left_sidebar_link_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.05
+:navigation_background_hover_color: 
+  :r: 5
+  :g: 125
+  :b: 75
+  :a: 1
+:index_data_table_header_color: 
+  :r: 200
+  :g: 200
+  :b: 60
+  :a: 0.6
+:content_sub_center_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:content_container2_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 1.0
+:footbox_right_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
+:left_sidebar_link_background_hover_color: 
+  :r: 200
+  :g: 230
+  :b: 90
+  :a: 0.9
+:navigation_link_text_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
+:content_sub_right_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:content_h_color: 
+  :r: 70
+  :g: 90
+  :b: 15
+  :a: 0.9
+:container_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 1.0
+:pcolor: 
+  :r: 30
+  :g: 30
+  :b: 30
+  :a: 0.8
+:content_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.7
+:navigation_border_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.7
+:base_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
