@@ -62,7 +62,6 @@
       background: $navigation_background_hover_color url("../img/glass_button.png") repeat-x 0 50%
 
 #content_container
-  float: left
   width: 1000px
   background: $content-container_background_color_IE
   background: $content-container_background_color 
@@ -127,9 +126,10 @@
 #content
   float: left
   background: $content_background_color 
-  width: 320px
+  width: 340px
   padding: 15px 10px 10px 10px 
-  margin: 0 0 0 30px
+  margin: 0px 20px 0px 30px
+  border: 0 solid silver
   h1
     font-size: 180% 
     color: $content_h_color_IE
@@ -151,40 +151,67 @@
         color: $content_pagetitle_hover_color_IE 
         color: $content_pagetitle_hover_color
 
-  ol.content_sub
+  ul.content_sub
     clear: left
-    width: 400PX
-    padding: 10px
-    border: 1px dotted red
-    margin: 1px
+    list-style-type: none
+    width: 340px
+    padding: 2px 0 3px 0
+    border: 1px dotted silver
+    border-width: 1px 0 0 0 
+    margin: 5px 0 0 0 
     background: $content_sub_background_color_IE
     background: $content_sub_background_color
     li.content_sub_left
       float: left
       width: 100px
-      border: 1px dotted red
-      background: $content_sub_left_background_color_IE
-      background: $content_sub_left_background_color
+      height: 100px
+      border: 0px dotted red
+      margin: 0 6px 0 0 
+      padding: 0 0px
+      background: $content_sub_left_background_color_IE url("../img/img_left.jpg") repeat-x 0 50%
+      background: $content_sub_left_background_color url("../img/img_left.jpg") repeat-x 0 50%
+
     li.content_sub_center
       float: left
       width: 100px
-      border: 1px dotted red
-      background: $content_sub_center_background_color_IE
-      background: $content_sub_center_background_color
+      height: 100px
+      border: 0px dotted green
+      margin: 0 6px 0 6px
+      padding: 0 0px
+      background: $content_sub_center_background_color_IE url("../img/img_center.jpg") repeat-x 0 50%
+      background: $content_sub_center_background_color url("../img/img_center.jpg") repeat-x 0 50%
     li.content_sub_right
       float: left
       width: 100px
-      border: 1px dotted red
-      background: $content_sub_right_background_color_IE
-      background: $content_sub_right_background_color
+      height: 100px
+      margin: 0 0 0 6px
+      padding: 0 0px
+      border: 0px dotted blue
+      background: $content_sub_right_background_color_IE url("../img/img_right.jpg") repeat-x 0 50%
+      background: $content_sub_right_background_color url("../img/img_right.jpg") repeat-x 0 50%
+
+    a
+      text-decoration: none
+      font-size: 7pt
+      padding: 0.5px
+      color: $content_sub_link_color_IE
+      color: $content_sub_link_color
+      background: $content_sub_link_background_color_IE
+      background: $content_sub_link_background_color
+      &:hover
+        color: $content_sub_link_hover_color_IE
+        color: $content_sub_link_hover_color
+        background: $content_sub_link_background_hover_color_IE
+        background: $content_sub_link_background_hover_color
+
 
 #right_sidebar
   float: left
   background: $right_sidebar_background_color_IE
   background: $right_sidebar_background_color 
-  width: 140px
+  width: 240px
   padding: 15px 10px 10px 10px 
-  margin: 0 20px 0 0
+  margin: 0 120px 0 0
   display: inline
   h3
     margin: 0
@@ -194,35 +221,52 @@
   background: $footer_background_color_IE
   background: $footer_background_color 
   text-align: right
-  padding: 20px
-  height: 1%
+  padding: 10px
+  height: 15%
   @include rounded("bottom", "left", $border_radius)
   @include rounded("bottom", "right", $border_radius)
 
-  ol.footboxes
-    background: $footer_background_color_IE
-    background: $footer_background_color
+  ul.footboxes
+    list-style-type: none
+    font-size: 8pt
+    padding: 0px
+    margin: 0px
+    width: 100%
+    height: 40px
+    color: $footboxes_color_IE
+    color: $footboxes_color
+    background: $footboxes_background_color_IE
+    background: $footboxes_background_color
     li.footbox_left
       float: left
-      background: $footbox_left_background_color_IE url("../img/img_left.jpg") repeat-x 0 50%
-      background: $footbox_left_background_color url("../img/img_left.jpg") repeat-x 0 50%
+      color: $footbox_left_color_IE
+      color: $footbox_left_color
+      background: $footbox_left_background_color_IE 
+      background: $footbox_left_background_color 
+      padding: 20px
     li.footbox_center
       float: left
-      background: $footbox_center_background_color_IE url("../img/img_center.jpg") repeat-x 0 50%
-      background: $footbox_center_background_color url("../img/img_center.jpg") repeat-x 0 50%
+      color: $footbox_center_color_IE
+      color: $footbox_center_color
+      background: $footbox_center_background_color_IE 
+      background: $footbox_center_background_color 
+      padding: 20px
     li.footbox_right
-      float: left
-      background: $footbox_right_background_color_IE url("../img/img_right.jpg") repeat-x 0 50%
-      background: $footbox_right_background_color url("../img/img_right.jpg") repeat-x 0 50%
+      color: $footbox_right_color_IE
+      color: $footbox_right_color
+      background: $footbox_right_background_color_IE 
+      background: $footbox_right_background_color 
+      padding: 20px
+    a
+      font-size: 8pt
+      color: $footer_link_text_color_IE
+      color: $footer_link_text_color 
+      text-decoration: none
+      text-align: right
+      &:hover
+        color: $footer_link_text_hover_color_IE
+        color: $footer_link_text_hover_color 
 
-  a
-    font-size: 8pt
-    color: $left_sidebar_link_text_color_IE
-    color: $left_sidebar_link_text_color 
-    background: $left_sidebar_link_background_color_IE
-    background: $left_sidebar_link_background_color 
-    text-decoration: none
-    text-align: right
 
 .group:after
   content: "."

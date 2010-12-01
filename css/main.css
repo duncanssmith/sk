@@ -300,22 +300,22 @@ body {
   padding: 10px; }
   body h1 {
     color: #28280a;
-    color: rgba(40, 40, 10, 0.9); }
+    color: #28280a; }
   body h2 {
     color: #28280a;
-    color: rgba(40, 40, 10, 0.9); }
+    color: #28280a; }
   body h3 {
     color: #28280a;
-    color: rgba(40, 40, 10, 0.9); }
+    color: #28280a; }
   body h4 {
     color: #28280a;
-    color: rgba(40, 40, 10, 0.9); }
+    color: #28280a; }
   body h5 {
     color: #28280a;
-    color: rgba(40, 40, 10, 0.9); }
+    color: #28280a; }
   body h6 {
     color: #28280a;
-    color: rgba(40, 40, 10, 0.9); }
+    color: #28280a; }
   body p {
     color: #1e1e1e;
     color: rgba(30, 30, 30, 0.8); }
@@ -369,7 +369,7 @@ table.index_data {
 
 #header {
   background: #41cda0;
-  background: rgba(65, 205, 160, 0.5);
+  background: rgba(65, 205, 160, 0.9);
   padding: 20px;
   border-top-left-radius: 1em 1em;
   -webkit-border-top-left-radius: 1em 1em;
@@ -401,7 +401,7 @@ table.index_data {
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
     color: white;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     text-decoration: none;
     border-right: 1px solid white;
     border-right: 1px solid rgba(255, 255, 255, 0.7); }
@@ -412,7 +412,6 @@ table.index_data {
       background: #057d4b url("../img/glass_button.png") repeat-x 0 50%; }
 
 #content_container {
-  float: left;
   width: 1000px;
   background: white;
   background: white;
@@ -437,7 +436,7 @@ table.index_data {
     padding: 0 0 0 0px;
     border-top: 1px dotted green;
     background: white;
-    background: rgba(255, 255, 255, 0.05); }
+    background: rgba(255, 255, 255, 0.1); }
     #left_sidebar ul li {
       margin: 0 0 0 0px;
       padding: 0em;
@@ -452,15 +451,15 @@ table.index_data {
         background: rgba(200, 230, 90, 0.9); }
       #left_sidebar ul li a {
         color: #287832;
-        color: rgba(40, 120, 50, 0.9);
+        color: #287832;
         background: white;
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.1);
         text-decoration: none;
         text-align: right; }
   #left_sidebar .more_btn a {
     padding: 3px 12px;
     color: white;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     text-decoration: none;
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
     background: #23af82 url("../img/glass_button.png") repeat-x 0 50%;
@@ -481,103 +480,145 @@ table.index_data {
 #content {
   float: left;
   background: rgba(255, 255, 255, 0.7);
-  width: 320px;
+  width: 340px;
   padding: 15px 10px 10px 10px;
-  margin: 0 0 0 30px; }
+  margin: 0px 20px 0px 30px;
+  border: 0 solid silver; }
   #content h1 {
     font-size: 180%;
     color: #465a0f;
-    color: rgba(70, 90, 15, 0.9); }
+    color: #465a0f; }
   #content h2 {
     margin: 0;
     font-size: 150%;
     color: #465a0f;
-    color: rgba(70, 90, 15, 0.9); }
+    color: #465a0f; }
   #content #pagetitle {
     color: #c86464;
-    color: rgba(200, 100, 100, 0.9);
+    color: #c86464;
     font-size: 8pt; }
     #content #pagetitle a {
       text-decoration: none;
       color: #c86464;
-      color: rgba(200, 100, 100, 0.9); }
+      color: #c86464; }
       #content #pagetitle a:hover {
         color: #f08c8c;
-        color: rgba(240, 140, 140, 0.9); }
-  #content ol.content_sub {
+        color: #f08c8c; }
+  #content ul.content_sub {
     clear: left;
-    width: 400PX;
-    padding: 10px;
-    border: 1px dotted red;
-    margin: 1px;
-    background: #fafafa;
-    background: rgba(250, 250, 250, 0.8); }
-    #content ol.content_sub li.content_sub_left {
+    list-style-type: none;
+    width: 340px;
+    padding: 2px 0 3px 0;
+    border: 1px dotted silver;
+    border-width: 1px 0 0 0;
+    margin: 5px 0 0 0;
+    background: white;
+    background: rgba(255, 255, 255, 0.9); }
+    #content ul.content_sub li.content_sub_left {
       float: left;
       width: 100px;
-      border: 1px dotted red;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8); }
-    #content ol.content_sub li.content_sub_center {
+      height: 100px;
+      border: 0px dotted red;
+      margin: 0 6px 0 0;
+      padding: 0 0px;
+      background: #96faff url("../img/img_left.jpg") repeat-x 0 50%;
+      background: rgba(150, 250, 255, 0.8) url("../img/img_left.jpg") repeat-x 0 50%; }
+    #content ul.content_sub li.content_sub_center {
       float: left;
       width: 100px;
-      border: 1px dotted red;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8); }
-    #content ol.content_sub li.content_sub_right {
+      height: 100px;
+      border: 0px dotted green;
+      margin: 0 6px 0 6px;
+      padding: 0 0px;
+      background: #fafafa url("../img/img_center.jpg") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_center.jpg") repeat-x 0 50%; }
+    #content ul.content_sub li.content_sub_right {
       float: left;
       width: 100px;
-      border: 1px dotted red;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8); }
+      height: 100px;
+      margin: 0 0 0 6px;
+      padding: 0 0px;
+      border: 0px dotted blue;
+      background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_right.jpg") repeat-x 0 50%; }
+    #content ul.content_sub a {
+      text-decoration: none;
+      font-size: 7pt;
+      padding: 0.5px;
+      color: #f0f0f0;
+      color: #f0f0f0;
+      background: #2d2d2d;
+      background: rgba(45, 45, 45, 0.4); }
+      #content ul.content_sub a:hover {
+        color: white;
+        color: white;
+        background: #9b9bff;
+        background: rgba(155, 155, 255, 0.9); }
 
 #right_sidebar {
   float: left;
   background: white;
   background: rgba(255, 255, 255, 0.99);
-  width: 140px;
+  width: 240px;
   padding: 15px 10px 10px 10px;
-  margin: 0 20px 0 0;
+  margin: 0 120px 0 0;
   display: inline; }
   #right_sidebar h3 {
     margin: 0; }
 
 #footer {
   clear: left;
-  background: #373737;
-  background: rgba(55, 55, 55, 0.9);
+  background: #555555;
+  background: #555555;
   text-align: right;
-  padding: 20px;
-  height: 1%;
+  padding: 10px;
+  height: 15%;
   border-bottom-left-radius: 1em 1em;
   -webkit-border-bottom-left-radius: 1em 1em;
   -moz-border-radius-bottomleft: 1em 1em;
   border-bottom-right-radius: 1em 1em;
   -webkit-border-bottom-right-radius: 1em 1em;
   -moz-border-radius-bottomright: 1em 1em; }
-  #footer ol.footboxes {
-    background: #373737;
-    background: rgba(55, 55, 55, 0.9); }
-    #footer ol.footboxes li.footbox_left {
-      float: left;
-      background: white url("../img/img_left.jpg") repeat-x 0 50%;
-      background: rgba(255, 255, 255, 0.9) url("../img/img_left.jpg") repeat-x 0 50%; }
-    #footer ol.footboxes li.footbox_center {
-      float: left;
-      background: white url("../img/img_center.jpg") repeat-x 0 50%;
-      background: rgba(255, 255, 255, 0.9) url("../img/img_center.jpg") repeat-x 0 50%; }
-    #footer ol.footboxes li.footbox_right {
-      float: left;
-      background: white url("../img/img_right.jpg") repeat-x 0 50%;
-      background: rgba(255, 255, 255, 0.9) url("../img/img_right.jpg") repeat-x 0 50%; }
-  #footer a {
+  #footer ul.footboxes {
+    list-style-type: none;
     font-size: 8pt;
-    color: #287832;
-    color: rgba(40, 120, 50, 0.9);
-    background: white;
-    background: rgba(255, 255, 255, 0.05);
-    text-decoration: none;
-    text-align: right; }
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    color: #555555;
+    color: #555555;
+    background: #555555;
+    background: #555555; }
+    #footer ul.footboxes li.footbox_left {
+      float: left;
+      color: #b4b4b4;
+      color: #b4b4b4;
+      background: #555555;
+      background: #555555;
+      padding: 20px; }
+    #footer ul.footboxes li.footbox_center {
+      float: left;
+      color: #646464;
+      color: #646464;
+      background: #555555;
+      background: #555555;
+      padding: 20px; }
+    #footer ul.footboxes li.footbox_right {
+      color: #b4b4b4;
+      color: #b4b4b4;
+      background: #555555;
+      background: #555555;
+      padding: 20px; }
+    #footer ul.footboxes a {
+      font-size: 8pt;
+      color: white;
+      color: white;
+      text-decoration: none;
+      text-align: right; }
+      #footer ul.footboxes a:hover {
+        color: #ffcdcd;
+        color: #ffcdcd; }
 
 .group:after {
   content: ".";
