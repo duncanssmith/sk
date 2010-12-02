@@ -292,10 +292,10 @@ caption {
  *-------------------------------------------------------------- */
 body {
   font-family: arial, helvetica neue, verdana, tahoma, arial, helvetica, sans-serif;
-  background: rgba(255, 255, 255, 0.9) url("../img/grass.jpg") top left repeat-x fixed;
+  background: white url("../img/grass.jpg") top left repeat-x fixed;
   background: white url("../img/grass.jpg") top left repeat-x fixed;
   color: #1e1e1e;
-  color: rgba(30, 30, 30, 0.8);
+  color: #1e1e1e;
   margin: 10px;
   padding: 10px; }
   body h1 {
@@ -318,7 +318,7 @@ body {
     color: #28280a; }
   body p {
     color: #1e1e1e;
-    color: rgba(30, 30, 30, 0.8); }
+    color: #1e1e1e; }
 
 table.index_data {
   margin: 0px;
@@ -329,7 +329,7 @@ table.index_data {
     background-image: none; }
     table.index_data tr th {
       background: #c8c83c url("../img/glass_button.png") repeat-x 0 50%;
-      background: rgba(200, 200, 60, 0.6) url("../img/glass_button.png") repeat-x 0 50%;
+      background: #c8c83c url("../img/glass_button.png") repeat-x 0 50%;
       color: white;
       padding-left: 6px;
       padding-right: 6px;
@@ -341,10 +341,10 @@ table.index_data {
       padding-right: 6px; }
   table.index_data tr.list-line-odd {
     background: #dcfff0;
-    background: rgba(220, 255, 240, 0.8); }
+    background: #dcfff0; }
   table.index_data tr.list-line-even {
     background: #f0ffdc;
-    background: rgba(240, 255, 220, 0.6); }
+    background: #f0ffdc; }
 
 /*--------------------------------------------------------------
  *   structure_fixed.css
@@ -369,7 +369,7 @@ table.index_data {
 
 #header {
   background: #41cda0;
-  background: rgba(65, 205, 160, 0.9);
+  background: #41cda0;
   padding: 20px;
   border-top-left-radius: 1em 1em;
   -webkit-border-top-left-radius: 1em 1em;
@@ -404,7 +404,7 @@ table.index_data {
     color: white;
     text-decoration: none;
     border-right: 1px solid white;
-    border-right: 1px solid rgba(255, 255, 255, 0.7); }
+    border-right: 1px solid white; }
     #navigation li a:hover {
       color: white;
       color: white;
@@ -425,7 +425,7 @@ table.index_data {
 #left_sidebar {
   float: left;
   background: white;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   width: 140px;
   padding: 15px 10px 10px 10px;
   margin: 0 15px;
@@ -434,26 +434,26 @@ table.index_data {
     width: 120%;
     margin: 0;
     padding: 0 0 0 0px;
-    border-top: 1px dotted green;
-    background: white;
-    background: rgba(255, 255, 255, 0.1); }
+    border-top: 1px dotted green; }
     #left_sidebar ul li {
       margin: 0 0 0 0px;
       padding: 0em;
       list-style-type: none;
       font-size: 1em;
       font-family: arial;
+      background: white;
+      background: white;
+      color: #287832;
+      color: #287832;
       border-bottom: 1px dotted green;
       padding-top: 2px;
       text-align: right; }
       #left_sidebar ul li:hover {
         background: #c8e65a;
-        background: rgba(200, 230, 90, 0.9); }
+        background: #c8e65a; }
       #left_sidebar ul li a {
         color: #287832;
         color: #287832;
-        background: white;
-        background: rgba(255, 255, 255, 0.1);
         text-decoration: none;
         text-align: right; }
   #left_sidebar .more_btn a {
@@ -479,7 +479,7 @@ table.index_data {
 
 #content {
   float: left;
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   width: 340px;
   padding: 15px 10px 10px 10px;
   margin: 0px 20px 0px 30px;
@@ -510,10 +510,10 @@ table.index_data {
     width: 340px;
     padding: 2px 0 3px 0;
     border: 1px dotted silver;
-    border-width: 1px 0 0 0;
+    border-width: 0px 0 0 0;
     margin: 5px 0 0 0;
     background: white;
-    background: rgba(255, 255, 255, 0.9); }
+    background: white; }
     #content ul.content_sub li.content_sub_left {
       float: left;
       width: 100px;
@@ -522,7 +522,7 @@ table.index_data {
       margin: 0 6px 0 0;
       padding: 0 0px;
       background: #96faff url("../img/img_left.jpg") repeat-x 0 50%;
-      background: rgba(150, 250, 255, 0.8) url("../img/img_left.jpg") repeat-x 0 50%; }
+      background: #96faff url("../img/img_left.jpg") repeat-x 0 50%; }
     #content ul.content_sub li.content_sub_center {
       float: left;
       width: 100px;
@@ -531,7 +531,7 @@ table.index_data {
       margin: 0 6px 0 6px;
       padding: 0 0px;
       background: #fafafa url("../img/img_center.jpg") repeat-x 0 50%;
-      background: rgba(250, 250, 250, 0.8) url("../img/img_center.jpg") repeat-x 0 50%; }
+      background: #fafafa url("../img/img_center.jpg") repeat-x 0 50%; }
     #content ul.content_sub li.content_sub_right {
       float: left;
       width: 100px;
@@ -540,7 +540,7 @@ table.index_data {
       padding: 0 0px;
       border: 0px dotted blue;
       background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%;
-      background: rgba(250, 250, 250, 0.8) url("../img/img_right.jpg") repeat-x 0 50%; }
+      background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%; }
     #content ul.content_sub a {
       text-decoration: none;
       font-size: 7pt;
@@ -548,23 +548,76 @@ table.index_data {
       color: #f0f0f0;
       color: #f0f0f0;
       background: #2d2d2d;
-      background: rgba(45, 45, 45, 0.4); }
+      background: #2d2d2d; }
       #content ul.content_sub a:hover {
         color: white;
         color: white;
         background: #9b9bff;
-        background: rgba(155, 155, 255, 0.9); }
+        background: #9b9bff; }
 
 #right_sidebar {
   float: left;
   background: white;
-  background: rgba(255, 255, 255, 0.99);
+  background: white;
   width: 240px;
   padding: 15px 10px 10px 10px;
   margin: 0 120px 0 0;
   display: inline; }
   #right_sidebar h3 {
     margin: 0; }
+
+#ribbon {
+  clear: both; }
+  #ribbon ul.ribbon_sub {
+    clear: left;
+    list-style-type: none;
+    width: 1000px;
+    padding: 10px 0 5px 0;
+    border: 1px dotted silver;
+    border-width: 1px 0 0 0;
+    margin: 5px 0px 5px 0px;
+    background: white;
+    background: white; }
+    #ribbon ul.ribbon_sub li.ribbon_sub_left {
+      float: left;
+      width: 100px;
+      height: 100px;
+      border: 0px dotted red;
+      margin: 0 85px 0 145px;
+      padding: 0 0px;
+      background: #96faff url("../img/img_left.jpg") repeat-x 0 50%;
+      background: #96faff url("../img/img_left.jpg") repeat-x 0 50%; }
+    #ribbon ul.ribbon_sub li.ribbon_sub_center {
+      float: left;
+      width: 100px;
+      height: 100px;
+      border: 0px dotted green;
+      margin: 0 115px 0 115px;
+      padding: 0 0px;
+      background: #fafafa url("../img/img_center.jpg") repeat-x 0 50%;
+      background: #fafafa url("../img/img_center.jpg") repeat-x 0 50%; }
+    #ribbon ul.ribbon_sub li.ribbon_sub_right {
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin: 0 145px 0 85;
+      padding: 0 0px;
+      border: 0px dotted blue;
+      background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%;
+      background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%; }
+    #ribbon ul.ribbon_sub a {
+      text-decoration: none;
+      font-size: 7pt;
+      padding: 0.5px;
+      color: #f0f0f0;
+      color: #f0f0f0;
+      background: #2d2d2d;
+      background: #2d2d2d; }
+      #ribbon ul.ribbon_sub a:hover {
+        color: white;
+        color: white;
+        background: #9b9bff;
+        background: #9b9bff; }
 
 #footer {
   clear: left;

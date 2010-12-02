@@ -8,7 +8,7 @@
 <!--[if opera]><!-->
 <link rel="stylesheet" href="css/main.css" type="text/css">
 <!-- <![endif]-->
-
+<meta http-equiv="pragma" content="no-cache">
 <meta name="keywords" content=" " >
 <meta name="description" content=" ">
 <meta name="robots" content="index,follow">

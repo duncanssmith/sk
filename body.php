@@ -33,26 +33,43 @@
             include "state.php";
           ?>
         <ul class="content_sub group">
-          <li class="content_sub_left">
-            <a href="?pageid=1">Your Health &rarr;</a>
+          <!--<li class="content_sub_left">-->
+          <li>
+            <!--<a href="?pageid=1">Your Health &rarr;</a>-->
           </li>
-          <li class="content_sub_center">
-            <a href="?pageid=2">Your Organisation &rarr;</a>
+          <!--<li class="content_sub_center">-->
+          <li>
+            <!--<a href="?pageid=2">Your Organisation &rarr;</a>-->
           </li>
-          <li class="content_sub_right">
-            <a href="?pageid=1.6">Weight Loss &rarr;</a>
+          <!--<li class="content_sub_right">-->
+          <li>
+            <!--<a href="?pageid=1.6">Weight Loss &rarr;</a>-->
           </li>
-        </ul>
+				</ul>
       </div>
       <div id="right_sidebar">
-
         <?php
           include "right_sidebar.php";
           if(($debug['global'])){
                   include "debug_printout.php";
           }
         ?>
+			</div>
+			<div id="ribbon">
+        <ul class="ribbon_sub group">
+          <li class="ribbon_sub_left">
+            <a href="?pageid=1">Your Health &rarr;</a>
+          </li>
+          <li class="ribbon_sub_center">
+            <a href="?pageid=2">Your Organisation &rarr;</a>
+          </li>
+          <li class="ribbon_sub_right">
+            <a href="?pageid=1.6">Weight Loss &rarr;</a>
+          </li>
+				</ul>
+
       </div>
+
       <div id="footer">
         <ul class="footboxes group">
           <li class="footbox_left"> 

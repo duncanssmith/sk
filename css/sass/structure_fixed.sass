@@ -81,25 +81,25 @@
     margin: 0
     padding: 0 0 0 0px
     border-top: 1px dotted green 
-    background: $left_sidebar_link_background_color_IE
-    background: $left_sidebar_link_background_color 
     li
       margin: 0 0 0 0px
       padding: 0em
       list-style-type: none
-      font-size: $left_sidebar_link_text_size
-      font-family: $left_sidebar_link_text_font
+      font-size: $left_sidebar_list_text_size
+      font-family: $left_sidebar_list_text_font
+      background: $left_sidebar_list_background_color_IE
+      background: $left_sidebar_list_background_color 
+      color: $left_sidebar_list_text_color_IE
+      color: $left_sidebar_list_text_color 
       border-bottom: 1px dotted green
       padding-top: 2px
       text-align: right
       &:hover
-        background: $left_sidebar_link_background_hover_color_IE
-        background: $left_sidebar_link_background_hover_color 
+        background: $left_sidebar_list_background_hover_color_IE
+        background: $left_sidebar_list_background_hover_color 
       a
-        color: $left_sidebar_link_text_color_IE
-        color: $left_sidebar_link_text_color 
-        background: $left_sidebar_link_background_color_IE
-        background: $left_sidebar_link_background_color 
+        color: $left_sidebar_list_text_color_IE
+        color: $left_sidebar_list_text_color 
         text-decoration: none
         text-align: right
         
@@ -157,7 +157,7 @@
     width: 340px
     padding: 2px 0 3px 0
     border: 1px dotted silver
-    border-width: 1px 0 0 0 
+    border-width: 0px 0 0 0 
     margin: 5px 0 0 0 
     background: $content_sub_background_color_IE
     background: $content_sub_background_color
@@ -215,6 +215,63 @@
   display: inline
   h3
     margin: 0
+
+#ribbon
+  clear: both
+  
+  ul.ribbon_sub
+    clear: left
+    list-style-type: none
+    width: 1000px 
+    padding: 10px 0 5px 0
+    border: 1px dotted silver
+    border-width: 1px 0 0 0 
+    margin: 5px 0px 5px 0px
+    background: $ribbon_sub_background_color_IE
+    background: $ribbon_sub_background_color
+    li.ribbon_sub_left
+      float: left
+      width: 100px
+      height: 100px
+      border: 0px dotted red
+      margin: 0 85px 0 145px
+      padding: 0 0px
+      background: $ribbon_sub_left_background_color_IE url("../img/img_left.jpg") repeat-x 0 50%
+      background: $ribbon_sub_left_background_color url("../img/img_left.jpg") repeat-x 0 50%
+
+    li.ribbon_sub_center
+      float: left
+      width: 100px
+      height: 100px
+      border: 0px dotted green
+      margin: 0 115px 0 115px
+      padding: 0 0px
+      background: $ribbon_sub_center_background_color_IE url("../img/img_center.jpg") repeat-x 0 50%
+      background: $ribbon_sub_center_background_color url("../img/img_center.jpg") repeat-x 0 50%
+    li.ribbon_sub_right
+      float: left
+      width: 100px
+      height: 100px
+      margin: 0 145px 0 85
+      padding: 0 0px
+      border: 0px dotted blue
+      background: $ribbon_sub_right_background_color_IE url("../img/img_right.jpg") repeat-x 0 50%
+      background: $ribbon_sub_right_background_color url("../img/img_right.jpg") repeat-x 0 50%
+
+    a
+      text-decoration: none
+      font-size: 7pt
+      padding: 0.5px
+      color: $ribbon_sub_link_color_IE
+      color: $ribbon_sub_link_color
+      background: $ribbon_sub_link_background_color_IE
+      background: $ribbon_sub_link_background_color
+      &:hover
+        color: $ribbon_sub_link_hover_color_IE
+        color: $ribbon_sub_link_hover_color
+        background: $ribbon_sub_link_background_hover_color_IE
+        background: $ribbon_sub_link_background_hover_color
+
 
 #footer
   clear: left
