@@ -2,6 +2,9 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
+css/.sass-cache/*
+css/sass/.sass-cache/*
+gen/sidebar*
 ./.Gemfile.swp
 *~
 *.swp
@@ -9,6 +12,7 @@ tmp/**/*
 *.txt
 *.xls
 *.xlsx
+*.rtf
 *.doc
 *.docx
 *.psd
