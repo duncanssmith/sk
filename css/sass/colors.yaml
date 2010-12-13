@@ -34,6 +34,11 @@
   :g: 175
   :b: 130
   :a: 1
+:navigation_tab_selected_color: 
+  :r: 235
+  :g: 175
+  :b: 130
+  :a: 1
 :listlineoddcolor: 
   :r: 220
   :g: 255
@@ -185,7 +190,7 @@
   :b: 255
   :a: 1.0
 :navigation_background_hover_color: 
-  :r: 5
+  :r: 15
   :g: 125
   :b: 75
   :a: 1

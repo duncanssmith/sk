@@ -1,4 +1,21 @@
-<body>
+<?php
+
+/*  $pk = array_keys($pages);
+  
+  echo "<pre>";
+  echo "PAGEID: ";
+  echo $pageid;
+  echo "<br />";
+  for($i=0;$i<sizeof($pk);$i++){
+    print_r($pk[$i]);
+    print_r (" ");
+  }
+  echo "</pre>";
+*/
+include "body_style.php";
+
+?>
+
   <div id="container">
     <div id="header">
       <div id="logo">
@@ -67,6 +84,27 @@
             <a href="?pageid=1.6">Weight Loss &rarr;</a>
           </li>
 				</ul>
+
+        <dl class="ribbon_sub group">
+          <dt class="ribbon_sub_left">
+            <a href="?pageid=1">Your Health &rarr;</a>
+          </dt>
+          <dd>
+            Your Health
+          </dd>
+          <dt class="ribbon_sub_center">
+            <a href="?pageid=2">Your Organisation &rarr;</a>
+          </dt>
+          <dd>
+            Your Organisation
+          </dd>
+          <dt class="ribbon_sub_right">
+            <a href="?pageid=1.6">Weight Loss &rarr;</a>
+          </dt>
+          <dd>
+            Weight Loss
+          </dd>
+				</dl>
 
       </div>
 

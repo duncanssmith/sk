@@ -27,11 +27,12 @@ $control=array(
   'generate_scripts'=>0,
   'generate_menu'=>0,
   'include_menu'=>0,
-  'generate_tabs'=>1,
+  'generate_tabs'=>0,
   'include_tabs'=>1,
   'generate_sidebar_links'=>0,
   'include_sidebar_links'=>1,
-	'show_right_sidebar_images'=>1
+	'show_right_sidebar_images'=>1,
+	'body_styling'=>true
 );
 
 $scale=array(

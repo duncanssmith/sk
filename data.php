@@ -1,16 +1,20 @@
 <?php
 
 #include "file_inventory_array.php";
-#
+include "images.php";
+
 date_default_timezone_set('GMT');
 
 $now=date("l d F Y");
 $year=date("Y");
 $timestamp=date('Y-m-d H:i:s');
 $sitename="Duncan Smith";
+
 $found=FALSE;
 $foundx=FALSE;
 $foundy=FALSE;
+$foundz=FALSE;
+
 $depth=0;
 $flm=0;
 $final_menu="";
@@ -27,6 +31,9 @@ $xmlfile="";
 
 $var=1;
 
+# -----------------------
+#
+$sidebar_links=array();
 # -----------------------
 #
 $files=array(
@@ -120,7 +127,9 @@ $pages=array(
     'parent' => '/',
     'include'=>'inc/philosophy.inc',
     'layout'=>'info',
-    'image' => 'img/ist2_9462849-handfull-of-fruits.jpg',
+    'image' => 'img/ist2_6167844-healthy-eating.jpg',
+    'image' => $images[9],
+    #'image' => 'img/ist2_9462849-handfull-of-fruits.jpg',
     #'image' => 'img/ist2_10645616-stethoscope-and-fruit.jpg',
     #'image'=>'img/img_main.jpg',
     'xmlfile'=>'xml/nutrition.xml',
@@ -130,7 +139,8 @@ $pages=array(
       'showtitle'=>true,
       'parent' => '0',
       'layout'=>'info',
-      'image' => 'img/ist2_10645616-stethoscope-and-fruit.jpg',
+      'image' => 'img/ist2_14896264-red-tomato.jpg',
+      #'image' => 'img/ist2_10645616-stethoscope-and-fruit.jpg',
       #'image'=>'img/torso_x-ray.jpg',
       'include'=>'inc/reasons.inc',
       'sidebar_file' => 'gen/sidebar_0_0.inc'
@@ -171,7 +181,16 @@ $pages=array(
     'layout'=>'info',
     'parent' => '/',
     'xmlfile'=>'xml/nutrition.xml',
-    'image' => 'img/ist2_10645616-stethoscope-and-fruit.jpg',
+    'image' => 'img/ist2_14894484-blueberries.jpg',
+    #'image' => 'img/ist2_4303867-human-stomach.jpg',
+    #'image' => 'img/ist2_4441714-human-heart.jpg',
+    #'image' => 'img/ist2_4718836-what-do-you-eat.jpg',
+    #'image' => 'img/ist2_4946839-human-body-with-internal-organs.jpg',
+    #'image' => 'img/ist2_6167844-healthy-eating.jpg',
+    #'image' => 'img/ist2_8534640-internal-organs.jpg',
+    #'image' => 'img/ist2_9148441-digestive-system.jpg',
+    #'image' => 'img/ist2_9148464-digestive-system.jpg',
+    #'image' => 'img/ist2_4946839-human-body-with-internal-organs.jpg',
     'include'=>'inc/consultation.inc',
     'sidebar_file' => 'gen/sidebar_1.inc',
     '1.0'=>array(
@@ -280,7 +299,7 @@ $pages=array(
   '6'=>array(
     'title'=>'Images',
     'showtitle'=>true,
-    'layout'=>'info',
+    'layout'=>'wide',
     'parent' => '/',
     'include'=>'inc/image_list.inc',
     'sidebar_file' => 'gen/sidebar_5.inc',

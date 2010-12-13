@@ -43,7 +43,7 @@ function generate_tabs($p,$f){
     }
   }
 
-  fprintf($file,"  %s\n", ");\n?>");
+  fprintf($file, "  %s\n", ");\n?>" );
 
   tabs();
 
@@ -67,6 +67,7 @@ function generate_sidebar_links($p){
   global $menulevels;
   global $pagetitles;
   global $tabs;
+  global $sidebar_links;
   global $timestamp;
 
   if($debug['functions']){
@@ -89,10 +90,15 @@ function generate_sidebar_links($p){
     if($array_present){
       $file=fopen( $p['sidebar_file'], "w");
       fprintf($file,"\n<ul class=\"left_sidebar_links\">\n");
-
       for($i=0;$i<sizeof($p);$i++){
         if(is_array($p[$pk[$i]])){
-          fprintf($file, "<li><a href=\"index.php?pageid=%s\">%s</a></li>\n", $pk[$i], $p[$pk[$i]]['title']);
+         # if($pageid == $p[$i]){
+         #   fprintf($file, "<li><a class=\"current\" href=\"index.php?pageid=%s\">%s</a></li>\n", $pk[$i], $p[$pk[$i]]['title']);
+         # }else{
+            $sidebar_links[]=array($pk[$i], $p[$pk[$i]]['title']);
+
+ #           fprintf($file, "<li><a href=\"index.php?pageid=%s\">%s</a></li>\n", $pk[$i], $p[$pk[$i]]['title']);
+         # }
           generate_sidebar_links($p[$pk[$i]]);
         }
       }
@@ -501,6 +507,7 @@ function combine_arrays($a,$b){
 function tabs(){
 
   global $debug;
+  global $pages;
   global $pageid;
   global $tabs;
   
@@ -512,12 +519,16 @@ function tabs(){
   $pk=array_keys($tabs);
   
   #echo "\n   <div id=\"navigation\">\n";
-  echo "     <ul>\n";
+  echo "<p>ARRAY KEYS P ";
+  print_r($pages[$pk[1]['title']]);
+  echo "</p>";
 
+  echo "     <ul>\n";
+  
   for($i=0;$i<sizeof($tabs);$i++){
 
     if($pageid==$pk[$i]){ 
-        echo "       <li id=\"current\"><a href=\"index.php?pageid=".$pk[$i]."\">".$tabs[$i]."</a></li>\n";
+        echo "       <li><a class=\"current\" href=\"index.php?pageid=".$pk[$i]."\">".$tabs[$i]."</a></li>\n";
     }else{
         echo "       <li><a href=\"index.php?pageid=".$pk[$i]."\">".$tabs[$i]."</a></li>\n";
     }
@@ -825,3 +836,80 @@ function getimages($p,$pageid,$d){
   }
   return $page;
 }
+
+function getlayout($p,$pageid,$d){
+
+  global $debug;
+  global $pageid;
+  global $foundz;
+  global $page;
+
+  if($debug['functions']){
+    $thisFunction ="getlayout( p: ".$p.", pageid: ".$pageid.", depth: ".$d.")";
+    echo_functionname($thisFunction);
+  }
+
+  if($debug['data']){
+    echo "<pre>";
+    print_r($p);
+    echo "</pre>";
+  }
+
+  $pk=array_keys($p);
+
+  if($foundz){
+    if($debug['page']){
+      echo "<pre>";
+      print_r($p);
+      echo "</pre>";
+    }
+  }else{
+    for($i=0;$i<sizeof($p);$i++){
+      if(is_array($p[$pk[$i]])){
+
+        $pagestr=sprintf("%s", $pk[$i]);
+        $pageidstr=sprintf("%s", $pageid);
+  
+        if($pagestr===$pageidstr){
+
+          $foundz=TRUE;
+
+          showlayout($p[$pk[$i]],2);
+
+          $page=$p[$pk[$i]];
+
+          break;
+
+        }else{
+          $foundz==FALSE;
+          $page=getlayout($p[$pk[$i]],$pageid,$d+1);
+        }
+      }else{
+        $page=$p;
+      }
+    }
+  }
+  return $page;
+}
+
+function showlayout($p,$cols){
+  
+  global $debug;
+  global $settings;
+  global $files;
+  global $pages;
+
+  if($debug['functions']){
+    $thisFunction ="showlayout(p,".$cols.")";
+    echo_functionname($thisFunction);
+  }
+
+	if(!empty($p['layout'])){
+		printf("\n<body class=\"%s\">", $p['layout']); 
+	}else{
+		echo "\n<body>"; 
+  }
+
+  return true;
+}
+
