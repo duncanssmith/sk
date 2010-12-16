@@ -85,24 +85,24 @@ include "body_style.php";
           </li>
 				</ul>
 
-        <dl class="ribbon_sub group">
-          <dt class="ribbon_sub_left">
+        <dl class="ribbon_sub_dl group">
+          <dt class="ribbon_sub_dt_left">
             <a href="?pageid=1">Your Health &rarr;</a>
           </dt>
           <dd>
-            Your Health
+            <img src="img/img_left.jpg"/>
           </dd>
-          <dt class="ribbon_sub_center">
+          <dt class="ribbon_sub_dt_center">
             <a href="?pageid=2">Your Organisation &rarr;</a>
           </dt>
           <dd>
-            Your Organisation
+            <img src="img/img_center.jpg"/>
           </dd>
-          <dt class="ribbon_sub_right">
+          <dt class="ribbon_sub_dt_right">
             <a href="?pageid=1.6">Weight Loss &rarr;</a>
           </dt>
           <dd>
-            Weight Loss
+            <img src="img/img_right.jpg"/>
           </dd>
 				</dl>
 

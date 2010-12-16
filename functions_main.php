@@ -43,10 +43,8 @@ function generate_tabs($p,$f){
     }
   }
 
-  fprintf($file, "  %s\n", ");\n?>" );
-
+  fprintf($file, "  %s\n", ");\n?>");
   tabs();
-
   fclose($file);
 
   return TRUE;
@@ -97,7 +95,7 @@ function generate_sidebar_links($p){
          # }else{
             $sidebar_links[]=array($pk[$i], $p[$pk[$i]]['title']);
 
- #           fprintf($file, "<li><a href=\"index.php?pageid=%s\">%s</a></li>\n", $pk[$i], $p[$pk[$i]]['title']);
+            fprintf($file, "<li><a href=\"index.php?pageid=%s\">%s</a></li>\n", $pk[$i], $p[$pk[$i]]['title']);
          # }
           generate_sidebar_links($p[$pk[$i]]);
         }
@@ -518,10 +516,11 @@ function tabs(){
 
   $pk=array_keys($tabs);
   
-  #echo "\n   <div id=\"navigation\">\n";
-  echo "<p>ARRAY KEYS P ";
-  print_r($pages[$pk[1]['title']]);
-  echo "</p>";
+  if($debug['data']){
+    echo "<p>";
+    print_r($pages[$pk[1]['title']]);
+    echo "</p>";
+  }
 
   echo "     <ul>\n";
   
@@ -651,16 +650,8 @@ function showlinks($p,$cols){
     if($showheader > 0){
             echo "<h6 id=\"links\">".$p['title']." </h6>\n";
     }
-    echo "<br/><ul>\n";  
+    echo "<br/>\n<ul>\n";  
   }
-  #echo $p['include'];
-  # echo "<pre>PAGE:";
-  #  print_r($p);
-  # echo "</pre>";
-  #
-  #echo "<p>DUNCAN</p>\n";
-  #echo "<p>".sizeof($p)."</p>\n";
-
 
   for($i=0;$i<sizeof($p);$i++){
     if(is_array($p[$pk[$i]])){

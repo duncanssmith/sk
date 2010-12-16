@@ -1,11 +1,11 @@
 <?php
 
 if($control['generate_sidebar_links']){
-  $z = array();
-  $z=getlinks($pages,$pageid,$depth);
+  $x=array();
+  $x=getlinks($pages,$pageid,$depth);
   if(!$foundx){
     $pageid = $_GET['pageid'] = 0;
-    $z=getlinks($pages,$pageid,$depth);
+    $x=getlinks($pages,$pageid,$depth);
   }
 }
 
