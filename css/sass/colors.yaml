@@ -3,17 +3,17 @@
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.9
+  :a: 1
 :header_background_color: 
   :r: 65
   :g: 205
   :b: 160
-  :a: 0.7
+  :a: 1
 :hcolor: 
   :r: 40
   :g: 40
   :b: 10
-  :a: 0.4
+  :a: 1
 :content_pagetitle_color: 
   :r: 200
   :g: 100
@@ -43,37 +43,47 @@
   :r: 220
   :g: 255
   :b: 240
-  :a: 0.8
+  :a: 1
 :content_background_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.7
+  :a: 1
 :content_sub_right_background_color: 
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
 :content_sub_center_background_color: 
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
+:content_sub_center_left_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 1
+:content_sub_center_right_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 1
 :content_sub_left_background_color: 
   :r: 150
   :g: 250
   :b: 255
-  :a: 0.8
+  :a: 1
 :content_sub_background_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.9
+  :a: 1
 :content_sub_link_background_color: 
   :r: 45
   :g: 45
   :b: 45
-  :a: 0.4
+  :a: 1
 :content_sub_link_color: 
   :r: 240
   :g: 240
@@ -83,7 +93,7 @@
   :r: 155
   :g: 155
   :b: 255
-  :a: 0.9
+  :a: 1
 :content_sub_link_hover_color: 
   :r: 255
   :g: 255
@@ -98,7 +108,7 @@
   :r: 85
   :g: 85
   :b: 85
-  :a: 0.5
+  :a: 1
 :footer_link_text_color:
   :r: 255 
   :g: 255
@@ -113,7 +123,7 @@
   :r: 85
   :g: 85
   :b: 85
-  :a: 0.9
+  :a: 1
 :footboxes_color: 
   :r: 85
   :g: 85
@@ -183,7 +193,7 @@
   :r: 240
   :g: 255
   :b: 220
-  :a: 0.6
+  :a: 1
 :content_container1_background_color: 
   :r: 255
   :g: 255
@@ -198,7 +208,7 @@
   :r: 200
   :g: 200
   :b: 60
-  :a: 0.6
+  :a: 1
 :content_container2_background_color: 
   :r: 255
   :g: 255
@@ -223,52 +233,62 @@
   :r: 30
   :g: 30
   :b: 30
-  :a: 0.8
+  :a: 1
 :content_background_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.7
+  :a: 1
 :navigation_border_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.7
+  :a: 1
 :base_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.9
+  :a: 1
 :ribbon_background_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.7
+  :a: 1
 :ribbon_sub_right_background_color: 
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
 :ribbon_sub_center_background_color: 
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
+:ribbon_sub_center_left_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 1
+:ribbon_sub_center_right_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 1
 :ribbon_sub_left_background_color: 
   :r: 150
   :g: 250
   :b: 255
-  :a: 0.8
+  :a: 1
 :ribbon_sub_background_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.9
+  :a: 1
 :ribbon_sub_link_background_color: 
   :r: 45
   :g: 45
   :b: 45
-  :a: 0.4
+  :a: 1
 :ribbon_sub_link_color: 
   :r: 240
   :g: 240
@@ -278,7 +298,7 @@
   :r: 155
   :g: 155
   :b: 255
-  :a: 0.9
+  :a: 1
 :ribbon_sub_link_hover_color: 
   :r: 255
   :g: 255

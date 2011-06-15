@@ -75,36 +75,15 @@ include "body_style.php";
 			<div id="ribbon">
         <ul class="ribbon_sub group">
           <li class="ribbon_sub_left">
-            <a href="?pageid=1">Your Health &rarr;</a>
+            <a href="?pageid=1">Your Health</a>
           </li>
           <li class="ribbon_sub_center">
-            <a href="?pageid=2">Your Organisation &rarr;</a>
+            <a href="?pageid=2">Your Organisation</a>
           </li>
           <li class="ribbon_sub_right">
-            <a href="?pageid=1.6">Weight Loss &rarr;</a>
+            <a href="?pageid=1.5">Weight Loss</a>
           </li>
 				</ul>
-
-        <dl class="ribbon_sub_dl group">
-          <dt class="ribbon_sub_dt_left">
-            <a href="?pageid=1">Your Health &rarr;</a>
-          </dt>
-          <dd>
-            <img src="img/img_left.jpg"/>
-          </dd>
-          <dt class="ribbon_sub_dt_center">
-            <a href="?pageid=2">Your Organisation &rarr;</a>
-          </dt>
-          <dd>
-            <img src="img/img_center.jpg"/>
-          </dd>
-          <dt class="ribbon_sub_dt_right">
-            <a href="?pageid=1.6">Weight Loss &rarr;</a>
-          </dt>
-          <dd>
-            <img src="img/img_right.jpg"/>
-          </dd>
-				</dl>
 
       </div>
 
@@ -126,6 +105,11 @@ include "body_style.php";
           <li class="footbox_right"> <?php echo $now ?> </li>
         </ul>
       </div>
+    </div>
+    <div>
+      <?php
+        include "parth.php";
+      ?>
     </div>
   </body>
 </html>

@@ -69,8 +69,7 @@ function generate_sidebar_links($p){
   global $timestamp;
 
   if($debug['functions']){
-					$thisFunction ="generate_sidebar_links(".$p.")";
-					echo "<h1>".sizeof($p)."</h1>";
+	  $thisFunction ="generate_sidebar_links(".$p.")";
     echo_functionname($thisFunction);
   }
 
@@ -517,16 +516,17 @@ function tabs(){
   $pk=array_keys($tabs);
   
   if($debug['data']){
-    echo "<p>";
+    echo "<pre>";
     print_r($pages[$pk[1]['title']]);
-    echo "</p>";
+    echo "</pre>";
   }
+
 
   echo "     <ul>\n";
   
   for($i=0;$i<sizeof($tabs);$i++){
 
-    if($pageid==$pk[$i]){ 
+    if($pageid[0]==$pk[$i]){ 
         echo "       <li><a class=\"current\" href=\"index.php?pageid=".$pk[$i]."\">".$tabs[$i]."</a></li>\n";
     }else{
         echo "       <li><a href=\"index.php?pageid=".$pk[$i]."\">".$tabs[$i]."</a></li>\n";
@@ -784,7 +784,7 @@ function getimages($p,$pageid,$d){
 
   if($debug['functions']){
     $thisFunction ="getimages( ".$p.", $pageid, $d)";
-    #echo_functionname($thisFunction);
+    echo_functionname($thisFunction);
   }
 
   if($debug['data']){

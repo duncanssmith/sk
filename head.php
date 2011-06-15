@@ -6,8 +6,8 @@
 <link rel="shortcut icon" href="images/spacer.gif" />
 
 <!--[if opera]><!-->
-<link rel="stylesheet" href="css/main.css" type="text/css">
 <!-- <![endif]-->
+<link rel="stylesheet" href="css/main.css" type="text/css">
 <meta http-equiv="pragma" content="no-cache">
 <meta name="keywords" content=" " >
 <meta name="description" content=" ">
