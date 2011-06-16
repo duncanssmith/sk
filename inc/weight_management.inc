@@ -1,5 +1,5 @@
 <h1>
-  Weight Management
+Weight Management
 </h1>
 <p>
   Many people diet to shed extra weight, but does it work? Keeping weight off permanently is very different from following the latest fad  crash diet. Trying to follow something which doesn't really fit into your life is hard to stick with, and weight gain can often happen later when the diet is inevitably broken.

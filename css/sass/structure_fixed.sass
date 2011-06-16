@@ -7,6 +7,10 @@
   -webkit-border-#{$side}-#{$orientation}-radius: $radius $radius
   -moz-border-radius-#{$side}#{$orientation}: $radius $radius
 
+#clearer 
+  clear: left 
+  line-height: 0
+  height: 0
 
 #container
   margin: 0 auto
@@ -28,9 +32,22 @@
     margin: 0
 
   #logo
+    float: left
     padding: 0
     margin: 0
 
+  #contact
+    float: right
+    padding: 0
+    margin: 0
+    background: $contact_number_bg_color_IE
+    background: $contact_number_bg_color
+    border: 1px red
+    h2
+      color: $contact_number_color_IE
+      color: $contact_number_color
+      font-size: 2em
+    
 
 #navigation
   float: left
@@ -107,6 +124,9 @@
         color: $left_sidebar_list_text_color 
         text-decoration: none
         text-align: right
+        &:hover
+          color: $left_sidebar_list_text_hover_color_IE
+          color: $left_sidebar_list_text_hover_color 
         
 
   .more_btn 
@@ -144,6 +164,9 @@
     font-size: 150% 
     color: $content_h_color_IE
     color: $content_h_color
+  p
+    font-size: 112%
+    font-family: verdana
   #pagetitle
     color: $content_pagetitle_color_IE 
     color: $content_pagetitle_color

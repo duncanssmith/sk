@@ -25,10 +25,15 @@ include "body_style.php";
           }else{
             echo $nologoline;
           }
-
         ?>
         <br/>
-     </div>
+      </div>
+      <div id="contact">
+        <?php
+          echo $phonelogoline;
+        ?> 
+      </div>
+      <div id="clearer">&nbsp;</div>
     </div>
     <div id="navigation">
       <?php  
@@ -105,11 +110,6 @@ include "body_style.php";
           <li class="footbox_right"> <?php echo $now ?> </li>
         </ul>
       </div>
-    </div>
-    <div>
-      <?php
-        include "parth.php";
-      ?>
     </div>
   </body>
 </html>

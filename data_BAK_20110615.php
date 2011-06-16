@@ -1,76 +1,11 @@
 <?php
-
-#include "file_inventory_array.php";
-include "images.php";
-
-date_default_timezone_set('GMT');
-
-$now=date("l d F Y");
-$year=date("Y");
-$timestamp=date('Y-m-d H:i:s');
-$sitename="Duncan Smith";
-
-$found=FALSE;
-$foundx=FALSE;
-$foundy=FALSE;
-$foundz=FALSE;
-
-$depth=0;
-$flm=0;
-$final_menu="";
-$menu_cell=array(
-  'width'=>140,
-  'height'=>20
-);
-$menu_array=array();
-$pagekeys=array();
-$menulevels=array();
-$pagetitles=array();
-$tabs=array();
-$xmlfile="";
-
-$var=1;
-
-# -----------------------
-#
-$sidebar_links=array();
-# -----------------------
-#
-$files=array(
-  'itemsxml'=>"xml/nutrition.xml",
-  'itemsxml2'=>"xml/nutrition.xml",
-  'pagesxml'=>'gen/pages.xml',
-  'productsxml'=>'gen/products.xml',
-  'menuintermed'=>'tmp/menuintmed.inc',
-  'menu'=>'gen/menu.inc',
-  'tabs'=>'gen/tabs.inc',
-  // ***NB*** 
-  // The number of sidebar links corresponds to the pages array with their sub-arrays below***
-  'menutmp'=>'tmp/menutmp.php'
-);
-/* 'include'=>'inc/philosophy.inc',
-   'include'=>'inc/consultation.inc',
-   'include'=>'inc/mainbody.inc',
-   'include'=>'inc/reasons.inc',
-   'include'=>'inc/bookings.inc',
-   'include'=>'inc/fees.inc',
-   'include'=>'inc/nutritionist_dietitian.inc',
-   'include'=>'inc/packages.inc',
-   'include'=>'inc/type2_diabetes.inc',
-   'include'=>'inc/heart_health.inc',
-   'include'=>'inc/fertility.inc',
-   'include'=>'inc/weight_management.inc',
-   'include'=>'inc/information_links.inc',
-   'include'=>'inc/insurance_providers.inc',
-
- */
 $pages=array(
   'title'=>'South East Nutrition and Health',
   'layout'=>'info',
   'showtitle'=>true,
   'sidebar_file' => 'gen/sidebar.inc',
   '0'=>array(
-    'title'=>'Our Service',
+    'title'=>'Home',
     'showtitle'=>true,
     'parent' => '/',
     'include'=>'inc/philosophy.inc',
@@ -323,17 +258,4 @@ $pages=array(
     'sidebar_file' => 'gen/sidebar_5.inc',
   )
 );
-
-$itingline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">&copy; iTing design ".$year." all rights reserved</a>\n";
-$sknutritionline="\n<a href=\"mailto:senh@gmail.com\" class=\"capt\">&copy; South East Nutrition & Health ".$year." all rights reserved</a>\n";
-/* images */
-$logo="images/logo.gif";
-$logoBlank="images/blank_logo.gif";
-$logoline="<a href=\"index.php\"><img src=\"img/senh_logo.png\" alt=\"SK Nutrition\"/></a>";
-$phonelogoline="<a href=\"index.php\"><img src=\"img/phone_logo.png\" alt=\"SK Nutrition\"/></a>";
-$nologoline="";
-
-/* alt text */
-$Alt00="SK Nutrition";
-
 ?>
