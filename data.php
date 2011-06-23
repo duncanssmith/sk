@@ -253,6 +253,7 @@ $pages=array(
     'layout'=>'info',
     'parent' => '/',
     'image' => 'img/ist2_14958241-young-businessman-with-his-team-in-the-background.jpg',
+    'sidebar_file' => 'gen/sidebar_2.inc',
     'include'=>'inc/your_organisation.inc'
   ),
   '3'=>array(
@@ -261,6 +262,7 @@ $pages=array(
     'layout'=>'info',
     'parent' => '/',
     'image' => 'img/ist2_14900196-nuts.jpg',
+    'sidebar_file' => 'gen/sidebar_3.inc',
     'include'=>'inc/about.inc'
   ),
   '4'=>array(
@@ -270,6 +272,7 @@ $pages=array(
     'parent' => '/',
     'image' => 'img/ist2_14900480-raspberries-and-flower-leaf-sprigs.jpg',
     'image' => $images[36],
+    'sidebar_file' => 'gen/sidebar_4.inc',
     'include'=>'inc/contact_us.inc'
   )
 );

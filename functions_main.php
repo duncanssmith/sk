@@ -696,10 +696,10 @@ function showpage($p,$cols){
 		echo $p['title'];
 		echo "</a>\n";
 		echo " ";
-	#	for($i=0;$i<sizeof($pk);$i++){
+		for($i=0;$i<sizeof($pk);$i++){
 	#					echo $pk[$i]." ";
 		#				echo $p[$pk[$i]]." ";
-	#	}
+		}
 		echo " ";
 		echo "</h1>\n";
   }

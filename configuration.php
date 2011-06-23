@@ -31,8 +31,8 @@ $control=array(
   'include_tabs'=>1,
   'generate_sidebar_links'=>0,
   'include_sidebar_links'=>1,
-	'show_right_sidebar_images'=>1,
-	'body_styling'=>true
+	'show_right_sidebar_images'=>0,
+	'body_styling'=>1
 );
 
 $scale=array(
