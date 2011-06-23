@@ -5,6 +5,8 @@ include "configuration.php";
 // included in configuration.php:
   #include "debug.php";
 include "data.php";
+#include "data_BAK_20110617.php";
+#include "data_BAK_20110615.php";
 include "functions.php";
 // included in functions.php:
   #include "datefunctions.php";

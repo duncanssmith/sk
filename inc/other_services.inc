@@ -1,9 +1,9 @@
 <h1>
   Other services
 </h1>
-<h2>
-  Health screening profiles
-</h2>
+<p>
+South East Nutrition and Health can provide a wide range of health screening and blood test profiles and analyses. These are listed below:
+</p>
 <h2>
   Mineral Profile
 </h2>
@@ -152,6 +152,19 @@
 <h2>
   Other services:
 </h2>
-<p>
-  Coeliac, Bone profile, Semen analysis, Thyroid, Allergy, Gut hormones, Folate, Glucose, HbA1c, Iodine, Lead, Mercury, Malarial Parasites, Om6/EPA Om3,
-</p>
+<ul>
+<li> Coeliac</li>
+<li> Bone profile</li>
+<li> Semen analysis</li>
+<li> Thyroid</li>
+<li> Allergy</li>
+<li> Gut hormones</li>
+<li> Folate</li>
+<li> Glucose</li>
+<li> HbA1c</li>
+<li> Iodine</li>
+<li> Lead</li>
+<li> Mercury</li>
+<li> Malarial Parasites</li>
+<li> Om6/EPA Om3</li>
+</ul>

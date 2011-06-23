@@ -2,23 +2,24 @@
 About Us
 </h1>
 <p>
-South East Nutrition and Health is a dietetic consultancy based in Guildford, Surrey.
+South East Nutrition and Health is a dietetic consultancy based in Guildford, Surrey, founded by dietician <b>Seamus Kirk BSc (Hons) RD HCIMA</b>
+</p>
+<h2>Seamus:</h2>
+<blockquote>
+<p>
+&quot;After completing my academic study in the Department of Nutrition and Dietetics, and practical training in several Surrey hospitals, I graduated from the University of Surrey with an Honours degree in Nutrition and Dietetics.
 </p>
 <p>
-SENH is owned and run by dietician Seamus Kirk BSc (Hons) RD HCIMA
+Recent posts have been within the community, providing dietetic services to over fifteen GP practices and several community hospitals. This has provided wide ranging experience with patients at all levels, covering areas such as diabetes, IBS, cholesterol, weight loss, oncology, nutrition support and various gastro-intestinal and intestinal conditions. My awareness of modern medical practice and medication is important in the diagnosis and provision of effective dietary advice, and exposure to a wide range of conditions has been a vitally important for my development and experience as a dietician.
 </p>
 <p>
-After completing my practical training in several hospitals in Surrey I graduated from the University of Surrey with an Honours degree in nutrition and dietetics.
+Before qualifying as a dietitian I founded London's first fully organic juice bar and caf&eacute;, Coffee Matters. The company was run entirely on Fair Trade principles and gained exposure on BBC TV and local radio and received very favourable reviews in London's Time Out and Evening Standard.
 </p>
 <p>
-My posts have been within the community providing a dietetic service to over fifteen GP practices and several community hospitals.  This has provided both a very diverse and wide ranging experiences with patients at all levels covering areas such as diabetes, IBS, cholesterol, weight loss, oncology, nutrition support and various gastro and intestinal conditions.  Being aware of modern medical practice and medications is important in terms of diagnosis and providing effective dietary advice.
+My practical background combined with hands-on community experience in dietetics provides a deep and thorough understanding of all aspects of food and nutrition.
 </p>
 <p>
-Prior to qualifying as a dietitian I founded London's first solely Fair Traded juice bar/caf&eacute; which specialised in organic food and drinks.  The unique concept gained exposure on BBC TV and local radio and in publications in London's Time Out and Evening Standard.
+I welcome the opportunity to professionally assist with your dietary and nutrition requirements, and I look forward to working with you whether in a one-to-one setting or as part of a group.  &quot;
 </p>
-<p>
-This practical background coupled with the community experience provide a solid and thorough understanding of all aspects of food and nutrition.
-</p>
-<p>
-I look forward to working whether it be one to one or the larger audience and would welcome the opportunity to assist.
-</p>
+</blockquote>
+<i>Seamus Kirk</>

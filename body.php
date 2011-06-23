@@ -54,20 +54,20 @@ include "body_style.php";
           <?php
             include "state.php";
           ?>
-        <ul class="content_sub group">
+       <!-- <ul class="content_sub group"> -->
           <!--<li class="content_sub_left">-->
-          <li>
+         <!-- <li> -->
             <!--<a href="?pageid=1">Your Health &rarr;</a>-->
-          </li>
+          <!--</li> -->
           <!--<li class="content_sub_center">-->
-          <li>
+          <!--<li> -->
             <!--<a href="?pageid=2">Your Organisation &rarr;</a>-->
-          </li>
+          <!--</li> -->
           <!--<li class="content_sub_right">-->
-          <li>
+          <!--<li> -->
             <!--<a href="?pageid=1.6">Weight Loss &rarr;</a>-->
-          </li>
-				</ul>
+          <!--</li> -->
+				<!--</ul> -->
       </div>
       <div id="right_sidebar">
         <?php

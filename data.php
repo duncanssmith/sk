@@ -73,46 +73,48 @@ $pages=array(
     'title'=>'Our Service',
     'showtitle'=>true,
     'parent' => '/',
-    'include'=>'inc/philosophy.inc',
+    'include'=>'inc/our_service.inc',
     'layout'=>'info',
     'image' => $images[42],
     'xmlfile'=>'xml/nutrition.xml',
     'sidebar_file' => 'gen/sidebar_0.inc',
     '0.0'=>array(
-      'title'=>'Why see a dietician?',
+      'title'=>'Overview of Dietetics',
       'showtitle'=>true,
       'parent' => '0',
       'layout'=>'info',
       'image' => $images[14],
+      'include'=>'inc/consultation.inc',
       'include'=>'inc/reasons.inc',
+      'include'=>'inc/overview_of_dietetics.inc',
       'sidebar_file' => 'gen/sidebar_0_0.inc'
     ),
     '0.1'=>array(
-      'title'=>'Differences between Dieticians and Nutritionists',
+      'title'=>'Consultation',
       'showtitle'=>true,
       'parent' => '0',
       'layout'=>'info',
-      'include'=>'inc/nutritionist_dietitian.inc',
-      'image' => $images[11],
-      'sidebar_file' => 'gen/sidebar_0_1.inc'
+      'image' => $images[14],
+      'include'=>'inc/consultation.inc',
+      'sidebar_file' => 'gen/sidebar_0_0.inc'
     ),
     '0.2'=>array(
+      'title'=>'Other Services',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'parent' => '0',
+      'image' => 'img/ist2_14898397-eggs.jpg',
+      'include'=>'inc/other_services.inc',
+      'sidebar_file' => 'gen/sidebar_0_2.inc'
+    ),
+    '0.3'=>array(
       'title'=>'Packages',
       'showtitle'=>true,
       'parent' => '0',
       'layout'=>'info',
       'image' => $images[17],
       'include'=>'inc/packages.inc',
-      'sidebar_file' => 'gen/sidebar_0_2.inc',
-    ),
-    '0.3'=>array(
-      'title'=>'Booking and Fees',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'parent' => '0',
-      'image' => $images[20],
-      'include'=>'inc/bookingsandfees.inc',
-      'sidebar_file' => 'gen/sidebar_0_3.inc',
+      'sidebar_file' => 'gen/sidebar_0_2.inc'
     )
   ),
   '1'=>array(
@@ -122,7 +124,7 @@ $pages=array(
     'parent' => '/',
     'image' => $images[34],
     'xmlfile'=>'xml/nutrition.xml',
-    'include'=>'inc/consultation.inc',
+    'include'=>'inc/your_health.inc',
     'sidebar_file' => 'gen/sidebar_1.inc',
     '1.0'=>array(
       'title'=>'Diabetes',
@@ -172,17 +174,15 @@ $pages=array(
       'include'=>'inc/food_allergy_and_intolerance.inc',
       'sidebar_file' => 'gen/sidebar_1_4.inc',
     ),
-
     '1.5'=>array(
-      'title'=>'Weight Loss',
+      'title'=>'Weight loss',
       'showtitle'=>true,
       'layout'=>'info',
       'parent' => '1',
       'image' => 'img/ist2_1770751-weighing-in.jpg',
-      'include'=>'inc/weight_management.inc',
+      'include'=>'inc/weight_loss.inc',
       'sidebar_file' => 'gen/sidebar_1_5.inc',
     ),
-
     '1.6'=>array(
       'title'=>'Healthy eating for families',
       'showtitle'=>true,
@@ -196,14 +196,56 @@ $pages=array(
       'title'=>'Vegetarian/Vegan',
       'showtitle'=>true,
       'layout'=>'info',
-      'image' => 'img/ist2_11428565-what-should-i-cook-today.jpg',
-      'image' => 'img/ist2_14898404-fresh-rosemary-herb.jpg',
       'image' => $images[23],
       'parent' => '1',
       'include'=>'inc/vegetarian_and_vegan.inc',
       'sidebar_file' => 'gen/sidebar_1_7.inc',
+    ),
+    '1.8'=>array(
+      'title'=>'Cancer',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'image' => $images[18],
+      'parent' => '1',
+      'include'=>'inc/cancer.inc',
+      'sidebar_file' => 'gen/sidebar_1_8.inc',
+    ),
+    '1.9'=>array(
+      'title'=>'Coeliac disease',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'image' => $images[19],
+      'parent' => '1',
+      'include'=>'inc/coeliac.inc',
+      'sidebar_file' => 'gen/sidebar_1_9.inc',
+    ),
+    '1.10'=>array(
+      'title'=>'PCOS',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'image' => $images[34],
+      'parent' => '1',
+      'include'=>'inc/pcos.inc',
+      'sidebar_file' => 'gen/sidebar_1_10.inc',
+    ),
+    '1.11'=>array(
+      'title'=>'Nutrition for the elderly',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'image' => $images[38],
+      'parent' => '1',
+      'include'=>'inc/elderly.inc',
+      'sidebar_file' => 'gen/sidebar_1_11.inc',
+    ),
+    '1.12'=>array(
+      'title'=>'Lethargy and loss of vitality',
+      'showtitle'=>true,
+      'layout'=>'info',
+      'image' => $images[58],
+      'parent' => '1',
+      'include'=>'inc/lethargy_vitality.inc',
+      'sidebar_file' => 'gen/sidebar_1_12.inc',
     )
-
   ),
   '2'=>array(
     'title'=>'Your Organisation',
@@ -211,24 +253,7 @@ $pages=array(
     'layout'=>'info',
     'parent' => '/',
     'image' => 'img/ist2_14958241-young-businessman-with-his-team-in-the-background.jpg',
-    'include'=>'inc/your_organisation.inc',
-    'sidebar_file' => 'gen/sidebar_2.inc',
-    '2.0'=>array(
-      'title'=>'Catering',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[27],
-      'parent' => '2',
-      'sidebar_file' => 'gen/sidebar_2_0.inc',
-    ),
-    '2.1'=>array(
-      'title'=>'Restaurants',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[23],
-      'parent' => '2',
-      'sidebar_file' => 'gen/sidebar_2_1.inc',
-    )
+    'include'=>'inc/your_organisation.inc'
   ),
   '3'=>array(
     'title'=>'About Us',
@@ -236,25 +261,7 @@ $pages=array(
     'layout'=>'info',
     'parent' => '/',
     'image' => 'img/ist2_14900196-nuts.jpg',
-    'include'=>'inc/about.inc',
-    'sidebar_file' => 'gen/sidebar_3.inc',
-    '3.0'=>array(
-      'title'=>'Dieticians',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[47],
-      'parent' => '3',
-      'sidebar_file' => 'gen/sidebar_3_0.inc',
-    ),
-    '3.1'=>array(
-      'title'=>'Our Practice',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[16],
-      'parent' => '3',
-      'sidebar_file' => 'gen/sidebar_3_1.inc',
-    )
-
+    'include'=>'inc/about.inc'
   ),
   '4'=>array(
     'title'=>'Contact Us',
@@ -263,64 +270,7 @@ $pages=array(
     'parent' => '/',
     'image' => 'img/ist2_14900480-raspberries-and-flower-leaf-sprigs.jpg',
     'image' => $images[36],
-    'include'=>'inc/contact_us.inc',
-    'sidebar_file' => 'gen/sidebar_4.inc',
-    '4.0'=>array(
-      'title'=>'UK Wide',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[42],
-      'parent' => '4',
-      'sidebar_file' => 'gen/sidebar_4_0.inc',
-    ),
-    '4.1'=>array(
-      'title'=>'South East',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[43],
-      'parent' => '4',
-      'sidebar_file' => 'gen/sidebar_4_1.inc',
-    ),
-    '4.2'=>array(
-      'title'=>'South West',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[41],
-      'parent' => '4',
-      'sidebar_file' => 'gen/sidebar_4_2.inc',
-    )
-  ),
-  '5'=>array(
-    'title'=>'Other Services',
-    'showtitle'=>true,
-    'layout'=>'info',
-    'parent' => '/',
-    'image' => 'img/ist2_14898397-eggs.jpg',
-    'sidebar_file' => 'gen/sidebar_5.inc',
-    '5.0'=>array(
-      'title'=>'Medical Tests',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[44],
-      'parent' => '5',
-      'sidebar_file' => 'gen/sidebar_5_0.inc',
-    ),
-    '5.1'=>array(
-      'title'=>'Food Allergies',
-      'showtitle'=>true,
-      'layout'=>'info',
-      'image' => $images[32],
-      'parent' => '5',
-      'sidebar_file' => 'gen/sidebar_5_1.inc',
-    )
-  ),
-  '6'=>array(
-    'title'=>'Images',
-    'showtitle'=>true,
-    'layout'=>'wide',
-    'parent' => '/',
-    'include'=>'inc/image_list.inc',
-    'sidebar_file' => 'gen/sidebar_5.inc',
+    'include'=>'inc/contact_us.inc'
   )
 );
 

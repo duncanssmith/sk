@@ -41,13 +41,13 @@
     A total of 5 hours of one on one time with us
   </li>
   <li>
-    Unlimited phone/email contact between sessions
+    Unlimited phone or email contact between sessions
   </li>
 </ul>
 <h2>
   Nutrition and fitness packages
 </h2>
 <p>
-  We works alongside fitness specialists who specialise in helping you improve your physical well being. Combined intervention from both a nutrition and fitness professional can give you the edge on meeting your goals.
+  We can work alongside fitness specialists who specialise in helping you improve your physical well being. Combined intervention from both a nutrition and fitness professional can give you the edge on meeting your goals.
 </p>
 
