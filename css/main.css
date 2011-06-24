@@ -211,21 +211,28 @@ dd {
  *	of other elements. */
 table {
   margin-bottom: 1.4em;
-  width: 100%; }
+  width: 110%;
+  vertical-align: top;
+  border: 1px, silver;
+  font-size: 0.95em; }
 
 th {
   font-weight: bold; }
 
 thead th {
-  background: #c3d9ff; }
+  background: #a3d9cf;
+  color: white; }
 
 th, td, caption {
-  padding: 4px 10px 4px 5px; }
+  padding: 4px 10px 4px 5px;
+  vertical-align: top; }
 
 /*	You can zebra-stripe your tables in outdated browsers by adding 
  *	the class "even" to every other table row. */
+tbody tr:nth-child(odd) td, tbody tr.even td {
+  background: #ebebeb; }
 tbody tr:nth-child(even) td, tbody tr.even td {
-  background: #e5ecf9; }
+  background: #ececec; }
 
 tfoot {
   font-style: italic; }
@@ -291,7 +298,7 @@ caption {
  *   master.css
  *-------------------------------------------------------------- */
 body {
-  font-family: arial, helvetica neue, helvetica, verdana, tahoma, sans-serif;
+  font-family: verdana, arial, "helvetica neue", helvetica, tahoma, sans-serif;
   background: white url("../img/bg.png") top left repeat-x fixed;
   background: rgba(255, 255, 255, 0.9) url("../img/bg.png") top left repeat-x fixed;
   color: #1e1e1e;
@@ -407,7 +414,9 @@ table.index_data {
   background: #23af82; }
   #navigation ul {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    font-family: verdana, "helvetica neue", arial, helvetica, tahoma, sans-serif;
+    font-weight: bold; }
     #navigation ul li {
       list-style-type: none;
       display: inline; }
@@ -519,16 +528,16 @@ table.index_data {
     font-size: 112%;
     font-family: verdana; }
   #content #pagetitle {
-    color: #5a3232;
-    color: rgba(90, 50, 50, 0.9);
+    color: #dcb4b4;
+    color: rgba(220, 180, 180, 0.9);
     font-size: 9pt; }
     #content #pagetitle a {
       text-decoration: none;
-      color: #5a3232;
-      color: rgba(90, 50, 50, 0.9); }
+      color: #dcb4b4;
+      color: rgba(220, 180, 180, 0.9); }
       #content #pagetitle a:hover {
-        color: #ff4141;
-        color: rgba(255, 65, 65, 0.9); }
+        color: #c3a5a5;
+        color: rgba(195, 165, 165, 0.9); }
   #content ul.content_sub {
     clear: left;
     list-style-type: none;
@@ -627,8 +636,8 @@ body.wide h1 #pagetitle {
       border: 1px dotted red;
       margin: 0 85px 0 145px;
       padding: 0 0px;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8);}
+      background: #fafafa url("../img/img_left.jpg") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_left.jpg") repeat-x 0 50%; }
     #ribbon dl.ribbon_sub dt.ribbon_sub_center_left {
       float: left;
       width: 100px;
@@ -636,8 +645,8 @@ body.wide h1 #pagetitle {
       border: 1px dotted green;
       margin: 0 115px 0 115px;
       padding: 0 0px;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8);}
+      background: #fafafa url("../img/img_center.jpg") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_center.jpg") repeat-x 0 50%; }
     #ribbon dl.ribbon_sub dt.ribbon_sub_center_right {
       float: left;
       width: 100px;
@@ -645,8 +654,8 @@ body.wide h1 #pagetitle {
       border: 1px dotted green;
       margin: 0 115px 0 115px;
       padding: 0 0px;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8);}
+      background: #fafafa url("../img/img_extra.jpg") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_extra.jpg") repeat-x 0 50%; }
     #ribbon dl.ribbon_sub dt.ribbon_sub_right {
       float: left;
       width: 100px;
@@ -654,8 +663,8 @@ body.wide h1 #pagetitle {
       margin: 0 145px 0 85;
       padding: 0 0px;
       border: 1px dotted blue;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8);}
+      background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_right.jpg") repeat-x 0 50%; }
     #ribbon dl.ribbon_sub a {
       text-decoration: none;
       font-size: 7pt;
@@ -686,8 +695,8 @@ body.wide h1 #pagetitle {
       border: 0px dotted red;
       margin: 0 60px 0 140px;
       padding: 0 0px;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8);}
+      background: #fafafa url("../img/img_left.png") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_left.png") repeat-x 0 50%; }
     #ribbon ul.ribbon_sub li.ribbon_sub_center {
       float: left;
       width: 180px;
@@ -695,8 +704,8 @@ body.wide h1 #pagetitle {
       border: 0px dotted green;
       margin: 0 60px 0 60px;
       padding: 0 0px;
-      background: #fafafa;
-      background: rgba(250, 250, 250, 0.8);}
+      background: #fafafa url("../img/img_center.jpg") repeat-x 0 50%;
+      background: rgba(250, 250, 250, 0.8) url("../img/img_center.jpg") repeat-x 0 50%; }
     #ribbon ul.ribbon_sub li.ribbon_sub_right {
       float: left;
       width: 180px;
@@ -705,7 +714,7 @@ body.wide h1 #pagetitle {
       padding: 0 0;
       border: 0px dotted blue;
       background: #fafafa url("../img/img_right.png") repeat-x 0 50%;
-      background: rgba(250, 250, 250, 0.8);}
+      background: rgba(250, 250, 250, 0.8) url("../img/img_right.png") repeat-x 0 50%; }
     #ribbon ul.ribbon_sub a {
       text-decoration: none;
       font-size: 8pt;

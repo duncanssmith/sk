@@ -45,9 +45,9 @@
   :b: 250
   :a: 0.8
 :content_pagetitle_hover_color: 
-  :r: 250
-  :g: 250
-  :b: 250
+  :r: 195
+  :g: 165
+  :b: 165
   :a: 0.9
 :content_sub_background_color: 
   :r: 250
@@ -88,7 +88,7 @@
   :r: 55
   :g: 55
   :b: 55
-  :a: 0.9
+  :a: 0.0
 :content_sub_link_hover_color: 
   :r: 250
   :g: 250
@@ -100,9 +100,9 @@
   :b: 255
   :a: 0.9
 :content_pagetitle_color: 
-  :r: 250
-  :g: 250
-  :b: 250
+  :r: 220
+  :g: 180
+  :b: 180
   :a: 0.9
 :left_sidebar_link_background_hover_color: 
   :r: 200

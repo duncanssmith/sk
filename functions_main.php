@@ -683,7 +683,7 @@ function showpage($p,$cols){
   # echo "</pre>";
   #
   $pk = array_keys($p);
-
+/*
   if(!empty($p['title'])&&(!empty($p['showtitle']))){
 	  echo "<h1 id=\"pagetitle\">";
 			if($p['parent'] != '/'){
@@ -703,6 +703,8 @@ function showpage($p,$cols){
 		echo " ";
 		echo "</h1>\n";
   }
+*/
+  echo "<br />";
   #
   # Default xmlfile is books.xml but this
   # can be overridden by adding a new xml
