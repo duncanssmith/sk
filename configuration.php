@@ -25,13 +25,15 @@ $settings=array(
 
 $control=array(
   'generate_scripts'=>0,
-  'generate_menu'=>0,
-  'include_menu'=>0,
-  'generate_tabs'=>0,
+  'generate_menu'=>1,
+  'include_menu'=>1,
+  'generate_tabs'=>1,
   'include_tabs'=>1,
+  'generate_pages_xml'=>false,
+  'generate_products_xml'=>false,
   'generate_sidebar_links'=>0,
   'include_sidebar_links'=>1,
-	'show_right_sidebar_images'=>0,
+	'show_right_sidebar_images'=>1,
 	'body_styling'=>1
 );
 

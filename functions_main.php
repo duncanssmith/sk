@@ -716,17 +716,17 @@ function showpage($p,$cols){
     $xmlfile=$files['itemsxml'];
   }
 
-    $my_catalog = new Itemlist($xmlfile);
+#    $my_catalog = new Itemlist($xmlfile);
 
-    if(($_GET['pageid']))
-    {
-      //return info on one item
-        $my_catalog->show_item($_GET['pageid']);
-    }else{
-      //show list of items
-        $my_catalog->show_item($_GET['pageid']);
-        #  $my_catalog->show_list();
-    }
+#    if(($_GET['pageid']))
+#    {
+#      //return info on one item
+#        $my_catalog->show_item($_GET['pageid']);
+#    }else{
+#      //show list of items
+#        $my_catalog->show_item($_GET['pageid']);
+#        #  $my_catalog->show_list();
+#    }
 
     if(!empty($p['include'])){
       #echo "<div class=\"box2\">\n";
@@ -783,6 +783,7 @@ function getimages($p,$pageid,$d){
   global $pageid;
   global $foundy;
   global $pages;
+  $page="";
 
   if($debug['functions']){
     $thisFunction ="getimages( ".$p.", $pageid, $d)";

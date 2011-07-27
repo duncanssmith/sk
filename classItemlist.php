@@ -25,22 +25,7 @@ class Itemlist{
 		// 1 = single field, 2 = array field, 3 = record container
 
 	$this->field_type = array(
-		'item' => 3,
-		'title' => 1,
-		'artist' => 1,
-		'date' => 1,
 		'pageid' => 1,
-		'media' => 1,
-		'dimensions' => 1,
-		'units' => 2,
-		'width' => 2,
-		'height' => 2,
-		'subtitle' => 1,
-		#'keyname' => 1,
-		#'id' => 1,
-		'images' => 2,
-		'thumbnail' => 1,
-		'image' => 1
 	);
 
 	$this->ends_record = array('item' => true);
