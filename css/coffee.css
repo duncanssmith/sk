@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+ *   reset.css
+ *   * Resets default browser CSS.
+ *-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* This helps to make newer HTML5 elements behave like DIVs in older browers */
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+/* Line-height should always be unitless! */
+body {
+  line-height: 1.5;
+  background: white; }
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+:focus {
+  outline: 0; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+/* float:none prevents the span-x classes from breaking table-cell display */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+/* Remove annoying border on linked images. */
+a img {
+  border: none; }
+
+body {
+  font-size: 100%;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background: #f3f2e8;
+  color: #51463d; }
+  body ul {
+    list-style: none; }
+  body img, body object {
+    max-width: 100%; }
+  body p.photo {
+    border: 15px solid #e2e1d4;
+    background: #e2e1d4;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em; }
+  body #wrap {
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    max-width: 62.5em; }
+  body .main {
+    float: left;
+    width: 73%; }
+    body .main h2 {
+      font: normal 1.25em Georgia, serif; }
+    body .main .secondary {
+      float: right;
+      width: 25%; }
+      body .main .secondary .mod_alt ul.press li blockquote p {
+        font: normal 0.8em;
+        color: red; }
+    body .main .entry h3 {
+      font: normal 1.438em Georgia, serif;
+      color: #ab6557; }
+    body .main .entry ul.entry_meta {
+      float: left;
+      width: 30.822%; }
+    body .main .entry .entry_body {
+      float: right;
+      width: 63.014%;
+      font-size: 0.813em;
+      line-height: 1.6; }
+    body .main span.amp {
+      font: normal 1.2em Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+      font-style: italic;
+      color: #766557; }

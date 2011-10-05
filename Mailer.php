@@ -3,10 +3,10 @@
 class Mailer
 {
 
-  public $to;
-  public $from;
-  public $subject;
-  public $body;
+  protected $to;
+  protected $from;
+  protected $subject;
+  protected $body;
    
   function __construct($to,$from,$subject,$body){
     $this->to = $to;

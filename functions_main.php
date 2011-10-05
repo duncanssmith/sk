@@ -1,5 +1,224 @@
 <?php
 
+
+function validate_form(){
+  global $debug;
+  global $errors;
+
+
+  if($debug['functions']){
+    $thisFunction ="validate_form()";
+    echo_functionname($thisFunction);
+  }
+
+
+  if(isset($_SESSION['enquiry_submitted'])&&
+     ($_SESSION['enquiry_submitted'])){
+    $errors['submitted']="You have already submitted the form";
+#    return $errors;
+  }
+  
+  #echo "<p class=\"mandatory_form_field_error\">\n";
+  if(!strlen($_POST['enquiry']['lname'])){
+    $errors['lname']="please enter your last name\n";
+  #  echo "<br />\n";
+  }
+  if(!strlen($_POST['enquiry']['fname'])){
+    $errors['fname']="please enter your first name or initial\n";
+    #echo "<br />\n";
+  }
+  if(!strlen($_POST['enquiry']['email'])){
+    $errors['email']="please enter your email address\n";
+  #  echo "<br />\n";
+  }elseif(!preg_match('/^[^@]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$/', $_POST['enquiry']['email'])){
+    $errors['email_format']="email address entered is invalid, please re-enter\n";
+  }
+  if(!strlen($_POST['enquiry']['enquiry_text'])){
+    $errors['enquiry_text']="please enter your enquiry\n";
+  #  echo "<br />\n";
+  }
+  #echo "</p>";
+
+  if(sizeof($errors) != 0){
+    $errors['main']="Please note the form is incomplete and has not been submitted. Please check the details highlighted below, and click the \"submit\" button again:";
+  }
+  return $errors;
+}
+
+
+function save_uploaded_image_file(){
+  global $debug;
+  global $mail;
+  global $fileUploadNewPathBase;
+  global $fileUpload;
+
+  $ret = false;
+
+  if($debug['functions']){
+    $thisFunction ="save_uploaded_image_file()";
+    echo_functionname($thisFunction);
+  }
+
+  if(isset($_FILES['image_file'])&&
+    ($_FILES['image_file']['error'] == UPLOAD_ERR_OK)){
+    if($debug['files']){
+      var_dump($_FILES['image_file']);
+    }
+    if(($_POST['enquiry']['fname'])&&
+       ($_POST['enquiry']['lname'])){
+      $cat_name = $_POST['enquiry']['fname'].$_POST['enquiry']['lname']."_";
+    }
+    # Make any uploaded file have a name related to the submitter!!
+    $newPath = $fileUploadNewPathBase.basename($cat_name.$_FILES['image_file']['name']);
+    $fileUpload=basename($cat_name.$_FILES['image_file']['name']);
+
+    if($ret = move_uploaded_file($_FILES['image_file']['tmp_name'], $newPath)){
+      printf("<br />File saved in %s<br />Retval: [%b]\n<br />", $newPath, $ret);
+    }else{
+      printf("<br />Couldn't move file from %s to %s!!<br />Retval: [%b]\n<br />", $_FILES['image_file']['tmp_name'], $newPath, $ret);
+    }
+  }else{
+    #print "No valid file uploaded \n<br />";
+  }
+
+
+  return $ret;
+}
+
+function build_email_response(){
+  global $debug;
+  global $mailRecipients;
+  $image_attachment=false;
+  global $fileUpload;
+  require 'Mailer.php';
+
+  if($debug['functions']){
+    $thisFunction ="build_email_response()";
+    echo_functionname($thisFunction);
+  }
+#mail($mailto, $subject, $body, "From: $mailfrom");
+
+				// RESPONSE TO USER
+  		  $mailRecipients['user']['to']=$_POST['enquiry']['email'];
+  		  $mailRecipients['user']['from']="noreply@southeastnutritionandhealth.co.uk";
+				$mailRecipients['user']['subject']="South East Nutrition and Health: Your enquiry has been received. Thank you.";
+				$mailRecipients['user']['body']=sprintf("Dear %s %s %s,\n\nThank you for your enquiry.\n\nYou wrote:\n\n\"%s\"\n\nWe will contact you shortly.\n\nSouth East Nutrition and Health\n",
+				  $_POST['enquiry']['title'], 
+				  $_POST['enquiry']['fname'], 
+				  $_POST['enquiry']['lname'],
+				  $_POST['enquiry']['enquiry_text']);
+
+        $mail_to_user=new Mailer(
+          $mailRecipients['user']['to'],
+          $mailRecipients['user']['from'],
+          $mailRecipients['user']['subject'],
+          $mailRecipients['user']['body']);
+
+  if($debug['mail']){
+        print "Mailtest: USER: ".$mail_to_user->getMailDetails()."\n";
+        print $mail_to_user->sendMailNow("USER")."\n<br/>";
+  }else{
+        $user_mail_retval = $mail_to_user->sendMailNow("USER")."\n<br/>";
+  }
+
+				// RESPONSE TO OWNER
+  		  $mailRecipients['owner']['to'];
+  		  $mailRecipients['owner']['from']="noreply@southeastnutritionandhealth.co.uk";
+				$mailRecipients['owner']['subject']="South East Nutrition and Health: Enquiry received";
+				$mailRecipients['owner']['body']=sprintf("%s %s %s\n%s\nEnquiry:\n\n%s\n\nSouth East Nutrition and Health\n",
+				  $_POST['enquiry']['title'], 
+				  $_POST['enquiry']['fname'], 
+				  $_POST['enquiry']['lname'],
+				  $_POST['enquiry']['email'],
+				  $_POST['enquiry']['enquiry_text']);
+
+        $mail_to_owner=new Mailer(
+          $mailRecipients['owner']['to'],
+          $mailRecipients['owner']['from'],
+          $mailRecipients['owner']['subject'],
+          $mailRecipients['owner']['body']);
+
+  if($debug['mail']){
+        print "Mailtest: OWNER: ".$mail_to_owner->getMailDetails()."\n<br/>";
+        #print $mail_to_owner->sendMailNow("OWNER")."\n<br/>";
+  }else{
+        $owner_mail_retval = $mail_to_owner->sendMailNow("OWNER")."\n<br/>";
+  }
+
+				// RESPONSE TO BUSINESS OWNER
+        // Was there an uploaded image file?
+        if(isset($_FILES['image_file'])){
+          $image_attachment = true;
+          // attach image here
+        }
+
+				// RESPONSE TO TESTER
+  		  $mailRecipients['test']['to'];
+  		  $mailRecipients['test']['from']="noreply@southeastnutritionandhealth.co.uk";
+				$mailRecipients['test']['subject']="South East Nutrition and Health Enquiry";
+				$mailRecipients['test']['body']=sprintf("title: %s\nfname: %s\nlname: %s\nemail: %s\nenquiry_text: %s\n\nwww.southeastnutritionandhealth.co.uk\n",
+				  $_POST['enquiry']['title'], 
+				  $_POST['enquiry']['fname'], 
+				  $_POST['enquiry']['lname'],
+				  $_POST['enquiry']['email'],
+				  $_POST['enquiry']['enquiry_text']);
+
+        $mail_to_tester=new Mailer(
+          $mailRecipients['test']['to'],
+          $mailRecipients['test']['from'],
+          $mailRecipients['test']['subject'],
+          $mailRecipients['test']['body']);
+
+   if($debug['mail']){
+        print "Mailtest: TESTER: ".$mail_to_tester->getMailDetails()."\n<br/>";
+        print $mail_to_tester->sendMailNow("TESTER");
+   }else{
+        $tester_mail_retval = $mail_to_tester->sendMailNow("TESTER");
+   }
+   
+  return true;
+}
+
+function xml2array($xml) {
+  global $debug;
+
+  if($debug['functions']){
+    $thisFunction ="xml2array(".$xml.")";
+    echo_functionname($thisFunction);
+  }
+
+        $xmlary = array();
+               
+        $reels = '/<(\w+)\s*([^\/>]*)\s*(?:\/>|>(.*)<\/\s*\\1\s*>)/s';
+        $reattrs = '/(\w+)=(?:"|\')([^"\']*)(:?"|\')/';
+
+        preg_match_all($reels, $xml, $elements);
+
+        foreach ($elements[1] as $ie => $xx) {
+                $xmlary[$ie]["name"] = $elements[1][$ie];
+               
+                if ($attributes = trim($elements[2][$ie])) {
+                        preg_match_all($reattrs, $attributes, $att);
+                        foreach ($att[1] as $ia => $xx)
+                                $xmlary[$ie]["attributes"][$att[1][$ia]] = $att[2][$ia];
+                }
+
+                $cdend = strpos($elements[3][$ie], "<");
+                if ($cdend > 0) {
+                        $xmlary[$ie]["text"] = substr($elements[3][$ie], 0, $cdend - 1);
+                }
+
+                if (preg_match($reels, $elements[3][$ie]))
+                        $xmlary[$ie]["elements"] = xml2array($elements[3][$ie]);
+                else if ($elements[3][$ie]) {
+                        $xmlary[$ie]["text"] = $elements[3][$ie];
+                }
+        }
+
+        return $xmlary;
+}
+
+
 function generate_tabs($p,$f){
 
   global $debug;
@@ -710,23 +929,24 @@ function showpage($p,$cols){
   # can be overridden by adding a new xml
   # filename to any page
   #
+
   if(!empty($p['xmlfile'])){
     $xmlfile=$p['xmlfile'];
   }else{
     $xmlfile=$files['itemsxml'];
   }
 
-#    $my_catalog = new Itemlist($xmlfile);
+    $my_catalog = new Itemlist($xmlfile);
 
-#    if(($_GET['pageid']))
-#    {
-#      //return info on one item
-#        $my_catalog->show_item($_GET['pageid']);
-#    }else{
-#      //show list of items
-#        $my_catalog->show_item($_GET['pageid']);
-#        #  $my_catalog->show_list();
-#    }
+    if(isset($_GET['pageid']))
+    {
+      //return info on one item
+        $my_catalog->show_item($_GET['pageid']);
+    }else{
+      //show list of items
+        $my_catalog->show_item($_GET['pageid']);
+        #  $my_catalog->show_list();
+    }
 
     if(!empty($p['include'])){
       #echo "<div class=\"box2\">\n";
@@ -757,7 +977,7 @@ $static_content_files=array(
   return true;
 }
 
-function showimages($p,$cols){
+function showimages($p,$cols,$width){
   
   global $debug;
   global $settings;
@@ -770,10 +990,16 @@ function showimages($p,$cols){
   }
 
 	$pk = array_keys($p);
-	if($p['image']){
-					printf("<a href=\"\"><img src=\"%s\" alt=\"\"/></a>\n", $p['image'], "HELLO"); 
+	if(isset($p['image'])){
+	  printf("<img src=\"img/iStockPhoto/%s\" alt=\"%s\" width=\"%d\" oncontextmenu=\"return false;\" />\n", 
+      $p['image'], 
+      $p['image_alt_text'], 
+      $width
+    ); 
+    if(isset($p['image_caption'])){
+      printf("<p class=\"small\">%s</p>", $p['image_caption']);
+    }
 	}
-
   return true;
 }
 
@@ -815,7 +1041,12 @@ function getimages($p,$pageid,$d){
 
           $foundy=TRUE;
 
-          showimages($p[$pk[$i]],2);
+          if(isset($p[$pk[$i]]['image_width'])){
+            showimages($p[$pk[$i]],2, $p[$pk[$i]]['image_width']);
+          }else{
+            showimages($p[$pk[$i]],2, 360);
+          }
+
 
           $page=$p[$pk[$i]];
           break;
@@ -906,4 +1137,5 @@ function showlayout($p,$cols){
 
   return true;
 }
+
 

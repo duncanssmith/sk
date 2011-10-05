@@ -1,4 +1,4 @@
-// generated file gen/menu.inc - 2011-07-27 16:03:09 - do not edit
+// generated file gen/menu.inc - 2011-07-27 17:46:22 - do not edit
   Menu1=new Array("Our Service", "index.php?pageid=0","", 4,20,140)
   Menu1_1=new Array("Overview of Dietetics", "index.php?pageid=0.0","", 0,20,140)
   Menu1_2=new Array("Consultation", "index.php?pageid=0.1","", 0,20,140)
@@ -19,9 +19,9 @@
   Menu2_8=new Array("Vegetarian/Vegan", "index.php?pageid=1.7","", 0,20,140)
   Menu2_9=new Array("Cancer", "index.php?pageid=1.8","", 0,20,140)
   Menu3=new Array("Your Organisation", "index.php?pageid=2","", 0,20,140)
-  Menu4=new Array("About Us", "index.php?pageid=3","", 0,20,140)
-  Menu5=new Array("Contact Us", "index.php?pageid=4","", 2,20,140)
-  Menu5_1=new Array("Query", "index.php?pageid=4.0","", 0,20,140)
+  Menu4=new Array("About", "index.php?pageid=3","", 0,20,140)
+  Menu5=new Array("Contact", "index.php?pageid=4","", 2,20,140)
+  Menu5_1=new Array("", "index.php?pageid=4.0","", 0,20,140)
   Menu5_2=new Array("Thank you", "index.php?pageid=4.1","", 0,20,140)
 
 var NoOffFirstLineMenus=5

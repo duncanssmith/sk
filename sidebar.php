@@ -21,4 +21,7 @@ if($control['include_sidebar_links']){
   $str2 = sprintf("gen/sidebar%s.inc", $str);
   include $str2;
 }
+
+include 'inc/bonafides.inc';
+
 ?>

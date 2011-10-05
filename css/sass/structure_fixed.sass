@@ -10,7 +10,7 @@
 #clearer 
   clear: left 
   line-height: 0
-  height: 0
+  height: 1em
 
 #container
   margin: 0 auto
@@ -57,8 +57,9 @@
   ul
     margin: 0
     padding: 0
-    font-family: verdana,'helvetica neue', arial, helvetica, tahoma, sans-serif
-    font-weight: bold
+    font-family: arial, helvetica, tahoma, verdana, sans-serif
+    font-weight: normal
+    font-size: 115%
     li
       list-style-type: none
       display: inline
@@ -285,8 +286,6 @@ body.wide
       border: 1px dotted red
       margin: 0 85px 0 145px
       padding: 0 0px
-      background: $ribbon_sub_left_background_color_IE url("../img/img_left.jpg") repeat-x 0 50%
-      background: $ribbon_sub_left_background_color url("../img/img_left.jpg") repeat-x 0 50%
 
     dt.ribbon_sub_center_left
       float: left
@@ -295,8 +294,6 @@ body.wide
       border: 1px dotted green
       margin: 0 115px 0 115px
       padding: 0 0px
-      background: $ribbon_sub_center_left_background_color_IE url("../img/img_center.jpg") repeat-x 0 50%
-      background: $ribbon_sub_center_left_background_color url("../img/img_center.jpg") repeat-x 0 50%
     dt.ribbon_sub_center_right
       float: left
       width: 100px
@@ -304,8 +301,6 @@ body.wide
       border: 1px dotted green
       margin: 0 115px 0 115px
       padding: 0 0px
-      background: $ribbon_sub_center_right_background_color_IE url("../img/img_extra.jpg") repeat-x 0 50%
-      background: $ribbon_sub_center_right_background_color url("../img/img_extra.jpg") repeat-x 0 50%
     dt.ribbon_sub_right
       float: left
       width: 100px
@@ -313,8 +308,6 @@ body.wide
       margin: 0 145px 0 85
       padding: 0 0px
       border: 1px dotted blue
-      background: $ribbon_sub_right_background_color_IE url("../img/img_right.jpg") repeat-x 0 50%
-      background: $ribbon_sub_right_background_color url("../img/img_right.jpg") repeat-x 0 50%
 
     a
       text-decoration: none
@@ -334,7 +327,7 @@ body.wide
     clear: left
     list-style-type: none
     width: 1100px 
-    padding: 10px 0 5px 0
+    padding: 10px 0 15px 0
     border: 1px dotted silver
     border-width: 1px 0 0 0 
     margin: 5px 0px 5px 0px
@@ -342,32 +335,27 @@ body.wide
     background: $ribbon_sub_background_color
     li.ribbon_sub_left
       float: left
-      width: 180px
-      height: 100px
+      width: 240px
+      height: 120px
       border: 0px dotted red
-      margin: 0 60px 0 140px
+      margin: 0 70px 0 40px
       padding: 0 0px
-      background: $ribbon_sub_left_background_color_IE url("../img/img_left.png") repeat-x 0 50%
-      background: $ribbon_sub_left_background_color url("../img/img_left.png") repeat-x 0 50%
 
     li.ribbon_sub_center
       float: left
-      width: 180px
-      height: 100px
+      width: 240px
+      height: 120px
       border: 0px dotted green
-      margin: 0 60px 0 60px
+      margin: 0 70px 0 70px
       padding: 0 0px
-      background: $ribbon_sub_center_background_color_IE url("../img/img_center.jpg") repeat-x 0 50%
-      background: $ribbon_sub_center_background_color url("../img/img_center.jpg") repeat-x 0 50%
+
     li.ribbon_sub_right
       float: left
-      width: 180px
-      height: 100px
-      margin: 0 100px 0 60px
+      width: 240px
+      height: 120px
+      margin: 0 20px 0 70px
       padding: 0 0
       border: 0px dotted blue
-      background: $ribbon_sub_right_background_color_IE url("../img/img_right.png") repeat-x 0 50%
-      background: $ribbon_sub_right_background_color url("../img/img_right.png") repeat-x 0 50%
 
     a
       text-decoration: none

@@ -8,7 +8,7 @@ date_default_timezone_set('GMT');
 $now=date("l d F Y");
 $year=date("Y");
 $timestamp=date('Y-m-d H:i:s');
-$sitename="Duncan Smith";
+$sitename="South East Nutrition and Health";
 
 $found=FALSE;
 $foundx=FALSE;
@@ -36,6 +36,33 @@ $var=1;
 $sidebar_links=array();
 # -----------------------
 #
+
+$errors=array();
+
+  $mailRecipients=array(
+    'owner' => array(
+      'to'=>"seamuskirk@yahoo.com",
+#      'to'=>"seamus.kirk@southeastnutritionandhealth.co.uk",
+      'from'=>"info@southeastnutritionandhealth.co.uk.co.uk",
+      'subject'=>"",
+      'body'=>""
+    ),
+    'user'=> array(
+      'to'=>"",
+      'from'=>"noreply@southeastnutritionandhealth.co.uk.co.uk",
+      'subject'=>"",
+      'body'=>""
+    ),
+    'test'=> array(
+      'to'=>"duncanssmith@gmail.com",
+      'from'=>"info@southeastnutrutionandhealth.co.uk",
+      'subject'=>"",
+      'body'=>""
+    )
+  );
+
+
+
 $files=array(
   'itemsxml'=>"xml/nutrition.xml",
   'itemsxml2'=>"xml/nutrition.xml",
@@ -67,31 +94,29 @@ $files=array(
 $pages=array(
   'title'=>'South East Nutrition and Health',
   'layout'=>'info',
-  'showtitle'=>true,
+  'show'=>true,
   'sidebar_file' => 'gen/sidebar.inc',
   '0'=>array(
     'title'=>'Our Service',
-    'showtitle'=>true,
+    'show'=>true,
     'parent' => '/',
     'include'=>'inc/our_service.inc',
     'layout'=>'info',
-    'image' => $images[42],
+    'image' => $images[40],
     'xmlfile'=>'xml/nutrition.xml',
     'sidebar_file' => 'gen/sidebar_0.inc',
     '0.0'=>array(
       'title'=>'Overview of Dietetics',
-      'showtitle'=>true,
+      'show'=>true,
       'parent' => '0',
       'layout'=>'info',
-      'image' => $images[15],
-      'include'=>'inc/consultation.inc',
-      'include'=>'inc/reasons.inc',
+      'image' => $images[38],
       'include'=>'inc/overview_of_dietetics.inc',
       'sidebar_file' => 'gen/sidebar_0_0.inc'
     ),
     '0.1'=>array(
       'title'=>'Consultation',
-      'showtitle'=>true,
+      'show'=>true,
       'parent' => '0',
       'layout'=>'info',
       'image' => $images[53],
@@ -100,16 +125,16 @@ $pages=array(
     ),
     '0.2'=>array(
       'title'=>'Other Services',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '0',
-      'image' => 'img/ist2_14898397-eggs.jpg',
+      'image' => $images[20],
       'include'=>'inc/other_services.inc',
       'sidebar_file' => 'gen/sidebar_0_2.inc'
     ),
     '0.3'=>array(
       'title'=>'Packages',
-      'showtitle'=>true,
+      'show'=>true,
       'parent' => '0',
       'layout'=>'info',
       'image' => $images[17],
@@ -119,73 +144,70 @@ $pages=array(
   ),
   '1'=>array(
     'title'=>'Your Health',
-    'showtitle'=>true,
+    'show'=>true,
     'layout'=>'info',
     'parent' => '/',
-    'image' => $images[55],
+    'image' => $images[38],
     'xmlfile'=>'xml/nutrition.xml',
     'include'=>'inc/your_health.inc',
     'sidebar_file' => 'gen/sidebar_1.inc',
     '1.0'=>array(
       'title'=>'Diabetes',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '1',
-      'image' => 'img/ist2_4718836-what-do-you-eat.jpg',
+      'image' => $images[36],
       'include'=>'inc/type2_diabetes.inc',
       'sidebar_file' => 'gen/sidebar_1_0.inc',
     ),
     '1.1'=>array(
       'title'=>'Heart Health',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '1',
-      'image' => 'img/ist2_4441714-human-heart.jpg',
+      'image' => $images[35], 
       'include'=>'inc/heart_health.inc',
       'sidebar_file' => 'gen/sidebar_1_1.inc',
     ),
     '1.2'=>array(
       'title'=>'Irritable Bowel Syndrome',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '1',
-      'image' => 'img/ist2_9148441-digestive-system.jpg',
-      'image' => 'img/ist2_9148464-digestive-system.jpg',
+      'image' => $images[45], 
       'include'=>'inc/ibs.inc',
       'sidebar_file' => 'gen/sidebar_1_2.inc',
     ),
     '1.3'=>array(
       'title'=>'Mineral and Vitamin Deficiency',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '1',
-      'image' => 'img/ist2_14900989-pomegranate.jpg',
       'image' => $images[37],
       'include'=>'inc/mineral_and_vitamin_deficiency.inc',
       'sidebar_file' => 'gen/sidebar_1_3.inc',
     ),
     '1.4'=>array(
       'title'=>'Food allergy or intolerance',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '1',
-      'image' => 'img/ist2_6167844-healthy-eating.jpg',
-      'image' => 'img/ist2_9148441-digestive-system.jpg',
+      'image' => $images[44], 
       'include'=>'inc/food_allergy_and_intolerance.inc',
       'sidebar_file' => 'gen/sidebar_1_4.inc',
     ),
     '1.5'=>array(
       'title'=>'Weight loss',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '1',
-      'image' => 'img/ist2_1770751-weighing-in.jpg',
+      'image' => $images[31], 
       'include'=>'inc/weight_loss.inc',
       'sidebar_file' => 'gen/sidebar_1_5.inc',
     ),
     '1.6'=>array(
       'title'=>'Healthy eating for families',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'parent' => '1',
       'image' => $images[30],
@@ -194,7 +216,7 @@ $pages=array(
     ),
     '1.7'=>array(
       'title'=>'Vegetarian/Vegan',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'image' => $images[23],
       'parent' => '1',
@@ -203,7 +225,7 @@ $pages=array(
     ),
     '1.8'=>array(
       'title'=>'Cancer',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'image' => $images[38],
       'parent' => '1',
@@ -212,25 +234,25 @@ $pages=array(
     ),
     '1.9'=>array(
       'title'=>'Coeliac disease',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
-      'image' => $images[59],
+      'image' => $images[49],
       'parent' => '1',
       'include'=>'inc/coeliac.inc',
       'sidebar_file' => 'gen/sidebar_1_9.inc',
     ),
     '1.10'=>array(
       'title'=>'PCOS',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
-      'image' => $images[65],
+      'image' => $images[41],
       'parent' => '1',
       'include'=>'inc/pcos.inc',
       'sidebar_file' => 'gen/sidebar_1_10.inc',
     ),
     '1.11'=>array(
       'title'=>'Nutrition for the elderly',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
       'image' => $images[38],
       'parent' => '1',
@@ -239,9 +261,9 @@ $pages=array(
     ),
     '1.12'=>array(
       'title'=>'Lethargy and loss of vitality',
-      'showtitle'=>true,
+      'show'=>true,
       'layout'=>'info',
-      'image' => $images[58],
+      'image' => $images[53],
       'parent' => '1',
       'include'=>'inc/lethargy_vitality.inc',
       'sidebar_file' => 'gen/sidebar_1_12.inc',
@@ -249,59 +271,59 @@ $pages=array(
   ),
   '2'=>array(
     'title'=>'Your Organisation',
-    'showtitle'=>true,
+    'show'=>true,
     'layout'=>'info',
     'parent' => '/',
-    'image' => 'img/ist2_14958241-young-businessman-with-his-team-in-the-background.jpg',
+    'image' => $images[29], 
     'sidebar_file' => 'gen/sidebar_2.inc',
     'include'=>'inc/your_organisation.inc'
   ),
   '3'=>array(
-    'title'=>'About Us',
-    'showtitle'=>true,
+    'title'=>'About',
+    'show'=>true,
     'layout'=>'info',
     'parent' => '/',
-    'image' => 'img/ist2_14900196-nuts.jpg',
+    'image' =>  $images[28],
     'sidebar_file' => 'gen/sidebar_3.inc',
     'include'=>'inc/about.inc'
   ),
   '4'=>array(
-    'title'=>'Contact Us',
-    'showtitle'=>true,
+    'title'=>'Contact',
+    'show'=>true,
     'layout'=>'info',
     'parent' => '/',
-    'image' => 'img/ist2_14900480-raspberries-and-flower-leaf-sprigs.jpg',
-    'image' => $images[36],
+    'image' => $images[26],
     'sidebar_file' => 'gen/sidebar_4.inc',
-    'include'=>'inc/contact_us.inc',
-    '4.0'=>array(
-      'title'=>'Query',
-      'showtitle'=>true,
-      'parent' => '0',
-      'layout'=>'info',
-      'image' => $images[25],
-      'include'=>'inc/queryform.inc',
-      'sidebar_file' => 'gen/sidebar_0_0.inc'
-    ),
-    '4.1'=>array(
-      'title'=>'Thank you',
-      'showtitle'=>true,
-      'parent' => '0',
-      'layout'=>'info',
-      'image' => $images[26],
-      'include'=>'inc/queryresponse.inc',
-      'sidebar_file' => 'gen/sidebar_0_0.inc'
-    )
-  )
+    'include'=>'inc/contact_us.inc'
+   ),
+   '5'=>array(
+     'title'=>'Enquiry form',
+     'show'=>true,
+     'parent' => '/',
+     'layout'=>'info',
+     'image' => $images[21],
+     'include'=>'enquiry_form.php',
+     'sidebar_file' => 'gen/sidebar_5.inc',
+     '5.0'=>array(
+       'title'=>'',
+       'show'=>false,
+       'parent' => '5',
+       'layout'=>'info',
+       'image' => $images[23],
+       'include'=>'process_enquiry.php',
+       'sidebar_file' => 'gen/sidebar_5.inc'
+     )
+   )
 );
 
 $itingline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">&copy; iTing design ".$year." all rights reserved</a>\n";
-$sknutritionline="\n<a href=\"mailto:senh@gmail.com\" class=\"capt\">&copy; South East Nutrition & Health ".$year." all rights reserved</a>\n";
+$sknutritionemailline="\n<a href=\"mailto:senh@gmail.com\" class=\"capt\">&copy; South East Nutrition & Health ".$year." all rights reserved</a>\n";
+$sknutritionline="\n<p class=\"capt\">&copy; South East Nutrition & Health ".$year." all rights reserved</p>\n";
 /* images */
 $logo="images/logo.gif";
 $logoBlank="images/blank_logo.gif";
-$logoline="<a href=\"index.php\"><img src=\"img/senh_logo.png\" alt=\"SK Nutrition\"/></a>";
-$phonelogoline="<a href=\"index.php\"><img src=\"img/phone_logo.png\" alt=\"SK Nutrition\"/></a>";
+$logoline="<a href=\"index.php\"><img src=\"img/senh_logo.png\" alt=\"South East Nutrition and Health\"/></a>";
+$phonelogoline="<a href=\"index.php\"><img src=\"img/phone_logo.png\" alt=\"South East Nutrition and Health\"/></a>";
 $nologoline="";
 
 /* alt text */

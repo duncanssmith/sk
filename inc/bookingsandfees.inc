@@ -27,11 +27,11 @@
 </p>
 <p>
   We are registered with the
-  <a href='www.hpcheck.org' name='www.hpcheck.org'>
+  <a target="_blank" href='www.hpcheck.org' name='www.hpcheck.org'>
     Health Professions Council (www.hpcheck.org)
   </a>
   and the
-  <a href='www.bda.uk.com' name='www.bda.uk.com'>
+  <a target="_blank" href='www.bda.uk.com' name='www.bda.uk.com'>
     British Dietetic Association (www.bda.uk.com)
   </a>
 </p>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="css/t.css" type="text/css"/>
+		<title>t</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+
+      $(document).ready(function() {
+       $("#show").click(function() {
+         $("#flip").toggle();
+        }) 
+      })
+
+      $(document).ready(function() {
+       $("#hide").click(function() {
+         $("#flop").toggle();
+        }) 
+      })
+
+    </script>
+	</head>
+
+	<body>
+  <div class="left">
+    <p id="flop">
+      <a href="#" id="show">Hello</a>
+    </p>
+  </div>
+  
+  <div class="right">
+    <p id="flip">
+      <a href="#" id="hide">Goodbye</a>
+    </p>
+
+  </div>
+  
+	 
+  </body>
+
+</html>
+

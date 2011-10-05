@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+.anchorelement { 
+	background-image:url('http://upload.wikimedia.org/wikipedia/commons/9/97/Aiga_leftarrow.gif');
+	width: 200px;
+	height: 200px;
+	display:block;
+ }
+
+.downarrow{
+	background-image:url('http://t1.gstatic.com/images?q=tbn:ANd9GcQ16zUjGkq7YGc0PNQ14YAQVYiSU166KEFrR-rwpnoV0ivmK-JkhQ');	
+}
+
+
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<script>
+$(document).ready(function() {
+$("#link1").click(function () {
+	if ($('#link1').is('.downarrow')) {
+		$('#link1').removeClass('downarrow');
+		return false;
+	} else {
+		$('#link1').addClass('downarrow');
+		return false;
+	}
+	
+});
+});
+
+</script>
+<body>
+  
+
+<a id="link1" class="anchorelement" href="#">test</a>
+
+
+
+</body>
+</html>
+

@@ -12,7 +12,7 @@
   }
   echo "</pre>";
 */
-include "body_style.php";
+#include "body_style.php";
 
 ?>
 
@@ -80,13 +80,13 @@ include "body_style.php";
 			<div id="ribbon">
         <ul class="ribbon_sub group">
           <li class="ribbon_sub_left">
-            <a href="?pageid=1">Your Health</a>
+            <a href="index.php?pageid=1"><img src="img/blank_your_health.png" alt="Your Health" width="240" height="120" /></a>
           </li>
           <li class="ribbon_sub_center">
-            <a href="?pageid=2">Your Organisation</a>
+            <a href="index.php?pageid=2"><img src="<?php echo "img/blank_your_organisation.png";?>" alt="Your Organisation" width="240" height="120" /></a>
           </li>
           <li class="ribbon_sub_right">
-            <a href="?pageid=1.5">Weight Loss</a>
+            <a href="index.php?pageid=1.5"><img src="<?php echo "img/blank_weight_loss.png";?>" alt="Weight Loss" width="240" height="120"  /></a>
           </li>
 				</ul>
 
@@ -96,7 +96,6 @@ include "body_style.php";
         <ul class="footboxes group">
           <li class="footbox_left"> 
             <?php  
-          echo "Lorem ipsum hac haec hoc ipso facto da da da";
               echo "<br />\n";
               echo $sknutritionline; 
             ?> 

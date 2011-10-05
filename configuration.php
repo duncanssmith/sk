@@ -1,4 +1,5 @@
 <?php
+
 include_once "debug.php";
 
 $settings=array(
@@ -25,9 +26,9 @@ $settings=array(
 
 $control=array(
   'generate_scripts'=>0,
-  'generate_menu'=>1,
-  'include_menu'=>1,
-  'generate_tabs'=>1,
+  'generate_menu'=>0,
+  'include_menu'=>0,
+  'generate_tabs'=>0,
   'include_tabs'=>1,
   'generate_pages_xml'=>false,
   'generate_products_xml'=>false,
@@ -37,30 +38,4 @@ $control=array(
 	'body_styling'=>1
 );
 
-$scale=array(
-  'itemw'=>6,
-  'itemh'=>6,
-  'listw'=>3,
-  'listh'=>3,
-  'adjust'=>array(
-    '0'=>2,
-    '0.0'=>4.0,
-    '0.1'=>1,
-    '0.2'=>2.5,
-    '0.3'=>1.0,
-    '0.4'=>2.00,
-    '0.5'=>2.45
-  ),
-  'columns'=>array(
-    '0'=>3,
-    '0.0'=>2,
-    '0.1'=>3,
-    '0.2'=>4,
-    '0.3'=>2,
-    '0.4'=>5,
-    '0.5'=>5,
-    '1'=>2,
-    '2'=>3
-  )
-  );
 ?>
