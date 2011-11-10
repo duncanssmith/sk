@@ -629,8 +629,10 @@ body.wide h1 #pagetitle {
     margin: 0; }
   #right_sidebar #main_image {
     width: 400px;
+    height: 400px;
+    background: silver;
     background: rgba(250, 250, 250, 0.8);
-    border: 1px solid black; }
+    border: 0px dotted red; }
 
 #ribbon {
   clear: left; }
