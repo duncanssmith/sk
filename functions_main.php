@@ -991,11 +991,16 @@ function showimages($p,$cols,$width){
 
 	$pk = array_keys($p);
 	if(isset($p['image'])){
-	  printf("<img src=\"img/iStockPhoto/%s\" alt=\"%s\" width=\"%d\" oncontextmenu=\"return false;\" />\n", 
-      $p['image'], 
-      $p['image_alt_text'], 
-      $width
-    ); 
+	  #printf("<img src=\"img/iStockPhoto_FINAL/%s\" alt=\"%s\" width=\"%d\" oncontextmenu=\"return false;\" />\n", 
+
+          echo "<div id=\"main_image\">";
+          printf("<img src=\"img/iStockPhoto_FINAL/%s\" alt=\"%s\" oncontextmenu=\"return false;\" />\n", 
+            $p['image'], 
+            $p['image_alt_text']
+            #,$width
+          ); 
+          echo "</div>";
+
     if(isset($p['image_caption'])){
       printf("<p class=\"small\">%s</p>", $p['image_caption']);
     }

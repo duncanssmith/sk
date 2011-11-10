@@ -1,74 +1,4 @@
 --- 
-:footbox_center_background_color: 
-  :r: 55
-  :g: 55
-  :b: 55
-  :a: 0.9
-:navigation_border_color: 
-  :r: 65
-  :g: 205
-  :b: 160
-  :a: 0.7
-:left_sidebar_list_background_hover_color: 
-  :r: 65
-  :g: 205
-  :b: 160
-  :a: 0.9
-:footbox_left_color: 
-  :r: 55
-  :g: 55
-  :b: 55
-  :a: 0.9
-:content_sub_link_background_hover_color: 
-  :r: 250
-  :g: 250
-  :b: 250
-  :a: 0.8
-:footer_box_center_background_color: 
-  :r: 55
-  :g: 55
-  :b: 55
-  :a: 1
-:navigation_link_text_color: 
-  :r: 255
-  :g: 255
-  :b: 255
-  :a: 0.9
-:left_sidebar_link_text_hover_color: 
-  :r: 55
-  :g: 55
-  :b: 55
-  :a: 0.9
-:ribbon_sub_center_left_background_color: 
-  :r: 250
-  :g: 250
-  :b: 250
-  :a: 0.8
-:content_pagetitle_hover_color: 
-  :r: 195
-  :g: 165
-  :b: 165
-  :a: 0.9
-:content_sub_background_color: 
-  :r: 250
-  :g: 250
-  :b: 250
-  :a: 0.8
-:ribbon_sub_link_background_color: 
-  :r: 250
-  :g: 250
-  :b: 250
-  :a: 0.8
-:right_sidebar_background_color: 
-  :r: 255
-  :g: 255
-  :b: 255
-  :a: 0.05
-:content_sub_center_left_background_color: 
-  :r: 250
-  :g: 250
-  :b: 250
-  :a: 0.8
 :footbox_center_color: 
   :r: 55
   :g: 55
@@ -99,11 +29,6 @@
   :g: 255
   :b: 255
   :a: 0.9
-:content_pagetitle_color: 
-  :r: 220
-  :g: 180
-  :b: 180
-  :a: 0.9
 :left_sidebar_link_background_hover_color: 
   :r: 200
   :g: 230
@@ -119,16 +44,11 @@
   :g: 250
   :b: 250
   :a: 0.8
-:contact_number_bg_color: 
-  :r: 255
-  :g: 255
-  :b: 255
-  :a: 0.01
-:content_sub_center_background_color: 
-  :r: 250
-  :g: 250
-  :b: 250
-  :a: 0.8
+:content_pagetitle_color: 
+  :r: 220
+  :g: 180
+  :b: 180
+  :a: 0.9
 :listlineoddcolor: 
   :r: 220
   :g: 255
@@ -139,11 +59,16 @@
   :g: 250
   :b: 250
   :a: 0.8
-:left_sidebar_list_text_hover_color: 
+:contact_number_bg_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 1
+  :a: 0.01
+:content_sub_center_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
 :footbox_right_background_color: 
   :r: 55
   :g: 55
@@ -154,6 +79,11 @@
   :g: 30
   :b: 30
   :a: 0.8
+:left_sidebar_list_text_hover_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 1
 :footboxes_color: 
   :r: 55
   :g: 55
@@ -229,11 +159,6 @@
   :g: 250
   :b: 250
   :a: 0.8
-:listlineevencolor: 
-  :r: 240
-  :g: 255
-  :b: 220
-  :a: 0.6
 :footer_background_color: 
   :r: 55
   :g: 55
@@ -244,16 +169,11 @@
   :g: 250
   :b: 250
   :a: 0.8
-:footer_box_left_background_color: 
-  :r: 55
-  :g: 55
-  :b: 55
-  :a: 1
-:ribbon_sub_background_color: 
-  :r: 250
-  :g: 250
-  :b: 250
-  :a: 0.8
+:listlineevencolor: 
+  :r: 240
+  :g: 255
+  :b: 220
+  :a: 0.6
 :header_background_color: 
   :r: 65
   :g: 205
@@ -264,11 +184,16 @@
   :g: 255
   :b: 255
   :a: 0.09
-:base_color: 
-  :r: 255
-  :g: 255
-  :b: 255
-  :a: 0.9
+:footer_box_left_background_color: 
+  :r: 55
+  :g: 55
+  :b: 55
+  :a: 1
+:ribbon_sub_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
 :navigation_background_hover_color: 
   :r: 40
   :g: 175
@@ -278,6 +203,11 @@
   :r: 40
   :g: 120
   :b: 50
+  :a: 0.9
+:base_color: 
+  :r: 255
+  :g: 255
+  :b: 255
   :a: 0.9
 :left_sidebar_link_background_color: 
   :r: 55
@@ -330,6 +260,76 @@
   :b: 255
   :a: 0.9
 :content_sub_center_right_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:navigation_border_color: 
+  :r: 65
+  :g: 205
+  :b: 160
+  :a: 0.7
+:left_sidebar_list_background_hover_color: 
+  :r: 65
+  :g: 205
+  :b: 160
+  :a: 0.9
+:footbox_center_background_color: 
+  :r: 55
+  :g: 55
+  :b: 55
+  :a: 0.9
+:footer_box_center_background_color: 
+  :r: 55
+  :g: 55
+  :b: 55
+  :a: 1
+:footbox_left_color: 
+  :r: 55
+  :g: 55
+  :b: 55
+  :a: 0.9
+:content_sub_link_background_hover_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:left_sidebar_link_text_hover_color: 
+  :r: 55
+  :g: 55
+  :b: 55
+  :a: 0.9
+:ribbon_sub_center_left_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:content_pagetitle_hover_color: 
+  :r: 195
+  :g: 165
+  :b: 165
+  :a: 0.9
+:navigation_link_text_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.9
+:content_sub_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:ribbon_sub_link_background_color: 
+  :r: 250
+  :g: 250
+  :b: 250
+  :a: 0.8
+:right_sidebar_background_color: 
+  :r: 255
+  :g: 255
+  :b: 255
+  :a: 0.05
+:content_sub_center_left_background_color: 
   :r: 250
   :g: 250
   :b: 250

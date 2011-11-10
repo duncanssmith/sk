@@ -144,10 +144,10 @@ $pages=array(
   ),
   '1'=>array(
     'title'=>'Your Health',
-    'sow'=>true,
+    'show'=>true,
     'layout'=>'info',
     'parent' => '/',
-    'image' => $images[20],
+    'image' => $images[9],
     'xmlfile'=>'xml/nutrition.xml',
     'include'=>'inc/your_health.inc',
     'sidebar_file' => 'gen/sidebar_1.inc',

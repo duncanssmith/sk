@@ -621,12 +621,16 @@ body.wide h1 #pagetitle {
   float: left;
   background: white;
   background: rgba(255, 255, 255, 0.05);
-  width: 240px;
+  width: 340px;
   padding: 15px 10px 10px 10px;
   margin: 0 120px 0 0;
   display: inline; }
   #right_sidebar h3 {
     margin: 0; }
+  #right_sidebar #main_image {
+    width: 400px;
+    background: rgba(250, 250, 250, 0.8);
+    border: 1px solid black; }
 
 #ribbon {
   clear: left; }

@@ -67,7 +67,7 @@
           <!--<li> -->
             <!--<a href="?pageid=1.6">Weight Loss &rarr;</a>-->
           <!--</li> -->
-				<!--</ul> -->
+        <!--</ul> -->
       </div>
       <div id="right_sidebar">
         <?php
@@ -76,8 +76,8 @@
                   include "debug_printout.php";
           }
         ?>
-			</div>
-			<div id="ribbon">
+      </div>
+      <div id="ribbon">
         <ul class="ribbon_sub group">
           <li class="ribbon_sub_left">
             <a href="index.php?pageid=1"><img src="img/blank_your_health.png" alt="Your Health" width="240" height="120" /></a>
@@ -88,7 +88,7 @@
           <li class="ribbon_sub_right">
             <a href="index.php?pageid=1.5"><img src="<?php echo "img/blank_weight_loss.png";?>" alt="Weight Loss" width="240" height="120"  /></a>
           </li>
-				</ul>
+        </ul>
 
       </div>
 
