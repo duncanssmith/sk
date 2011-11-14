@@ -2,6 +2,7 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
+sass-cache
 css/.sass-cache/*
 css/sass/.sass-cache/*
 gen/sidebar*

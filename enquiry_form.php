@@ -85,9 +85,9 @@ Enquiry form
   <br />
 <?php
   if(isset($_POST['enquiry']['enquiry_text'])){
-    printf("<textarea id=\"enquiry_enquiry_text\" name=\"enquiry[enquiry_text]\" cols=\"24\" rows=\"4\" size=\"2048\" type=\"text\">%s</textarea>", $_POST['enquiry']['enquiry_text']);
+    printf("<textarea id=\"enquiry_enquiry_text\" name=\"enquiry[enquiry_text]\" cols=\"64\" rows=\"12\" size=\"4096\" type=\"text\">%s</textarea>", $_POST['enquiry']['enquiry_text']);
   }else{
-    print "<textarea id=\"enquiry_enquiry_text\" name=\"enquiry[enquiry_text]\" size=\"2048\" type=\"text\"></textarea>";
+    print "<textarea id=\"enquiry_enquiry_text\" name=\"enquiry[enquiry_text]\" cols=\"64\" rows=\"12\" size=\"2048\" type=\"text\"></textarea>";
   }
 ?>
 <!--  <br />
