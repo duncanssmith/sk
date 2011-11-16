@@ -18,7 +18,7 @@
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.9
+  :a: 1
 :header_background_color: 
   :r: 65
   :g: 205
@@ -93,7 +93,7 @@
   :r: 40
   :g: 120
   :b: 50
-  :a: 0.9
+  :a: 1
 :navigation_background_color: 
   :r: 65
   :g: 205
@@ -133,7 +133,7 @@
   :r: 55
   :g: 55
   :b: 55
-  :a: 0.9
+  :a: 1
 :navigation_background_base_color: 
   :r: 65
   :g: 205
@@ -163,16 +163,16 @@
   :r: 55
   :g: 55
   :b: 55
-  :a: 0.95
+  :a: 1
 :left_sidebar_list_text_color: 
   :r: 25
   :g: 155
   :b: 25
-  :a: 0.95
+  :a: 1
 :left_sidebar_list_text_hover_color: 
-  :r: 255
-  :g: 255
-  :b: 255
+  :r: 25
+  :g: 105
+  :b: 85
   :a: 1
 :left_sidebar_list_background_color: 
   :r: 255
@@ -228,57 +228,57 @@
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.9
+  :a: 1
 :content_sub_right_background_color: 
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
 :content_sub_link_color:
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
 :content_sub_link_background_color:
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
 :content_sub_link_hover_color:
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
 :content_sub_link_background_hover_color:
   :r: 250
   :g: 250
   :b: 250
-  :a: 0.8
+  :a: 1
 :content_h_color: 
   :r: 70
   :g: 90
   :b: 15
-  :a: 0.9
+  :a: 1
 :container_background_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.9
+  :a: 1
 :pcolor: 
   :r: 30
   :g: 30
   :b: 30
-  :a: 0.8
+  :a: 1
 :content_background_color: 
   :r: 255
   :g: 255
   :b: 255
-  :a: 0.7
+  :a: 1
 :navigation_border_color: 
   :r: 65
   :g: 205
   :b: 160
-  :a: 0.7
+  :a: 1
 :base_color: 
   :r: 255
   :g: 255

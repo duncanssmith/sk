@@ -250,7 +250,10 @@ caption {
   font-size: 0.8em; }
 
 .capt {
-  color: silver; }
+  font-size: 0.8em;
+  color: silver;
+  margin-bottom: 1.875em;
+  line-height: 1.875em; }
 
 .small {
   font-size: 0.8em;
@@ -312,7 +315,7 @@ body {
   background: white url("../img/bg.png") top left repeat-x fixed;
   background: rgba(255, 255, 255, 0.9) url("../img/bg.png") top left repeat-x fixed;
   color: #1e1e1e;
-  color: rgba(30, 30, 30, 0.8);
+  color: #1e1e1e;
   margin: 10px;
   padding: 10px; }
   body h1 {
@@ -335,7 +338,7 @@ body {
     color: rgba(40, 40, 10, 0.9); }
   body p {
     color: #1e1e1e;
-    color: rgba(30, 30, 30, 0.8); }
+    color: #1e1e1e; }
 
 table.index_data {
   margin: 0px;
@@ -375,7 +378,7 @@ table.index_data {
   margin: 0 auto;
   width: 1100px;
   background: white;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   border-top-left-radius: 1em 1em;
   -webkit-border-top-left-radius: 1em 1em;
   -moz-border-radius-topleft: 1em 1em;
@@ -440,10 +443,10 @@ table.index_data {
     background: #41cda0 url("../img/glass_button.png") repeat-x 0 50%;
     background: #41cda0 url("../img/glass_button.png") repeat-x 0 50%;
     color: white;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     text-decoration: none;
     border-right: 1px solid #41cda0;
-    border-right: 1px solid rgba(65, 205, 160, 0.7); }
+    border-right: 1px solid #41cda0; }
     #navigation li a:hover {
       color: white;
       color: white;
@@ -464,7 +467,7 @@ table.index_data {
 #left_sidebar {
   float: left;
   background: white;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   width: 140px;
   padding: 15px 10px 10px 10px;
   margin: 0 15px;
@@ -483,7 +486,7 @@ table.index_data {
       background: white;
       background: rgba(255, 255, 255, 0.05);
       color: #199b19;
-      color: rgba(25, 155, 25, 0.95);
+      color: #199b19;
       border-bottom: 1px dotted green;
       padding-top: 2px;
       text-align: right; }
@@ -492,16 +495,16 @@ table.index_data {
         background: rgba(65, 205, 160, 0.9); }
       #left_sidebar ul li a {
         color: #199b19;
-        color: rgba(25, 155, 25, 0.95);
+        color: #199b19;
         text-decoration: none;
         text-align: right; }
         #left_sidebar ul li a:hover {
-          color: white;
-          color: white; }
+          color: #196955;
+          color: #196955; }
   #left_sidebar .more_btn a {
     padding: 3px 12px;
     color: white;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     text-decoration: none;
     background: #41cda0 url("../img/glass_button.png") repeat-x 0 50%;
     background: #41cda0 url("../img/glass_button.png") repeat-x 0 50%;
@@ -521,7 +524,7 @@ table.index_data {
 
 #content {
   float: left;
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   width: 340px;
   padding: 15px 10px 10px 10px;
   margin: 0px 20px 0px 30px;
@@ -529,12 +532,12 @@ table.index_data {
   #content h1 {
     font-size: 180%;
     color: #465a0f;
-    color: rgba(70, 90, 15, 0.9); }
+    color: #465a0f; }
   #content h2 {
     margin: 0;
     font-size: 150%;
     color: #465a0f;
-    color: rgba(70, 90, 15, 0.9); }
+    color: #465a0f; }
   #content p {
     font-size: 112%;
     font-family: verdana; }
@@ -594,20 +597,20 @@ table.index_data {
       padding: 0 0px;
       border: 0px dotted blue;
       background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%;
-      background: rgba(250, 250, 250, 0.8) url("../img/img_right.jpg") repeat-x 0 50%; }
+      background: #fafafa url("../img/img_right.jpg") repeat-x 0 50%; }
     #content ul.content_sub a {
       text-decoration: none;
       font-size: 7pt;
       padding: 0.5px;
       color: #fafafa;
-      color: rgba(250, 250, 250, 0.8);
+      color: #fafafa;
       background: #fafafa;
-      background: rgba(250, 250, 250, 0.8); }
+      background: #fafafa; }
       #content ul.content_sub a:hover {
         color: #fafafa;
-        color: rgba(250, 250, 250, 0.8);
+        color: #fafafa;
         background: #fafafa;
-        background: rgba(250, 250, 250, 0.8); }
+        background: #fafafa; }
 
 body.wide #left_sidebar {
   width: 0; }
@@ -621,9 +624,10 @@ body.wide h1 #pagetitle {
   float: left;
   background: white;
   background: rgba(255, 255, 255, 0.05);
-  width: 340px;
-  padding: 15px 10px 10px 10px;
-  margin: 0 120px 0 0;
+  width: 402px;
+  height: 402px;
+  padding: 0;
+  margin: 20px;
   display: inline; }
   #right_sidebar h3 {
     margin: 0; }
@@ -745,6 +749,10 @@ body.wide h1 #pagetitle {
   border-bottom-right-radius: 1em 1em;
   -webkit-border-bottom-right-radius: 1em 1em;
   -moz-border-radius-bottomright: 1em 1em; }
+  #footer span.lineleft {
+    float: left; }
+  #footer span.lineright {
+    float: right; }
   #footer ul.footboxes {
     list-style-type: none;
     font-size: 8pt;

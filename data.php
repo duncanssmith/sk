@@ -318,7 +318,7 @@ $pages=array(
 
 $itingline="\n<a href=\"mailto:itingdesign@gmail.com\" class=\"capt\">&copy; iTing design ".$year." all rights reserved</a>\n";
 $sknutritionemailline="\n<a href=\"mailto:senh@gmail.com\" class=\"capt\">&copy; South East Nutrition & Health ".$year." all rights reserved</a>\n";
-$sknutritionline="\n<p class=\"capt\">&copy; South East Nutrition & Health ".$year." all rights reserved</p>\n";
+$sknutritionline="\n<span class=\"lineleft\"><p class=\"capt\">&copy; South East Nutrition & Health ".$year." all rights reserved.</p></span> <span class=\"lineright\"><p class=\"capt\">".$now."</p></span>\n";
 /* images */
 $logo="images/logo.gif";
 $logoBlank="images/blank_logo.gif";

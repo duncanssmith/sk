@@ -93,21 +93,12 @@
       </div>
 
       <div id="footer">
-        <ul class="footboxes group">
-          <li class="footbox_left"> 
             <?php  
               echo "<br />\n";
               echo $sknutritionline; 
-            ?> 
-          </li>
-          <li class="footbox_center"> 
-           <?php 
               echo "<br />\n";
-              #echo $itingline; 
               echo "&nbsp;";
-           ?> </li>
-          <li class="footbox_right"> <?php echo $now ?> </li>
-        </ul>
+            ?>
       </div>
     </div>
   </body>

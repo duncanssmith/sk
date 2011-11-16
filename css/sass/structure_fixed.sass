@@ -258,10 +258,11 @@ body.wide
 #right_sidebar
   float: left
   background: $right_sidebar_background_color_IE
-  background: $right_sidebar_background_color 
-  width: 340px
-  padding: 15px 10px 10px 10px 
-  margin: 0 120px 0 0
+  background: $right_sidebar_background_color
+  width: 402px
+  height: 402px
+  padding: 0 
+  margin: 20px
   display: inline
   h3
     margin: 0
@@ -387,6 +388,11 @@ body.wide
   height: 15%
   @include rounded("bottom", "left", $border_radius)
   @include rounded("bottom", "right", $border_radius)
+  
+  span.lineleft
+    float: left
+  span.lineright
+    float: right
 
   ul.footboxes
     list-style-type: none
