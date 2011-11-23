@@ -7,7 +7,7 @@ South East Nutrition and Health seeks to inspire healthy, balanced living throug
 <p>
 South East Nutrition and Health, founded by 
 <b>Seamus Kirk, BSc. (Hons) RD HCIMA</b> is passionate about the benefits of nutrition, and the changes good dietary practice can bring.
-Seamus is a <a target="_blank" href="http://www.hpcheck.org">Health Professions Council (HPC) registered dietician</a>, and a member of the <a target="_blank" href="http://www.bda.uk.com/">British Dietetic Association (BDA)</a>, the professional body for dieticians in the UK.
+Seamus is a <a target="_blank" href="http://www.hpcheck.org">Health Professions Council (HPC) registered dietitian</a>, and a member of the <a target="_blank" href="http://www.bda.uk.com/">British Dietetic Association (BDA)</a>, the professional body for dietitians in the UK.
 <p>
 
 Diet choices face us every day and are informed by our cultural background, national heritage and socio-economic environment, as well as, for example, our personal development, our tendency to be experimental or conservative in our choices, and even our experiences of travel. They are also informed by our personal beliefs and knowledge about food and, importantly, by what we read or hear in the media and in the news.

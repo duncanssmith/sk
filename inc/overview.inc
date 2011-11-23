@@ -17,6 +17,6 @@ Registered Dietitians are the only qualified health professionals that assess, d
 Dietitians normally have a completed a 4 year Batchelor of Science degree (BSc.) in Nutrition and Dietetics or a 3 year BSc. followed by a Master's degree (MSc.) in Dietetics. These courses always include practical training working in a hospital and in the community.
 </p>
 <p>
-The title "Dietitian" can only be used by qualified dieticians who are registered with the Health Professions Council. Please refer to the <a target= "_blank" href="http://www.hpcheck.org.uk">Health Professions Council</a> website for further information.
+The title "Dietitian" can only be used by qualified dietitians who are registered with the Health Professions Council. Please refer to the <a target= "_blank" href="http://www.hpcheck.org.uk">Health Professions Council</a> website for further information.
 </p>
 
