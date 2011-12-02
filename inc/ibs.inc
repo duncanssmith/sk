@@ -2,7 +2,7 @@
  IBS - Irritable Bowel Syndrome
 </h1>
 <p>
-IBS is a bowel disorder characterized by abdominal pain, discomfort, bloating, and alteration of bowel habits. In some cases, symptoms are relieved by bowel movements. Symptoms include diarrhea, constipation, or both, alternating. IBS may begin after an infection, a stressful life event, or the onset of maturity.
+IBS is a bowel disorder characterized by abdominal pain, discomfort, bloating, and alteration of bowel habits. In some cases, symptoms are relieved by bowel movements. Symptoms include diarrhoea, constipation, or both, alternating. IBS may begin after an infection, a stressful life event, or the onset of maturity.
 </p>
 <p>
 Although there is no cure for IBS, there are treatments that can relieve symptoms. These include changes in diet, medication and psychological treatments.
